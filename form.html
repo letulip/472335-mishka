@@ -6,27 +6,28 @@
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
   </head>
   <body>
-    <nav class="main-nav">
-      <a href="index.html"><img class="logo" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка логотип"></a>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__content">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
-        <li class="main-nav__item"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
-      </ul>
-    </nav>
     <header class="page-header">
+      <nav class="main-nav">
+        <a href="index.html"><img class="logo" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка логотип"></a>
+        <button class="nav-toggle"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html" class="main-nav__content">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
       <h1 class="catalog-header">Вязание на заказ</h1>
     </header>
     <main class="page-content">
-      <form action="" class="form">
+      <form action="https://echo.htmlacademy.ru" class="form" method="post">
         <p class="form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset">
           <legend>ТИП</legend>
           <div class="field-wrapper form__type">
-            <input type="radio" name="form__type" id="form__type-1" value="form__type-1">
+            <input type="radio" name="form__type" id="form__type-1" value="form__type-1" checked>
             <label for="form__type-1">Аксессуары для интерьера</label>
-            <input type="radio" name="form__type" id="form__type-2" value="form__type-2" checked>
+            <input type="radio" name="form__type" id="form__type-2" value="form__type-2">
             <label for="form__type-2">Детская игрушка</label>
           </div>
         </fieldset>
@@ -78,18 +79,17 @@
             </textarea>
           </div>
         </fieldset>
-        <p class="form__necess">*Поля обязательны для заполнения</p>
-        <button class="button">Отправить заказ</button>
+        <p class="form__necessary">*Поля обязательны для заполнения</p>
+        <button type="submit" class="button">Отправить заказ</button>
       </form>
     </main>
     <footer class="page-footer">
-      <ul class="page-footer__social socialGroup">
-        <li class="socialGroup__btn btn-ig">Instagram</li>
-        <li class="socialGroup__btn btn-fb">Facebook</li>
-        <li class="socialGroup__btn btn-tw">Twitter</li>
+      <ul class="social">
+        <li class="social-item social-item--ig"><a href="#">Instagram</a></li>
+        <li class="social-item social-item--fb"><a href="#">Facebook</a></li>
+        <li class="social-item social-item--tw"><a href="#">Twitter</a></li>
       </ul>
-      <h3 class="h3-header">Разработано</h3>
-      <a href="" class="academy-link">HTML Academy</a>
+      <h3 class="page-footer__copyright header header--h3">Разработано<a href="http://htmlacademy.ru" class="academy-link">HTML Academy</a></h3>
     </footer>
     <div class="modal cart-add">
       <h2 class="cart-add__header">Добавить в корзину</h2>
