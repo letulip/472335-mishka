@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+    <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a href="index.html"><img class="logo" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка логотип"></a>
+        <button class="nav-toggle"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html" class="main-nav__content">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
+        </ul>
+      </nav>
+      <h1 class="catalog-header">Каталог товаров</h1>
+    </header>
+    <main class="page-content">
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="260" height="315" alt="Зайчик-попрыгайчик" class="catalog__img">
+              <h2 class="page-content__header header header--h2">Зайчик-попрыгайчик</h2>
+            </a>
+            <p class="catalog__desc">Рост 30 см, вес 200 г</p>
+            <p class="catalog__price">1200 руб.</p>
+            <a href="" class="catalog__add">cart</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="260" height="315" alt="Корзинка для белья" class="catalog__img">
+              <h2 class="page-content__header header header--h2">Корзинка для белья</h2>
+            </a>
+            <p class="catalog__desc">Диаметр 15 см, высота 10 см</p>
+            <p class="catalog__price">690 руб.</p>
+            <a href="" class="catalog__add">cart</a>
+          </li>
+          <li class="catalog__item">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="260" height="315" alt="Большая корзинка для игрушек" class="catalog__img">
+              <h2 class="page-content__header header header--h2">Большая корзинка для игрушек</h2>
+            </a>
+            <p class="catalog__desc">Диаметр 30 см, высота 30 см</p>
+            <p class="catalog__price">1500 руб.</p>
+            <a href="" class="catalog__add">cart</a>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__header header header--h2">Процесс производства</h2>
+        <img src="http://placehold.it/150x100" width="260" height="150" class="video__file"></img>
+        <button class="video__play">Play</button>
+        <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a href="form.html" class="button">Сделать заказ</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="social">
+        <li class="social-item social-item--ig"><a href="#">Instagram</a></li>
+        <li class="social-item social-item--fb"><a href="#">Facebook</a></li>
+        <li class="social-item social-item--tw"><a href="#">Twitter</a></li>
+      </ul>
+      <h3 class="page-footer__copyright header header--h3">Разработано<a href="http://htmlacademy.ru" class="academy-link">HTML Academy</a></h3>
+    </footer>
+    <div class="modal cart-add">
+      <h2 class="cart-add__header">Добавить в корзину</h2>
+      <p class="cart-add__choose-size">Выберите размер:</p>
+      <button class="cart-add__size-btn">S</button>
+      <button class="cart-add__size-btn">M</button>
+      <button class="cart-add__size-btn">L</button>
+      <button class="button cart-add__add-button">Добавить</button>
+    </div>
+  </body>
+</html>
