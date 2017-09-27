@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="main-nav">
         <a href="index.html"><img class="logo" src="http://placehold.it/150x100" width="150" height="100" alt="Мишка логотип"></a>
-        <button class="nav-toggle"></button>
+        <button type="button" class="nav-toggle"></button>
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="catalog.html" class="main-nav__content">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
@@ -24,7 +24,7 @@
       <form action="https://echo.htmlacademy.ru" class="form" method="post">
         <p class="form__desc">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <fieldset class="form__fieldset">
-          <legend>ТИП</legend>
+          <legend class="form__legend">ТИП</legend>
           <div class="field-wrapper form__type">
             <input type="radio" name="form__type" id="form__type-1" value="form__type-1" checked>
             <label for="form__type-1">Аксессуары для интерьера</label>
@@ -33,7 +33,7 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>ЦВЕТ</legend>
+          <legend class="form__legend">ЦВЕТ</legend>
             <div class="field-wrapper form__color">
               <input type="checkbox" class="field-wrapper__checkbox" id="white" name="white" checked>
               <label class="label-color" for="white">Белый</label>
@@ -50,7 +50,7 @@
             </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>ФИО</legend>
+          <legend class="form__legend">ФИО</legend>
           <div class="field-wrapper form__name">
             <label for="name" class="label-name">Имя:</label>
             <input type="text" class="field-wrapper__input" id="name" required placeholder="Введите ваше имя*">
@@ -61,19 +61,19 @@
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>ТЕЛ</legend>
+          <legend class="form__legend">ТЕЛ</legend>
           <div class="field-wrapper form__tel">
             <input type="tel" class="field-wrapper__input" required placeholder="+7 XXX XX XX*">
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>E-MAIL</legend>
+          <legend class="form__legend">E-MAIL</legend>
           <div class="field-wrapper form__email">
             <input type="email" class="field-wrapper__input" required placeholder="Ваш Email*">
           </div>
         </fieldset>
         <fieldset class="form__fieldset">
-          <legend>ДОП</legend>
+          <legend class="form__legend">ДОП</legend>
           <div class="form__additional">
             <textarea class="textarea">
               Опишите ваши пожелания к заказу
@@ -86,9 +86,9 @@
     </main>
     <footer class="page-footer">
       <ul class="social">
-        <li class="social-item social-item--ig"><a href="#">Instagram</a></li>
-        <li class="social-item social-item--fb"><a href="#">Facebook</a></li>
-        <li class="social-item social-item--tw"><a href="#">Twitter</a></li>
+        <li class="social__item social__item--ig"><a href="#">Instagram</a></li>
+        <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
+        <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
       </ul>
       <h3 class="page-footer__copyright header header--h3">Разработано<a href="http://htmlacademy.ru" class="academy-link">HTML Academy</a></h3>
     </footer>
