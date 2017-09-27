@@ -15,9 +15,22 @@ body {
   color: #444;
   font-weight: bold;
   background-color: #fefefe;
+  width: 320px;
 }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  margin: inherit;
+  padding: inherit;
+}
+
+.container {
+  width: 290px;
+  margin: 0 auto;
+}
+
+.map {
+  width: 100%;
+  height: 457px;
 }
