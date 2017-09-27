@@ -1,0 +1,20 @@
+.cart-add {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+.cart-add__size-btn {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  &:hover,
+  &:focus {
+    border: 2px solid #63d1bb;
+  }
+}
+
+.cart-add__add-button {
+  background-color: #63d1bb;
+  border: none;
+  color: #fff;
+}
