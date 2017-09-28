@@ -1,0 +1,25 @@
+.reviews__text {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.reviews__author {
+  font-size: 17px;
+}
+
+.reviews__author-email {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.reviews__controls {
+  width: 100%;
+  display: flex;
+}
+
+.reviews__btn {
+  width: 50%;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}

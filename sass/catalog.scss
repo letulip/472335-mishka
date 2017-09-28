@@ -1,0 +1,23 @@
+.catalog__list {
+  list-style: none;
+}
+
+.catalog__item--link {
+  text-decoration: none;
+ }
+
+.catalog__item--header {
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.catalog__desc {
+  font-size: 13px;
+  line-height: 30px;
+  color: #444;
+  font-weight: normal;
+}
+
+.catalog__price {
+  color: #000;
+}

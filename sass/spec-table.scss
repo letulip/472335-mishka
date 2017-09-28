@@ -1,0 +1,22 @@
+.spec-table {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  margin-left: 0;
+  border-collapse: collapse;
+}
+
+.spec-table__cell {
+  border-bottom: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+.spec-table__cell:first-child {
+
+}
+
+.spec-table__cell:last-child {
+
+}
