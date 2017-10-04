@@ -1,3 +1,19 @@
 .page-content__img {
   padding: 0;
 }
+
+@media (min-width: 768px) {
+  .page-content__img {
+    position: absolute;
+    width: 334px;
+    height: 403px;
+    right: 0;
+    top: 100px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-content__img {
+
+  }
+}
