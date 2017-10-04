@@ -4,19 +4,19 @@
   font-weight: normal;
   margin-left: 0;
   border-collapse: collapse;
+  margin-bottom: 20px;
 }
 
 .spec-table__cell {
   border-bottom: 1px solid #ddd;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 50%;
 }
 
 .spec-table__cell:first-child {
-
+  width: 95px;
 }
 
 .spec-table__cell:last-child {
-
+  width: 165px;
 }

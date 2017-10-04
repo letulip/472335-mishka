@@ -1,8 +1,22 @@
+.featured {
+  margin-bottom: 30px;
+}
+
+.featured > * {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.featured__header {
+  padding-bottom: 5px;
+}
+
 .featured__sub-header {
   font-size: 17px;
   line-height: 20px;
   color: #63d1bb;
   text-transform: uppercase;
+  padding-top: 0;
 }
 
 .featured__description {

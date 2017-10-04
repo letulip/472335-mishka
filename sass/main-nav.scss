@@ -1,3 +1,13 @@
+.logo {
+  outline: 1px solid red;
+  margin: 0 auto;
+}
+
+.menu-toggle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .main-nav__item {
   list-style: none;
   width: 100%;
@@ -5,6 +15,11 @@
   padding-bottom: 20px;
   text-align: center;
   border-top: 1px solid #ddd;
+}
+
+.free-shipping {
+  display: none;
+  font-weight: normal;
 }
 
 .main-nav__content {
@@ -15,5 +30,29 @@
 }
 
 .main-nav__list {
-  /*display: none;*/
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    display: flex;
+  }
+
+  .free-shipping {
+    display: flex;
+  }
+}
+
+@media (min-width: 1150px) {
+  .main-nav__list {
+
+  }
+
+  .free-shipping {
+
+  }
 }
