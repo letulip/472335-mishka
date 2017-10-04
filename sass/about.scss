@@ -9,9 +9,47 @@
   font-size: 17px;
   line-height: 20px;
   margin-top: 80px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    top: -50px;
+    left: 0px;
+    background-image: url("../img/icon-feature-flower.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &--style:before {
+    background-image: url("../img/icon-feature-money.svg");
+  }
+
+  &--like:before {
+    background-image: url("../img/icon-feature-heart.svg");
+  }
+
+  &--knitted:before {
+    background-image: url("../img/icon-feature-ball.svg");
+  }
+
+  &--patriot:before {
+    background-image: url("../img/icon-feature-rocket.svg");
+  }
+
+  &--present:before {
+    background-image: url("../img/icon-feature-gift.svg");
+  }
 }
 
 @media (min-width: 768px) {
+  .about__header {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
   .about__list {
     width: 668px;
     display: flex;
@@ -21,6 +59,8 @@
   .about__item {
     flex-basis: 50%;
     padding-right: 85px;
+    font-size: 20px;
+    line-height: 22px;
   }
 }
 
