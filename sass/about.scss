@@ -61,6 +61,26 @@
     padding-right: 85px;
     font-size: 20px;
     line-height: 22px;
+
+    &--style {
+      order: 2;
+    }
+
+    &--like {
+      order: 4;
+    }
+
+    &--knitted {
+      order: 1;
+    }
+
+    &--patriot {
+      order: 3;
+    }
+
+    &--present {
+      order: 5;
+    }
   }
 }
 
