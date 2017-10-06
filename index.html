@@ -9,15 +9,15 @@
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="container">
+        <div class="container page-header--logo">
           <img class="logo" src="img/logo-mobile.svg" width="100" height="45" alt="Мишка логотип">
           <img class="menu-toggle" src="img/icon-menu-open.svg" width="20" height="20" alt="Меню">
         </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html" class="main-nav__content">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html" class="main-nav__content">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--form"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
         </ul>
         <span class="free-shipping">Бесплатная доставка по России</span>
       </nav>
@@ -25,13 +25,15 @@
         <h1 class="index-header header header--h1">Милые штучки ручной работы для дома</h1>
       </div>
       <div class="page-header__content--wrapper">
-        <div class="container">
-          <a href="#" class="page-header__content">Предметы интерьера</a>
+        <div class="page-header__content--bg-wrapper">
+          <div class="container page-header__content--interior">
+            <a href="#" class="page-header__content">Предметы интерьера</a>
+          </div>
         </div>
-      </div>
-      <div class="page-header__content--wrapper">
-        <div class="container">
-          <a href="#" class="page-header__content">Детские игрушки</a>
+        <div class="page-header__content--bg-wrapper">
+          <div class="container page-header__content--toy">
+            <a href="#" class="page-header__content">Детские игрушки</a>
+          </div>
         </div>
       </div>
     </header>
@@ -77,13 +79,15 @@
         <section class="reviews">
           <h2 class="reviews__header header header--h2">Отзывы</h2>
           <blockquote class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</blockquote>
-          <p class="reviews__author">Анастасия Красильникова</p>
-          <p class="reviews__author-email">@misssssiskras</p>
+          <div class="reviews__author--details">
+            <p class="reviews__author">Анастасия Красильникова</p>
+            <p class="reviews__author-email">@misssssiskras</p>
+          </div>
           <div class="reviews__controls">
             <button type="button" class="reviews__btn reviews__btn--prev">предыдущий отзыв</button>
             <button type="button" class="reviews__btn reviews__btn--next">следующий отзыв</button>
           </div>
-          <a href="#" class="button">Написать</a>
+          <a href="#" class="button reviews__btn-write">Написать</a>
         </section>
       </main>
     </div>
