@@ -65,16 +65,30 @@
   }
 
   .featured--wrapper * {
-    width: 334px;
+    width: 300px;
   }
 
   .featured__description {
     margin-right: auto;
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: 1150px) {
-  .container {
+  .featured__header {
+    order: 1;
+    font-size: 53px;
+    line-height: 57px;
+    margin-right: auto;
+  }
 
+  .featured__sub-header {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .featured--wrapper {
+    margin-left: 175px;
   }
 }
