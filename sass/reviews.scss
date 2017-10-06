@@ -55,7 +55,6 @@
       order: 1;
       margin-bottom: 60px;
       font-size: 17px;
-      line-height: 30px;
     }
 
     &__author--details {
@@ -74,7 +73,7 @@
 }
 
 @media (min-width: 1150px) {
-  .container {
-    width: 1050px;
+  .reviews {
+    padding-left: 175px;
   }
 }
