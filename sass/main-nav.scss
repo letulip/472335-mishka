@@ -6,11 +6,9 @@
   display: flex;
   max-width: 260px;
   margin: 0 auto;
-  /*justify-content: space-between;*/
 }
 
 .main-nav__item--logo {
-  outline: 1px solid red;
   margin: 0 auto;
 }
 
@@ -60,9 +58,18 @@
     margin: 0 auto;
   }
 
+  .main-nav__item--logo {
+    margin: 0;
+  }
+
   .main-nav__drop-down {
     display: flex;
+    top: -30px;
   }
+
+  .main-nav__drop-down .main-nav__item {
+  border: 0;
+}
 }
 
 @media (min-width: 1150px) {
