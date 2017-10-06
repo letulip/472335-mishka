@@ -1,24 +1,36 @@
-.logo {
+.main-nav__list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  max-width: 260px;
+  margin: 0 auto;
+  /*justify-content: space-between;*/
+}
+
+.main-nav__item--logo {
   outline: 1px solid red;
   margin: 0 auto;
 }
 
-.menu-toggle {
-  margin-top: auto;
-  margin-bottom: auto;
+.main-nav__item--menu-toggle {
+  align-self: center;
 }
 
 .main-nav__item {
   list-style: none;
-  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+}
+
+.main-nav__drop-down .main-nav__item {
+  width: 100%;
   border-top: 1px solid #ddd;
 }
 
 .free-shipping {
-  display: none;
   font-weight: normal;
 }
 
@@ -29,7 +41,7 @@
   line-height: 24px;
 }
 
-.main-nav__list {
+.main-nav__drop-down {
   display: none;
 }
 
@@ -38,12 +50,7 @@
     display: none;
   }
 
-  .main-nav {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
+  .main-nav__list {
     max-width: 668px;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
@@ -53,11 +60,7 @@
     margin: 0 auto;
   }
 
-  .main-nav__list {
-    display: flex;
-  }
-
-  .free-shipping {
+  .main-nav__drop-down {
     display: flex;
   }
 }
