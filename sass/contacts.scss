@@ -12,7 +12,7 @@
   .contacts__spec {
     width: 100%;
 
-    & tbody {
+    & > tbody {
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
