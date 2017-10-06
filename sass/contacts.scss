@@ -1,3 +1,46 @@
 .contacts .container {
   flex-wrap: wrap;
 }
+
+@media (min-width: 768px) {
+  .contacts__header {
+    font-size: 43px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  .contacts__spec {
+    width: 100%;
+
+    & tbody {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+    }
+
+    & .spec-table__row {
+      min-width: 50%;
+    }
+
+    & .spec-table__cell {
+      border: none;
+    }
+  }
+
+  .spec-table__cell--address {
+    vertical-align: top;
+  }
+
+  .button--write-us {
+    max-width: 231px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+
+  }
+}
