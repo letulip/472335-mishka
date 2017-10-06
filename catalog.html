@@ -5,24 +5,26 @@
     <title>HTML Academy: Мишка</title>
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <div class="container">
-          <a href="index.html"><img class="logo" src="img/logo-mobile.svg" width="100" height="45" alt="Мишка логотип"></a>
-          <img class="menu-toggle" src="img/icon-menu-open.svg" width="20" height="20" alt="Меню">
-        </div>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="catalog.html" class="main-nav__content">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html" class="main-nav__content">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--logo"><img class="logo" src="img/logo-mobile.svg" width="100" height="45" alt="Мишка логотип"></li>
+          <li class="main-nav__item main-nav__item--menu-toggle"><img class="menu-toggle" src="img/icon-menu-open.svg" width="20" height="20" alt="Меню"></li>
+          <li class="main-nav__item main-nav__item--catalog main-nav__drop-down"><a href="catalog.html" class="main-nav__content main-nav__content--tablet">Каталог товаров</a></li>
+          <li class="main-nav__item main-nav__item--form main-nav__drop-down"><a href="form.html" class="main-nav__content main-nav__content--tablet">Вязание на заказ</a></li>
+          <li class="main-nav__item main-nav__item--search main-nav__drop-down"><a href="#" class="main-nav__content">Поиск по сайту</a></li>
+          <li class="main-nav__item main-nav__item--cart main-nav__drop-down"><a href="cart.html" class="main-nav__content">Корзина: пока пуста</a></li>
+          <li class="main-nav__item main-nav__item--new"><a href="new.html" class="main-nav__content main-nav__content--desktop">Новые поступления</a></li>
+          <li class="main-nav__item main-nav__item--sale"><a href="sale.html" class="main-nav__content main-nav__content--desktop">Распродажа</a></li>
+          <li class="main-nav__item main-nav__item--free-shipping"><span class="main-nav__content main-nav__content--tablet free-shipping">Бесплатная доставка по России</span></li>
         </ul>
       </nav>
       <h1 class="catalog-header header header--h1">Каталог товаров</h1>
     </header>
-    <div class="container">
+    <div class="container container--catalog">
       <main class="page-content">
         <section class="catalog">
           <ul class="catalog__list">
@@ -57,13 +59,14 @@
         </section>
         <section class="video">
           <h2 class="video__header header header--h2">Процесс производства</h2>
-          <img src="/img/video-mobile@1x.jpg" width="260" height="150" class="video__file"></img>
+          <img src="/img/video-mobile@1x.jpg" width="260" height="150" class="video__file">
           <button class="video__play">Play</button>
           <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a href="form.html" class="button">Сделать заказ</a>
         </section>
       </main>
       <footer class="page-footer">
+        <img class="logo page-footer__logo" src="img/logo-mobile.svg" width="100" height="45" alt="Мишка логотип">
         <ul class="social">
           <li class="social__item social__item--ig"><a href="#">Instagram</a></li>
           <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
