@@ -40,7 +40,38 @@
 }
 
 @media (min-width: 1150px) {
-  .container {
+  .contacts {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 1050px;
+    margin: 0 auto;
+    position: relative;
 
+    & .container {
+      max-width: 525px;
+      padding-left: 175px;
+    }
+  }
+
+  .map {
+    max-width: 525px;
+  }
+
+  .contacts__spec > tbody {
+    display: block;
+  }
+
+  .button--write-us {
+    position: absolute;
+    left: 175px;
+    bottom: 0;
   }
 }
