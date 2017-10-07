@@ -64,5 +64,27 @@
 }
 
 @media (min-width: 1150px) {
+  .catalog__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .catalog__item {
+    max-width: 315px;
+    padding-left: 0;
+  }
+
+  .catalog__img {
+    position: relative;
+    min-width: 315px;
+    min-height: 460px;
+  }
+
+  .catalog__add {
+    margin-left: auto;
+  }
 }
