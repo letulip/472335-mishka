@@ -6,3 +6,52 @@
   display: flex;
   flex-direction: column;
 }
+
+.field-wrapper__checkbox,
+.field-wrapper__radio {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .field-wrapper,
+  .form__additional--textarea {
+    margin-left: 167px;
+  }
+
+  .form__additional--textarea {
+    width: 501px;
+  }
+
+  .form__color {
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .label-color {
+    min-width: 170px;
+    margin-left: 70px;
+  }
+
+  .form__submit {
+    max-width: 230px;
+    margin-right: auto;
+  }
+
+  .form__necessary {
+    order: 1;
+    max-width: 300px;
+    font-weight: normal;
+  }
+}
+
+@media (min-width: 1150px) {
+
+}

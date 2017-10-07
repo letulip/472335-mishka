@@ -21,3 +21,70 @@
 .catalog__price {
   color: #000;
 }
+
+@media (min-width: 768px) {
+  .catalog__item {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 334px;
+    margin-bottom: 50px;
+    align-content: flex-start;
+    padding-left: 334px;
+    border-bottom: 1px solid #efefef;
+
+    &--header {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &--price {
+      font-size: 17px;
+      line-height: 24px;
+    }
+  }
+
+  .catalog__item--link,
+  .catalog__desc {
+    width: 334px;
+  }
+
+  .catalog__img {
+    position: absolute;
+    left: 0;
+  }
+}
+
+@media (min-width: 1150px) {
+  .catalog__list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    max-width: 315px;
+    padding-left: 0;
+  }
+
+  .catalog__img {
+    position: relative;
+    min-width: 315px;
+    min-height: 460px;
+  }
+
+  .catalog__add {
+    margin-left: auto;
+  }
+}
