@@ -28,8 +28,14 @@ body {
   width: 260px;
   margin: 0 auto;
   display: flex;
+}
 
-  /*outline: 1px solid red;*/
+.container--catalog {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
