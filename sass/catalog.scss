@@ -40,6 +40,16 @@
     align-content: flex-start;
     padding-left: 334px;
     border-bottom: 1px solid #efefef;
+
+    &--header {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &--price {
+      font-size: 17px;
+      line-height: 24px;
+    }
   }
 
   .catalog__item--link,

@@ -10,3 +10,54 @@
   font-weight: normal;
   margin-left: 30px;
 }
+
+@media (min-width: 768px) {
+  .video {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+      position: relative;
+
+    &__file {
+      order: -1;
+      width: 100%;
+      min-height: 455px;
+      margin-bottom: 30px;
+    }
+
+    &__play {
+      position: absolute;
+      left: 50%;
+      top: 230px;
+    }
+
+    &__header {
+      font-size: 20px;
+      line-height: 24px;
+      margin-left: 90px;
+    }
+
+    &__desc {
+      font-size: 15px;
+      line-height: 30px;
+      width: 580px;
+      margin: 0 auto;
+    }
+
+    &__order {
+      width: 580px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+
+}
