@@ -31,9 +31,9 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">ТИП</legend>
             <div class="field-wrapper form__type">
-              <input type="radio" name="form__type" id="form__type-1" value="form__type-1" checked>
+              <input type="radio" class="field-wrapper__radio" name="form__type" id="form__type-1" value="form__type-1" checked>
               <label for="form__type-1">Аксессуары для интерьера</label>
-              <input type="radio" name="form__type" id="form__type-2" value="form__type-2">
+              <input type="radio" class="field-wrapper__radio" name="form__type" id="form__type-2" value="form__type-2">
               <label for="form__type-2">Детская игрушка</label>
             </div>
           </fieldset>
@@ -57,11 +57,11 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">ФИО</legend>
             <div class="field-wrapper form__name">
-              <label for="name" class="label-name">Имя:</label>
+              <label for="name" class="form__name--label">Имя:</label>
               <input type="text" class="field-wrapper__input" id="name" required placeholder="Введите ваше имя*">
-              <label for="lastname" class="label-name">Фамилия:</label>
+              <label for="lastname" class="form__name--label">Фамилия:</label>
               <input type="text" class="field-wrapper__input" id="lastname" required placeholder="Укажите фамилию*">
-              <label for="patronymic" class="label-name">Отчество:</label>
+              <label for="patronymic" class="form__name--label">Отчество:</label>
               <input type="text" class="field-wrapper__input" id="patronymic" placeholder="Отчество, если желаете">
             </div>
           </fieldset>
@@ -80,13 +80,13 @@
           <fieldset class="form__fieldset">
             <legend class="form__legend">ДОП</legend>
             <div class="form__additional">
-              <textarea class="textarea">
+              <textarea class="form__additional--textarea">
                 Опишите ваши пожелания к заказу
               </textarea>
             </div>
           </fieldset>
           <p class="form__necessary">*Поля обязательны для заполнения</p>
-          <button type="submit" class="button">Отправить заказ</button>
+          <button type="submit" class="button form__submit">Отправить заказ</button>
         </form>
       </main>
       <footer class="page-footer">
