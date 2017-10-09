@@ -1,5 +1,6 @@
 :root {
   --main-color: #63d1bb;
+  --main-bg-color: #f4f4f4;
 }
 
 html {
@@ -62,5 +63,6 @@ body {
   display: inline-block;
   background-image: url('/img/logo-htmlacademy.svg');
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% 0%;
+  margin-left: 30px;
 }

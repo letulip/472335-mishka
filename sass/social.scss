@@ -5,6 +5,7 @@
   display: -o-flex;
   display: flex;
   list-style: none;
+  align-self: center;
 
   &__item {
     font-size: 0;
@@ -13,6 +14,7 @@
     background-image: url('/img/icon-insta.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
+    margin-right: 15px;
   }
 
   &__item--fb {
