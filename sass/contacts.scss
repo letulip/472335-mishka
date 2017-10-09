@@ -1,12 +1,55 @@
-.contacts .container {
-  flex-wrap: wrap;
+.contacts {
+  margin-top: 40px;
+
+  & .container {
+    flex-wrap: wrap;
+  }
+
+  &__spec .spec-table__cell {
+    border: none;
+  }
+
+  &__spec > tbody {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+
+.spec-table__cell--email span {
+  box-shadow: 0 1px 0 0 var(--main-color);
+}
+
+.spec-table__cell--address {
+  vertical-align: top;
+}
+
+.button--write-us {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 768px) {
-  .contacts__header {
-    font-size: 43px;
-    line-height: 50px;
-    width: 100%;
+  .contacts {
+    margin-top: 60px;
+
+    &__header {
+      font-size: 43px;
+      line-height: 50px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .contacts__flag {
+      width: 55px;
+      height: 85px;
+      background-image: url('/img/icon-flag.svg');
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
   }
 
   .contacts__spec {
@@ -18,24 +61,21 @@
       display: -ms-flex;
       display: -o-flex;
       display: flex;
+      justify-content: space-between;
+      font-size: 17px;
     }
 
     & .spec-table__row {
-      min-width: 50%;
+      min-width: 45%;
     }
 
-    & .spec-table__cell {
-      border: none;
-    }
-  }
-
-  .spec-table__cell--address {
-    vertical-align: top;
   }
 
   .button--write-us {
     max-width: 231px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
@@ -53,11 +93,24 @@
     flex-wrap: wrap;
     max-width: 1050px;
     margin: 0 auto;
+    margin-bottom: 100px;
     position: relative;
+    margin-top: 65px;
 
     & .container {
       max-width: 525px;
       padding-left: 175px;
+    }
+
+    &__header {
+      margin-top: 70px;
+      max-height: 100px;
+      font-size: var(--header-font-size-desktop);
+      line-height: var(--header-line-height-desktop);
+    }
+
+    &__flag {
+      left: -100px;
     }
   }
 
@@ -67,11 +120,13 @@
 
   .contacts__spec > tbody {
     display: block;
+    margin-bottom: 10px;
   }
 
   .button--write-us {
     position: absolute;
     left: 175px;
     bottom: 0;
+    margin-bottom: 0;
   }
 }
