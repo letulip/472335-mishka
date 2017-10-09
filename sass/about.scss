@@ -48,9 +48,10 @@
   .about {
     margin-bottom: 60px;
   }
+
   .about__header {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: var(--header-font-size-tablet);
+    line-height: var(--header-line-height-tablet);
   }
 
   .about__list {
@@ -90,6 +91,11 @@
 @media (min-width: 1150px) {
   .about {
     margin-left: 180px;
+  }
+
+  .about__header {
+    font-size: var(--header-font-size-desktop);
+    line-height: var(--header-line-height-desktop);
   }
 
   .about__list {

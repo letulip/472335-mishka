@@ -68,8 +68,8 @@
 @media (min-width: 768px) {
   .index-header {
     width: 530px;
-    font-size: 43px;
-    line-height: 50px;
+    font-size: var(--header-font-size-tablet);
+    line-height: var(--header-line-height-tablet);
   }
 
   .page-header__content--wrapper {
@@ -103,8 +103,8 @@
 @media (min-width: 1150px) {
   .index-header {
     width: 700px;
-    font-size: 53px;
-    line-height: 57px;
+    font-size: var(--header-font-size-desktop);
+    line-height: var(--header-line-height-desktop);
   }
 
   .page-header__content--wrapper {

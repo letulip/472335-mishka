@@ -69,8 +69,8 @@
 @media (min-width: 768px) {
   .catalog {
     &-header {
-      font-size: 43px;
-      line-height: 50px;
+      font-size: var(--header-font-size-tablet);
+      line-height: var(--header-line-height-tablet);
     }
 
     &__item {
@@ -126,8 +126,8 @@
 @media (min-width: 1150px) {
   .catalog {
     &-header {
-      font-size: 53px;
-      line-height: 57px;
+      font-size: var(--header-font-size-desktop);
+      line-height: var(--header-line-height-desktop);
     }
 
     &__list {
