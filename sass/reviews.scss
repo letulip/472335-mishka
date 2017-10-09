@@ -19,13 +19,14 @@
     display: flex;
   }
 
-  &__btn--wrapper {
+  &__btn {
     width: 50%;
     background-image: url('/img/icon-right-arrow.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     min-height: 50px;
     border: 1px solid #ececec;
+    background-color: #fff;
   }
 
   &__btn--prev {
@@ -34,7 +35,7 @@
   }
 
   &__btn {
-    display: none;
+    font-size: 0;
   }
 }
 
