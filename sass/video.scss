@@ -1,23 +1,49 @@
 .video {
   position: relative;
+  border: 1px solid #ececec;
+  overflow: hidden;
 
   &__header {
     font-size: 17px;
     line-height: 24px;
-    margin-left: 60px;
+    padding-left: 60px;
+    background-image: url('/img/icon-video.svg');
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    margin-bottom: 20px;
   }
 
   &__play {
     position: absolute;
-    left: 50%;
-    top: 100px;
+    left: calc(50% - 52px);
+    top: 105px;
+    min-height: 80px;
+    min-width: 105px;
+    background-image: url('/img/icon-play.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 0;
+  }
+
+  &__file {
+    margin-bottom: 30px;
   }
 
   &__desc {
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
-    margin-left: 30px;
+    margin-left: 35px;
+    width: 190px;
+    margin-bottom: 20px;
+  }
+
+  &__order {
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 }
 
@@ -42,7 +68,7 @@
     }
 
     &__play {
-      top: 230px;
+      top: 215px;
     }
 
     &__header {
