@@ -19,6 +19,7 @@
 
   &__copyright {
     display: flex;
+    padding-top: 20px;
   }
 }
 
@@ -38,6 +39,7 @@
 
     &__copyright {
       margin-left: auto;
+      padding-top: 0;
     }
   }
 }
