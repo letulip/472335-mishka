@@ -2,6 +2,7 @@
   position: relative;
   border: 1px solid #ececec;
   overflow: hidden;
+  margin-bottom: 60px;
 
   &__header {
     font-size: 17px;
@@ -59,6 +60,7 @@
     -ms-flex-direction: column;
     -o-flex-direction: column;
     flex-direction: column;
+    margin-bottom: 65px;
 
     &__file {
       order: -1;
@@ -95,6 +97,7 @@
   .video {
     min-height: 455px;
     padding-left: 680px;
+    margin-bottom: 100px;
 
     &__file {
       max-width: 680px;

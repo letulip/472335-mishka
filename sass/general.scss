@@ -54,3 +54,13 @@ body {
   width: 100%;
   min-height: 457px;
 }
+
+.academy-link {
+  font-size: 0;
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  background-image: url('/img/logo-htmlacademy.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}

@@ -5,4 +5,21 @@
   display: -o-flex;
   display: flex;
   list-style: none;
+
+  &__item {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url('/img/icon-insta.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &__item--fb {
+    background-image: url('/img/icon-fb.svg');
+  }
+
+  &__item--tw {
+    background-image: url('/img/icon-twitter.svg');
+  }
 }
