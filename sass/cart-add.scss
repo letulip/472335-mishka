@@ -42,3 +42,32 @@
   border: none;
   color: #fff;
 }
+
+@media (min-width: 768px) {
+  .cart-add {
+    width: 568px;
+    left: calc(50% - 284px);
+
+    & .container {
+      width: 360px;
+    }
+
+    &__header {
+      font-size: 30px;
+      line-height: 57px;
+    }
+
+    &__choose-size {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    &__size-btn {
+      width: 112px
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+
+}
