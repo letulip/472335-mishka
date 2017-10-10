@@ -1,8 +1,12 @@
 .contacts {
-  margin-top: 40px;
+  margin-top: var(--main-margin-bottom-mobile);
 
   & .container {
     flex-wrap: wrap;
+  }
+
+  &__header {
+    margin-bottom: var(--main-margin-bottom-mobile);
   }
 
   &__spec .spec-table__cell {
