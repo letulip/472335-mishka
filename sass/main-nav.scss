@@ -33,7 +33,7 @@
   font-weight: normal;
 }
 
-.main-nav__content {
+.main-nav__link {
   text-decoration: none;
   color: #000;
   font-size: 17px;
@@ -43,6 +43,21 @@
   margin: 0 auto;
   padding-left: 30px;
 }
+
+.main-nav__item--search,
+.main-nav__item--cart {
+  position: relative;
+
+  & .main-nav__link::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    background-color: red;
+  }
+}
+
 
 .main-nav__item--drop-down,
 .main-nav__item--new,
@@ -80,7 +95,7 @@
     top: -30px;
   }
 
-  .main-nav__content {
+  .main-nav__link {
     display: inline;
     max-width: 100%;
     margin: 0;
@@ -92,7 +107,7 @@
     border-top: none;
   }
 
-  .main-nav__content--tablet {
+  .main-nav__link--tablet {
     font-size: 15px;
   }
 
@@ -144,11 +159,11 @@
     max-width: 1050px;
   }
 
-  .main-nav__content--tablet {
+  .main-nav__link--tablet {
     font-size: 17px;
   }
 
-  .main-nav__content--desktop {
+  .main-nav__link--desktop {
     font-size: 15px;
   }
 
