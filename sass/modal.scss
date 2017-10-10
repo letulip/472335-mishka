@@ -1,10 +1,11 @@
 .modal {
   position: fixed;
   z-index: 11;
-  top: 50%;
+  top: calc(50% - 172px);
   background-color: #fff;
   border-top: 1px solid #ddd;
   box-shadow: 0px 10px 15px 0px #eee;
+  display: none;
 
   & .container {
     -webkit-flex-wrap: wrap;
