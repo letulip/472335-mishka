@@ -1,10 +1,17 @@
 .main-nav__list {
-  max-width: 260px;
-  margin: 0 auto;
 }
 
 .main-nav__item--logo {
+  max-width: 260px;
   margin: 0 auto;
+  text-align: center;
+  position: relative;
+
+  & .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
 }
 
 .main-nav__item--menu-toggle {
@@ -15,10 +22,9 @@
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
 }
 
-.main-nav__item--drop-down .main-nav__item {
+.main-nav__item--drop-down {
   width: 100%;
   border-top: 1px solid #ddd;
 }
@@ -33,6 +39,9 @@
   font-size: 17px;
   line-height: 24px;
   display: block;
+  max-width: 260px;
+  margin: 0 auto;
+  padding-left: 30px;
 }
 
 .main-nav__item--drop-down,
@@ -69,6 +78,18 @@
     display: -o-flex;
     display: flex;
     top: -30px;
+  }
+
+  .main-nav__content {
+    display: inline;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .main-nav__item--drop-down {
+    width: 100%;
+    border-top: none;
   }
 
   .main-nav__content--tablet {
