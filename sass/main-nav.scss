@@ -41,11 +41,12 @@
   display: block;
   max-width: 260px;
   margin: 0 auto;
-  padding-left: 30px;
+  padding-left: 45px;
 }
 
-.main-nav__item--search,
-.main-nav__item--cart {
+.main-nav__link--wrapper {
+  max-width: 260px;
+  margin: 0 auto;
   position: relative;
 
   & .main-nav__link::before {
@@ -54,7 +55,14 @@
     width: 30px;
     height: 30px;
     left: 0;
-    background-color: red;
+    background-image: url('/img/icon-search.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.2;
+  }
+
+  & .main-nav__link--cart::before {
+    background-image: url('/img/icon-cart.svg');
   }
 }
 
@@ -63,7 +71,7 @@
 .main-nav__item--new,
 .main-nav__item--sale,
 .main-nav__item--free-shipping {
-  display: block;
+  display: none;
 }
 
 @media (min-width: 768px) {
