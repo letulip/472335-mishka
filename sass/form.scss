@@ -76,18 +76,6 @@
   }
 }
 
-.field-wrapper {
-  font-size: 17px;
-  line-height: 18px;
-
-  &__input {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border: 0;
-    border-bottom: 2px solid black;
-  }
-}
-
 .form__type--radio,
 .form__color--checkbox {
   padding-left: 60px;
@@ -154,33 +142,76 @@
     &__legend {
       position: absolute;
       font-size: 17px;
+      top: 17px;
+    }
+
+    &__additional--textarea {
+      width: 501px;
+    }
+
+    &__color {
+      -webkit-flex-direction: row;
+      -moz-flex-direction: row;
+      -ms-flex-direction: row;
+      -o-flex-direction: row;
+      flex-direction: row;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      -o-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+
+    &__type--radio,
+    &__color--checkbox {
+      padding-left: 80px;
+      padding-top: 25px;
+      margin-bottom: 25px;
+    }
+
+    &__type--radio::before,
+    &__color--checkbox::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    &__type--radio::before {
+      border: 15px solid white;
+    }
+
+    &__color--checkbox {
+      min-width: 250px;
+    }
+
+    &__tel::after,
+    &__email::after {
+      top: 10px;
+    }
+
+    &__submit {
+      max-width: 230px;
+      margin-right: auto;
+    }
+
+    &__necessary {
+      order: 1;
+      max-width: 300px;
+      font-weight: normal;
     }
   }
 
-  .field-wrapper {
-    font-size: 19px;
-    line-height: 20px;
-  }
+  .form__fieldset .form__name {
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: baseline;
 
-  .form__type--radio,
-  .form__color--checkbox {
-    padding-left: 80px;
-    padding-top: 25px;
-    margin-bottom: 25px;
-  }
-
-  .form__type--radio::before,
-  .form__color--checkbox::before {
-    width: 52px;
-    height: 52px;
-  }
-
-  .form__type--radio::before {
-    border: 15px solid white;
-  }
-
-  .form__color--checkbox {
-    min-width: 250px;
+    &--label {
+      margin-right: 25px;
+    }
   }
 }
 
