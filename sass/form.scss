@@ -16,6 +16,40 @@
   margin-left: -20px;
 }
 
+.form__type--radio,
+.form__color--checkbox {
+  padding-left: 60px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    box-shadow: 0 0 0 2px black;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.form__type--radio::before {
+  border: 10px solid white;
+  border-radius: 50%;
+}
+
+.field-wrapper__radio:checked + .form__type--radio::before {
+  background-color: var(--main-color);
+  background-size: 50% 50%;
+}
+
+.field-wrapper__checkbox:checked + .form__color--checkbox::before {
+  background-image: url('/img/icon-tick.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 @media (min-width: 768px) {
   .form {
     display: -webkit-flex;
