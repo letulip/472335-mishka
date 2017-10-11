@@ -138,6 +138,12 @@
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
 
+    &__desc {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 50px;
+    }
+
     &__fieldset {
       border: none;
       position: relative;
@@ -147,13 +153,34 @@
 
     &__legend {
       position: absolute;
+      font-size: 17px;
     }
+  }
+
+  .field-wrapper {
+    font-size: 19px;
+    line-height: 20px;
+  }
+
+  .form__type--radio,
+  .form__color--checkbox {
+    padding-left: 80px;
+    padding-top: 25px;
+    margin-bottom: 25px;
   }
 
   .form__type--radio::before,
   .form__color--checkbox::before {
     width: 52px;
     height: 52px;
+  }
+
+  .form__type--radio::before {
+    border: 15px solid white;
+  }
+
+  .form__color--checkbox {
+    min-width: 250px;
   }
 }
 
