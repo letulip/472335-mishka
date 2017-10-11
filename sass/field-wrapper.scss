@@ -51,5 +51,12 @@
 }
 
 @media (min-width: 1150px) {
+  .form__name .field-wrapper__input {
+    min-width: 590px;
+    padding-left: 20px;
+  }
 
+  .field-wrapper__input--name {
+    width: 640px;
+  }
 }

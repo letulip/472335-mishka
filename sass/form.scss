@@ -241,8 +241,6 @@
     }
   }
 
-  .form
-
   .form__fieldset .form__name {
     flex-direction: row;
     -webkit-flex-wrap: wrap;
@@ -259,5 +257,36 @@
 }
 
 @media (min-width: 1150px) {
+  .form {
+    &__fieldset .container {
+      padding-right: 167px;
+    }
 
+    &__fieldset--color .container {
+      padding-right: 0;
+    }
+
+    &__desc {
+      padding-left: 167px;
+      padding-right: 167px;
+    }
+
+    &__tel,
+    &__email {
+      width: 81%;
+    }
+
+    &__tel::after,
+    &__email::after {
+      right: 16%;
+    }
+
+    &__submit {
+      margin-left: 167px;
+    }
+
+    &__necessary {
+      margin-right: 167px;
+    }
+  }
 }
