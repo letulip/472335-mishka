@@ -26,8 +26,8 @@
   &::before {
     content: "";
     position: absolute;
-    width: 43px;
-    height: 43px;
+    width: 42px;
+    height: 42px;
     box-shadow: 0 0 0 2px black;
     left: 0;
     top: 5px;
@@ -62,17 +62,23 @@
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
+
+    &__fieldset {
+      border: none;
+      position: relative;
+      padding: 0;
+      min-width: 100%;
+    }
+
+    &__legend {
+      position: absolute;
+    }
   }
 
-  .form__fieldset {
-    border: none;
-    position: relative;
-    padding: 0;
-    min-width: 100%;
-  }
-
-  .form__legend {
-    position: absolute;
+  .form__type--radio::before,
+  .form__color--checkbox::before {
+    width: 52px;
+    height: 52px;
   }
 }
 
