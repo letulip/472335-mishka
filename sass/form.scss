@@ -10,7 +10,11 @@
     border: none;
     border-top: 1px solid var(--main-color);
     padding: 0;
-    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  &__fieldset .container {
     position: relative;
   }
 
@@ -135,14 +139,23 @@
     &__fieldset {
       border: none;
       position: relative;
-      padding: 0;
       min-width: 100%;
+    }
+
+    &__fieldset:nth-child(3),
+    &__fieldset:nth-child(5),
+    &__fieldset:nth-child(6) {
+      background-color: #f1f1f1;
     }
 
     &__legend {
       position: absolute;
       font-size: 17px;
       top: 17px;
+    }
+
+    &__additional {
+      width: calc(100% - 167px);
     }
 
     &__additional--textarea {
@@ -183,6 +196,11 @@
       min-width: 250px;
     }
 
+    &__tel,
+    &__email {
+      background-color: #f1f1f1;
+    }
+
     &__tel::after,
     &__email::after {
       top: 10px;
@@ -197,6 +215,9 @@
       order: 1;
       max-width: 300px;
       font-weight: normal;
+      align-self: center;
+      margin-top: 30px;
+      margin-bottom: 55px;
     }
   }
 
