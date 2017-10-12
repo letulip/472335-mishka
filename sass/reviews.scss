@@ -40,6 +40,16 @@
     background-color: #fff;
   }
 
+  &__btn:hover,
+  &__btn:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &__btn:active {
+    opacity: 0.3;
+  }
+
   &__btn--prev {
     border-left: 0;
     transform: rotate(180deg);
