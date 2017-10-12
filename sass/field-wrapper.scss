@@ -22,6 +22,16 @@
     border: 0;
     border-bottom: 2px solid black;
   }
+
+  &__input:hover,
+  &__input:focus,
+  &__input:active {
+    border-color: var(--main-color);
+  }
+
+  &__input:active {
+    color: #444;
+  }
 }
 
 @media (min-width: 768px) {

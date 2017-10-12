@@ -63,6 +63,15 @@
     background-image: url('/img/icon-mail.svg');
   }
 
+  &__tel::after:hover,
+  &__tel::after:focus,
+  &__email::after:hover,
+  &__email::after:focus,
+  &__tel::after:active,
+  &__email::after:active {
+    fill: var(--main-color);
+  }
+
   &__additional {
     margin-top: 20px;
     margin-bottom: 15px;
@@ -77,6 +86,15 @@
     max-width: 260px;
     padding: 10px;
     color: #ddd;
+  }
+
+  &__additional--textarea:hover,
+  &__additional--textarea:focus {
+    border-color: var(--main-color);
+  }
+
+  &__additional--textarea:active {
+    color: #444;
   }
 
   &__necessary {
@@ -106,6 +124,23 @@
     box-shadow: 0 0 0 2px black;
     left: 0;
     top: 10px;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:hover::before,
+  &:focus::before {
+    box-shadow: 0 0 0 2px var(--main-color);
+  }
+
+  &:active::before,
+  &:active::before {
+    box-shadow: 0 0 0 2px #c7c7c7;
   }
 }
 
