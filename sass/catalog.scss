@@ -4,7 +4,6 @@
   }
 
   &__item {
-    border: 1px solid #ececec;
     margin-bottom: 30px;
   }
 
@@ -30,9 +29,11 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+    min-width: 334px;
     flex-direction: column;
-    margin-left: 25px;
-    margin-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #ececec;
   }
 
   &__price--wrapper {
@@ -89,12 +90,20 @@
       margin-bottom: 55px;
       align-content: flex-start;
       padding-left: 334px;
-      border-bottom: 1px solid #efefef;
     }
 
     &__item--wrapper {
       min-height: 334px;
       width: 284px;
+    }
+
+    &__item--wrapper:hover,
+    &__item--wrapper:focus {
+      box-shadow: 1px 6px 10px 1px #eee;
+    }
+
+    &__item--wrapper:active {
+      box-shadow: 1px 3px 4px 1px #eee;
     }
 
     &__item--header {
