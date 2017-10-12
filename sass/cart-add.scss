@@ -21,7 +21,7 @@
 
 .cart-add__size-btn {
   background-color: #fff;
-  border: 2px solid #ddd;
+  border: 2px solid #ececec;
   width: 82px;
   min-height: 54px;
   margin-bottom: 30px;
@@ -29,7 +29,11 @@
 
   &:hover,
   &:focus {
-    border: 2px solid #63d1bb;
+    border: 2px solid #c7c7c7;
+  }
+
+  &:active {
+    border: 2px solid var(--main-color);
   }
 
   &--small {
@@ -38,7 +42,7 @@
 }
 
 .cart-add__add-button {
-  background-color: #63d1bb;
+  background-color: var(--main-color);
   border: none;
   color: #fff;
 }
