@@ -16,6 +16,21 @@
     line-height: 24px;
   }
 
+  &__item--header:hover,
+  &__item--header:focus {
+    opacity: 0.6;
+  }
+
+  &__item--header:hover ~ .catalog__add,
+  &__item--header:focus ~ .catalog__add,
+  &__item--header:active ~ .catalog__add {
+    fill: var(--main-color);
+  }
+
+  &__item--header:active ~ .catalog__add {
+    opacity: 0.3;
+  }
+
   &__desc {
     font-size: 13px;
     line-height: 30px;
@@ -34,6 +49,15 @@
     padding-left: 25px;
     padding-right: 25px;
     border: 1px solid #ececec;
+  }
+
+  &__item--wrapper:hover,
+  &__item--wrapper:focus {
+    box-shadow: 1px 6px 10px 1px #eee;
+  }
+
+  &__item--wrapper:active {
+    box-shadow: 1px 3px 4px 1px #eee;
   }
 
   &__price--wrapper {
@@ -95,15 +119,6 @@
     &__item--wrapper {
       min-height: 334px;
       width: 284px;
-    }
-
-    &__item--wrapper:hover,
-    &__item--wrapper:focus {
-      box-shadow: 1px 6px 10px 1px #eee;
-    }
-
-    &__item--wrapper:active {
-      box-shadow: 1px 3px 4px 1px #eee;
     }
 
     &__item--header {
