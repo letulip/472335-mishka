@@ -21,6 +21,19 @@
     display: flex;
     padding-top: 20px;
   }
+
+  &__logo:hover,
+  &__logo:focus,
+  &__logo:active,
+  &__copyright:hover,
+  &__copyright:focus {
+    fill: var(--main-color);
+  }
+
+  &__logo:active,
+  &__copyright:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {

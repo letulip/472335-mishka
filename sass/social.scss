@@ -19,6 +19,16 @@
     margin-right: 15px;
   }
 
+  &__item:hover,
+  &__item:focus,
+  &__item:active {
+    fill: var(--main-color);
+  }
+
+  &__item:active {
+    opacity: 0.3
+  }
+
   &__item--fb {
     background-image: url('/img/icon-fb.svg');
   }
