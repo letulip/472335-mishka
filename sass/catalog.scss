@@ -96,6 +96,9 @@
     &-header {
       font-size: var(--header-font-size-tablet);
       line-height: var(--header-line-height-tablet);
+      margin-top: 90px;
+      padding-top: 100px;
+      padding-bottom: 60px;
     }
 
     &__item {
@@ -153,6 +156,8 @@
     &-header {
       font-size: var(--header-font-size-desktop);
       line-height: var(--header-line-height-desktop);
+      padding-top: 105px;
+      padding-bottom: 80px;
     }
 
     &__list {
