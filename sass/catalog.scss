@@ -3,6 +3,11 @@
     list-style: none;
   }
 
+  &__img {
+    width: 260px;
+    height: 195px;
+  }
+
   &__item {
     margin-bottom: 30px;
   }
@@ -99,6 +104,11 @@
       margin-top: 90px;
       padding-top: 100px;
       padding-bottom: 60px;
+    }
+
+    &__img {
+      width: 334px;
+      height: 334px;
     }
 
     &__item {
