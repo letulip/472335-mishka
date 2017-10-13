@@ -104,6 +104,10 @@
   }
 
   &__submit {
+    display: block;
+  }
+
+  &__submit--btn {
     margin-top: 30px;
     margin-bottom: 55px;
   }
@@ -262,6 +266,14 @@
     }
 
     &__submit {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+    }
+
+    &__submit--btn {
       max-width: 230px;
       margin-right: auto;
     }
@@ -316,7 +328,7 @@
       right: 16%;
     }
 
-    &__submit {
+    &__submit--btn {
       margin-left: 167px;
     }
 
