@@ -49,7 +49,7 @@
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    min-width: 334px;
+    min-width: 260px;
     flex-direction: column;
     padding-left: 25px;
     padding-right: 25px;
@@ -131,7 +131,7 @@
 
     &__item--wrapper {
       min-height: 334px;
-      width: 284px;
+      width: 334px;
     }
 
     &__item--header {
@@ -186,12 +186,12 @@
 
     &__item--wrapper {
       min-height: 153px;
-      width: 264px;
+      width: 315px;
     }
 
     &__img {
       position: relative;
-      min-width: 315px;
+      max-width: 315px;
       min-height: 460px;
     }
 
