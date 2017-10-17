@@ -1,24 +1,19 @@
 .header {
-  color: #000;
+  color: #000000;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
+
   &--h1 {
     font-size: 27px;
   }
-  &--h2 {
 
-  }
   &--h3 {
     font-size: 18px;
   }
 }
 
 .catalog-header {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   height: 175px;
   background-color: #f2f2f2;

@@ -1,90 +1,179 @@
-.catalog__list {
-  list-style: none;
-}
+.catalog {
+  &__list {
+    list-style: none;
+  }
 
-.catalog__item--link {
-  text-decoration: none;
- }
+  &__img {
+    width: 260px;
+    height: 195px;
+    display: block;
+  }
 
-.catalog__item--header {
-  font-size: 17px;
-  line-height: 24px;
-}
+  &__item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 
-.catalog__desc {
-  font-size: 13px;
-  line-height: 30px;
-  color: #444;
-  font-weight: normal;
-}
+  &__item--link {
+    text-decoration: none;
+  }
 
-.catalog__price {
-  color: #000;
+  &__item--header {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  &__item--header:hover,
+  &__item--header:focus {
+    opacity: 0.6;
+  }
+
+  &__item--header:hover ~ .catalog__add,
+  &__item--header:focus ~ .catalog__add,
+  &__item--header:active ~ .catalog__add {
+    fill: var(--main-color);
+  }
+
+  &__item--header:active ~ .catalog__add {
+    opacity: 0.3;
+  }
+
+  &__desc {
+    font-size: 13px;
+    line-height: 30px;
+    color: #444444;
+    font-weight: normal;
+  }
+
+  &__item--wrapper {
+    display: flex;
+    min-width: 260px;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 1px solid #ececec;
+  }
+
+  &__item--wrapper:hover,
+  &__item--wrapper:focus {
+    box-shadow: 1px 6px 10px 1px #eeeeee;
+  }
+
+  &__item--wrapper:active {
+    box-shadow: 1px 3px 4px 1px #eeeeee;
+  }
+
+  &__price--wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ececec;
+    min-height: 75px;
+    margin-top: 24px;
+  }
+
+  &__price {
+    color: #000000;
+    align-self: center;
+  }
+
+  &__add {
+    width: 22px;
+    min-width: 20px;
+    background-image: url("/img/icon-cart.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.2;
+  }
+
+  &__add a {
+    font-size: 0;
+  }
 }
 
 @media (min-width: 768px) {
-  .catalog__item {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
-    flex-wrap: wrap;
-    position: relative;
-    min-height: 334px;
-    margin-bottom: 50px;
-    align-content: flex-start;
-    padding-left: 334px;
-    border-bottom: 1px solid #efefef;
-
-    &--header {
-      font-size: 20px;
-      line-height: 24px;
+  .catalog {
+    &-header {
+      font-size: var(--header-font-size-tablet);
+      line-height: var(--header-line-height-tablet);
+      margin-top: 90px;
+      padding-top: 100px;
+      padding-bottom: 60px;
     }
 
-    &--price {
+    &__img {
+      width: 334px;
+      height: 334px;
+      position: absolute;
+      left: 0;
+    }
+
+    &__item {
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+      min-height: 334px;
+      margin-bottom: 55px;
+      align-content: flex-start;
+      padding-left: 334px;
+    }
+
+    &__item--wrapper {
+      min-height: 334px;
+      width: 334px;
+    }
+
+    &__item--header {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 28px;
+    }
+
+    &__price--wrapper {
+      margin-top: auto;
+    }
+
+    &__price {
       font-size: 17px;
       line-height: 24px;
     }
   }
-
-  .catalog__item--link,
-  .catalog__desc {
-    width: 334px;
-  }
-
-  .catalog__img {
-    position: absolute;
-    left: 0;
-  }
 }
 
 @media (min-width: 1150px) {
-  .catalog__list {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-  }
+  .catalog {
+    &-header {
+      font-size: var(--header-font-size-desktop);
+      line-height: var(--header-line-height-desktop);
+      padding-top: 105px;
+      padding-bottom: 80px;
+    }
 
-  .catalog__item {
-    max-width: 315px;
-    padding-left: 0;
-  }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .catalog__img {
-    position: relative;
-    min-width: 315px;
-    min-height: 460px;
-  }
+    &__item {
+      max-width: 315px;
+      padding-left: 0;
+      flex-direction: column;
+    }
 
-  .catalog__add {
-    margin-left: auto;
+    &__item--wrapper {
+      min-height: 140px;
+      width: 315px;
+      flex-grow: 1;
+    }
+
+    &__img {
+      position: relative;
+      max-width: 315px;
+      min-height: 460px;
+    }
+
+    &__add {
+      margin-left: auto;
+    }
   }
 }

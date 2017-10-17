@@ -1,0 +1,18 @@
+.modal {
+  position: fixed;
+  z-index: 11;
+  top: calc(50% - 172px);
+  background-color: #ffffff;
+  border-top: 1px solid #dddddd;
+  box-shadow: 0 10px 15px 0 #eeeeee;
+  display: none;
+
+  & .container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__overlay {
+    z-index: 10;
+  }
+}

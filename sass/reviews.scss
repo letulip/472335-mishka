@@ -1,46 +1,87 @@
-.reviews__text {
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 30px;
-}
+.reviews {
+  margin-bottom: var(--main-margin-bottom-mobile);
 
-.reviews__author {
-  font-size: 17px;
-}
+  &__header {
+    margin-bottom: 30px;
+  }
 
-.reviews__author-email {
-  font-weight: normal;
-  font-size: 17px;
-}
+  &__text {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: var(--main-margin-bottom-mobile);
+  }
 
-.reviews__controls {
-  width: 100%;
-  display: flex;
-}
+  &__author {
+    font-size: 17px;
+    line-height: 30px;
+  }
 
-.reviews__btn {
-  width: 50%;
-  border: 1px solid #ddd;
-  background-color: #fff;
+  &__author-email {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  &__controls {
+    width: 100%;
+    display: flex;
+    margin-top: var(--main-margin-bottom-mobile);
+    margin-bottom: var(--main-margin-bottom-mobile);
+  }
+
+  &__btn {
+    width: 50%;
+    font-size: 0;
+    background-image: url("/img/icon-right-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-height: 50px;
+    border: 1px solid #ececec;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    opacity: 0.6;
+    outline: none;
+  }
+
+  &__btn:active {
+    opacity: 0.3;
+  }
+
+  &__btn--prev {
+    border-left: 0;
+    transform: rotate(180deg);
+  }
 }
 
 @media (min-width: 768px) {
   .reviews {
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 40px;
-    background-image: url('/img/review@1x.jpg');
-    background-repeat: no-repeat;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 350px;
+      height: 457px;
+      z-index: -1;
+      top: 0;
+      left: -37px;
+      background-image: url("/img/review@1x.jpg");
+      background-repeat: no-repeat;
+    }
 
     &__header {
-      font-size: 43px;
-      line-height: 50px;
+      font-size: var(--header-font-size-tablet);
+      line-height: var(--header-line-height-tablet);
     }
 
     &__btn-write {
@@ -69,11 +110,24 @@
     &__btn {
       border: none;
     }
+
+    &__btn--wrapper {
+      border: 0;
+    }
   }
 }
 
 @media (min-width: 1150px) {
   .reviews {
     padding-left: 175px;
+
+    &::before {
+      left: 0;
+    }
+
+    &__header {
+      font-size: var(--header-font-size-desktop);
+      line-height: var(--header-line-height-desktop);
+    }
   }
 }

@@ -1,8 +1,42 @@
 .social {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   list-style: none;
+  align-self: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+
+  &__item {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url("/img/icon-insta.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 15px;
+  }
+
+  &__item:hover,
+  &__item:focus,
+  &__item:active {
+    fill: var(--main-color);
+  }
+
+  &__item:active {
+    opacity: 0.3;
+  }
+
+  &__item--fb {
+    background-image: url("/img/icon-fb.svg");
+  }
+
+  &__item--tw {
+    background-image: url("/img/icon-twitter.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .social {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
 }

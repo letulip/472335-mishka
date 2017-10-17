@@ -4,9 +4,10 @@
 }
 
 .index-header--wrapper {
-  background-image: url('/img/hero-mobile@1x.jpg');
+  background-image: url("/img/hero-mobile@1x.jpg");
   background-position: 50% 20%;
   background-repeat: no-repeat;
+  border-top: 1px solid #dddddd;
 }
 
 .index-header {
@@ -21,6 +22,10 @@
 .page-header__content--bg-wrapper {
   width: 100%;
   background-color: var(--main-color);
+
+  & a {
+    text-decoration: none;
+  }
 }
 
 .page-header__content--bg-wrapper:last-child {
@@ -29,8 +34,7 @@
 
 .page-header__content--interior,
 .page-header__content--toy {
-  text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   width: 40%;
   display: block;
   padding-top: 10px;
@@ -68,8 +72,14 @@
 @media (min-width: 768px) {
   .index-header {
     width: 530px;
-    font-size: 43px;
-    line-height: 50px;
+    font-size: var(--header-font-size-tablet);
+    line-height: var(--header-line-height-tablet);
+
+    &--wrapper {
+      margin-top: 90px;
+      padding-top: 60px;
+      background-color: #f9f9f9;
+    }
   }
 
   .page-header__content--wrapper {
@@ -103,8 +113,8 @@
 @media (min-width: 1150px) {
   .index-header {
     width: 700px;
-    font-size: 53px;
-    line-height: 57px;
+    font-size: var(--header-font-size-desktop);
+    line-height: var(--header-line-height-desktop);
   }
 
   .page-header__content--wrapper {
@@ -117,4 +127,3 @@
     width: 525px;
   }
 }
-

@@ -1,47 +1,98 @@
-.video__header {
-  font-size: 17px;
-  line-height: 24px;
-  margin-left: 60px;
-}
+.video {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+  border: 1px solid #ececec;
 
-.video__desc {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: normal;
-  margin-left: 30px;
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 10px 1px #eeeeee;
+  }
+
+  &:active {
+    box-shadow: 1px 3px 4px 1px #eeeeee;
+  }
+
+  &__header {
+    font-size: 17px;
+    line-height: 24px;
+    padding-left: 60px;
+    background-image: url("/img/icon-video.svg");
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+    margin-bottom: 20px;
+  }
+
+  &__play {
+    position: absolute;
+    left: calc(50% - 52px);
+    top: 105px;
+    min-height: 80px;
+    min-width: 105px;
+    background-image: url("/img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border: 0;
+    background-color: transparent;
+    font-size: 0;
+  }
+
+  &__play:hover,
+  &__play:focus {
+    transform: scale(1.2);
+    outline: none;
+  }
+
+  &__play:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
+  &__file {
+    width: 260px;
+    height: 150px;
+    margin-bottom: 30px;
+  }
+
+  &__desc {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-left: 35px;
+    width: 190px;
+    margin-bottom: 20px;
+  }
+
+  &__order {
+    width: 190px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) {
   .video {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
     flex-direction: column;
-    position: relative;
+    margin-bottom: 65px;
 
     &__file {
       order: -1;
       width: 100%;
       min-height: 455px;
-      margin-bottom: 30px;
+      margin-bottom: 0;
     }
 
     &__play {
-      position: absolute;
-      left: 50%;
-      top: 230px;
+      top: 215px;
     }
 
     &__header {
       font-size: 20px;
       line-height: 24px;
-      margin-left: 90px;
+      padding-left: 106px;
+      padding-top: 30px;
+      background-position: 6% 100%;
     }
 
     &__desc {
@@ -53,7 +104,7 @@
 
     &__order {
       width: 580px;
-      margin: 0 auto;
+      margin: 40px auto;
     }
   }
 }
@@ -62,6 +113,7 @@
   .video {
     min-height: 455px;
     padding-left: 680px;
+    margin-bottom: 100px;
 
     &__file {
       max-width: 680px;
@@ -75,18 +127,21 @@
     }
 
     &__header {
-      width: 180px;
-      margin-top: 80px;
+      width: 280px;
+      padding-top: 50px;
+      margin-top: 50px;
       max-height: 70px;
-      margin-bottom: 30px;
+      margin-bottom: 70px;
+      padding-left: 80px;
+      background-position: 33% 0%;
     }
 
     &__desc,
     &__order {
       width: 230px;
       margin: 0;
-      margin-left: 90px;
-      margin-bottom: 30px;
+      margin-left: 80px;
+      margin-bottom: 40px;
     }
   }
 }

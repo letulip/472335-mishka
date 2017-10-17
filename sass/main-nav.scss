@@ -1,15 +1,14 @@
-.main-nav__list {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+.main-nav__item--logo {
   max-width: 260px;
   margin: 0 auto;
-}
+  text-align: center;
+  position: relative;
 
-.main-nav__item--logo {
-  margin: 0 auto;
+  & .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 30px;
+  }
 }
 
 .main-nav__item--menu-toggle {
@@ -20,26 +19,79 @@
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  text-align: center;
+
+  &:not(:last-child):hover,
+  &:not(:last-child):focus {
+    opacity: 0.6;
+  }
+
+  &:not(:last-child):active {
+    opacity: 0.3;
+  }
 }
 
-.main-nav__drop-down .main-nav__item {
+.main-nav__item--drop-down {
   width: 100%;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
 }
 
 .free-shipping {
   font-weight: normal;
 }
 
-.main-nav__content {
+.main-nav__link {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: 17px;
   line-height: 24px;
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
+  padding-left: 45px;
+  position: relative;
+
+  &--cart::before,
+  &--search::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    background-image: url("/img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.2;
+  }
+
+  &--cart::before {
+    background-image: url("/img/icon-cart.svg");
+  }
 }
 
-.main-nav__drop-down,
+.main-nav__link--wrapper {
+  max-width: 260px;
+  margin: 0 auto;
+  position: relative;
+
+  & .main-nav__link::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    background-image: url("/img/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    opacity: 0.2;
+  }
+
+  & .main-nav__link--cart::before {
+    background-image: url("/img/icon-cart.svg");
+  }
+}
+
+
+.main-nav__item--drop-down,
 .main-nav__item--new,
 .main-nav__item--sale,
 .main-nav__item--free-shipping {
@@ -53,25 +105,47 @@
 
   .main-nav__list {
     max-width: 668px;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 334px);
   }
 
   .main-nav__drop-down {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     top: -30px;
   }
 
-  .main-nav__content--tablet {
-    font-size: 15px;
+  .main-nav__link {
+    display: inline;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 0;
+
+    &--cart::before,
+    &--search::before {
+      left: -50px;
+    }
+
+    &--search {
+      font-size: 0;
+    }
+
+    &--search::before {
+      left: 25px;
+    }
+
+    &--tablet {
+      font-size: 15px;
+    }
+  }
+
+  .main-nav__item--drop-down {
+    width: 100%;
+    border-top: none;
+    display: flex;
   }
 
   .main-nav__item {
@@ -84,31 +158,31 @@
     }
 
     &--free-shipping {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
+      order: 1;
+      margin-left: auto;
     }
 
     &--search {
       width: 83px;
       margin-left: auto;
+      border-left: 1px solid #dddddd;
+      min-height: 90px;
+      padding-top: 30px;
     }
 
     &--cart {
       padding-left: 80px;
+      max-width: 265px;
+      border-left: 1px solid #dddddd;
+      min-height: 90px;
+      padding-top: 30px;
     }
 
     &--catalog,
     &--form {
       order: 1;
       width: 167px;
-    }
-
-    &--free-shipping {
-      order: 1;
-      margin-left: auto;
     }
   }
 
@@ -120,13 +194,14 @@
 @media (min-width: 1150px) {
   .main-nav__list {
     max-width: 1050px;
+    left: calc(50% - 525px);
   }
 
-  .main-nav__content--tablet {
+  .main-nav__link--tablet {
     font-size: 17px;
   }
 
-  .main-nav__content--desktop {
+  .main-nav__link--desktop {
     font-size: 15px;
   }
 
@@ -148,10 +223,6 @@
 
     &--new,
     &--sale {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       min-width: 218px;
     }

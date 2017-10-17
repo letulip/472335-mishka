@@ -1,25 +1,31 @@
 :root {
   --main-color: #63d1bb;
+  --main-bg-color: #f4f4f4;
+  --header-font-size-tablet: 43px;
+  --header-line-height-tablet: 50px;
+  --header-font-size-desktop: 53px;
+  --header-line-height-desktop: 57px;
+  --main-margin-bottom-mobile: 38px;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Open sans', Arial, sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #444;
+  color: #444444;
   font-weight: bold;
   background-color: #fefefe;
   min-width: 320px;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
 }
@@ -31,16 +37,12 @@ body {
 }
 
 .container--catalog {
-  -webkit-flex-direction: column;
-  -moz-flex-direction: column;
-  -ms-flex-direction: column;
-  -o-flex-direction: column;
   flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 670px;
+    width: 668px;
   }
 }
 
@@ -53,4 +55,15 @@ body {
 .map {
   width: 100%;
   min-height: 457px;
+}
+
+.academy-link {
+  font-size: 0;
+  width: 30px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("/img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  margin-left: 30px;
 }
