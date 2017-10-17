@@ -32,7 +32,8 @@
 
   &__btn {
     width: 50%;
-    background-image: url('/img/icon-right-arrow.svg');
+    font-size: 0;
+    background-image: url("/img/icon-right-arrow.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     min-height: 50px;
@@ -55,10 +56,6 @@
     border-left: 0;
     transform: rotate(180deg);
   }
-
-  &__btn {
-    font-size: 0;
-  }
 }
 
 @media (min-width: 768px) {
@@ -78,7 +75,7 @@
       z-index: -1;
       top: 0;
       left: -37px;
-      background-image: url('/img/review@1x.jpg');
+      background-image: url("/img/review@1x.jpg");
       background-repeat: no-repeat;
     }
 

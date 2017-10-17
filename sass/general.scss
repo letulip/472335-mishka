@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: 'Open sans', Arial, sans-serif;
+  font-family: "Open sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   color: #444444;
@@ -22,7 +22,9 @@ body {
   min-width: 320px;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
@@ -60,7 +62,7 @@ body {
   width: 30px;
   height: 40px;
   display: inline-block;
-  background-image: url('/img/logo-htmlacademy.svg');
+  background-image: url("/img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: 50% 0%;
   margin-left: 30px;

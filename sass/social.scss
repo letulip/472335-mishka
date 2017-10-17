@@ -9,7 +9,7 @@
     font-size: 0;
     width: 40px;
     height: 40px;
-    background-image: url('/img/icon-insta.svg');
+    background-image: url("/img/icon-insta.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     margin-right: 15px;
@@ -22,15 +22,15 @@
   }
 
   &__item:active {
-    opacity: 0.3
+    opacity: 0.3;
   }
 
   &__item--fb {
-    background-image: url('/img/icon-fb.svg');
+    background-image: url("/img/icon-fb.svg");
   }
 
   &__item--tw {
-    background-image: url('/img/icon-twitter.svg');
+    background-image: url("/img/icon-twitter.svg");
   }
 }
 

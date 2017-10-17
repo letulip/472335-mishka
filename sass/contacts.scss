@@ -59,7 +59,7 @@
     .contacts__flag {
       width: 55px;
       height: 85px;
-      background-image: url('/img/icon-flag.svg');
+      background-image: url("/img/icon-flag.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       right: 0;
@@ -80,7 +80,6 @@
     & .spec-table__row {
       min-width: 45%;
     }
-
   }
 
   .button--write-us {

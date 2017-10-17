@@ -80,7 +80,7 @@
   &__add {
     width: 22px;
     min-width: 20px;
-    background-image: url('/img/icon-cart.svg');
+    background-image: url("/img/icon-cart.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     opacity: 0.2;
@@ -104,6 +104,8 @@
     &__img {
       width: 334px;
       height: 334px;
+      position: absolute;
+      left: 0;
     }
 
     &__item {
@@ -135,11 +137,6 @@
       font-size: 17px;
       line-height: 24px;
     }
-  }
-
-  .catalog__img {
-    position: absolute;
-    left: 0;
   }
 }
 

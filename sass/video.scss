@@ -6,7 +6,7 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 0px 10px 1px #eeeeee;
+    box-shadow: 0 0 10px 1px #eeeeee;
   }
 
   &:active {
@@ -17,7 +17,7 @@
     font-size: 17px;
     line-height: 24px;
     padding-left: 60px;
-    background-image: url('/img/icon-video.svg');
+    background-image: url("/img/icon-video.svg");
     background-repeat: no-repeat;
     background-position: 15px 50%;
     margin-bottom: 20px;
@@ -29,7 +29,7 @@
     top: 105px;
     min-height: 80px;
     min-width: 105px;
-    background-image: url('/img/icon-play.svg');
+    background-image: url("/img/icon-play.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     border: 0;
