@@ -72,10 +72,6 @@
     width: 100%;
 
     & > tbody {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       justify-content: space-between;
       font-size: 17px;
@@ -97,15 +93,7 @@
 
 @media (min-width: 1150px) {
   .contacts {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 1050px;
     margin: 0 auto;

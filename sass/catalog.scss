@@ -6,19 +6,12 @@
   &__img {
     width: 260px;
     height: 195px;
+    display: block;
   }
 
   &__item {
     margin-bottom: 30px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
     flex-direction: column;
   }
 
@@ -49,15 +42,11 @@
   &__desc {
     font-size: 13px;
     line-height: 30px;
-    color: #444;
+    color: #444444;
     font-weight: normal;
   }
 
   &__item--wrapper {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     min-width: 260px;
     flex-direction: column;
@@ -68,18 +57,14 @@
 
   &__item--wrapper:hover,
   &__item--wrapper:focus {
-    box-shadow: 1px 6px 10px 1px #eee;
+    box-shadow: 1px 6px 10px 1px #eeeeee;
   }
 
   &__item--wrapper:active {
-    box-shadow: 1px 3px 4px 1px #eee;
+    box-shadow: 1px 3px 4px 1px #eeeeee;
   }
 
   &__price--wrapper {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ececec;
@@ -88,7 +73,7 @@
   }
 
   &__price {
-    color: #000;
+    color: #000000;
     align-self: center;
   }
 
@@ -122,15 +107,7 @@
     }
 
     &__item {
-      -webkit-flex-direction: row;
-      -moz-flex-direction: row;
-      -ms-flex-direction: row;
-      -o-flex-direction: row;
       flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      -o-flex-wrap: wrap;
       flex-wrap: wrap;
       position: relative;
       min-height: 334px;
@@ -160,11 +137,6 @@
     }
   }
 
-  .catalog__item--link,
-  .catalog__desc {
-    width: 334px;
-  }
-
   .catalog__img {
     position: absolute;
     left: 0;
@@ -181,10 +153,6 @@
     }
 
     &__list {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       justify-content: space-between;
     }
@@ -192,10 +160,6 @@
     &__item {
       max-width: 315px;
       padding-left: 0;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
-      -o-flex-direction: column;
       flex-direction: column;
     }
 

@@ -1,8 +1,4 @@
 .field-wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-direction: column;
 }
@@ -34,7 +30,7 @@
   }
 
   &__input:active {
-    color: #444;
+    color: #444444;
   }
 }
 

@@ -37,7 +37,7 @@
     background-position: 50% 50%;
     min-height: 50px;
     border: 1px solid #ececec;
-    background-color: #fff;
+    background-color: #ffffff;
     cursor: pointer;
   }
 
@@ -64,10 +64,6 @@
 @media (min-width: 768px) {
   .reviews {
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 70px;

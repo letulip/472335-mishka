@@ -32,7 +32,7 @@
 
 .main-nav__item--drop-down {
   width: 100%;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #dddddd;
 }
 
 .free-shipping {
@@ -41,15 +41,13 @@
 
 .main-nav__link {
   text-decoration: none;
-  color: #000;
+  color: #000000;
   font-size: 17px;
   line-height: 24px;
   display: block;
   max-width: 260px;
   margin: 0 auto;
   padding-left: 45px;
-  max-width: 260px;
-  margin: 0 auto;
   position: relative;
 
   &--cart::before,
@@ -107,16 +105,8 @@
 
   .main-nav__list {
     max-width: 668px;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 auto;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     position: absolute;
     top: 0;
@@ -124,10 +114,6 @@
   }
 
   .main-nav__drop-down {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
     top: -30px;
   }
@@ -157,10 +143,6 @@
   .main-nav__item--drop-down {
     width: 100%;
     border-top: none;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
   }
 
@@ -178,17 +160,13 @@
     }
 
     &--free-shipping {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
     }
 
     &--search {
       width: 83px;
       margin-left: auto;
-      border-left: 1px solid #ddd;
+      border-left: 1px solid #dddddd;
       min-height: 90px;
       padding-top: 30px;
     }
@@ -196,7 +174,7 @@
     &--cart {
       padding-left: 80px;
       max-width: 265px;
-      border-left: 1px solid #ddd;
+      border-left: 1px solid #dddddd;
       min-height: 90px;
       padding-top: 30px;
     }
@@ -250,10 +228,6 @@
 
     &--new,
     &--sale {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
       min-width: 218px;
     }

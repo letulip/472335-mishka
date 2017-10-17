@@ -5,13 +5,13 @@
 
 .about__item {
   list-style: none;
-  color: #000;
+  color: #000000;
   font-size: 17px;
   line-height: 20px;
   margin-top: 80px;
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     width: 55px;
@@ -23,23 +23,23 @@
     background-position: 0 0;
   }
 
-  &--style:before {
+  &--style::before {
     background-image: url("../img/icon-feature-money.svg");
   }
 
-  &--like:before {
+  &--like::before {
     background-image: url("../img/icon-feature-heart.svg");
   }
 
-  &--knitted:before {
+  &--knitted::before {
     background-image: url("../img/icon-feature-ball.svg");
   }
 
-  &--patriot:before {
+  &--patriot::before {
     background-image: url("../img/icon-feature-rocket.svg");
   }
 
-  &--present:before {
+  &--present::before {
     background-image: url("../img/icon-feature-gift.svg");
   }
 }

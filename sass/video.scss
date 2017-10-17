@@ -6,11 +6,11 @@
 
   &:hover,
   &:focus {
-    box-shadow: 0px 0px 10px 1px #eee;
+    box-shadow: 0px 0px 10px 1px #eeeeee;
   }
 
   &:active {
-    box-shadow: 1px 3px 4px 1px #eee;
+    box-shadow: 1px 3px 4px 1px #eeeeee;
   }
 
   &__header {
@@ -72,15 +72,7 @@
 
 @media (min-width: 768px) {
   .video {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-direction: column;
-    -moz-flex-direction: column;
-    -ms-flex-direction: column;
-    -o-flex-direction: column;
     flex-direction: column;
     margin-bottom: 65px;
 

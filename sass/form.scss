@@ -85,7 +85,7 @@
     min-width: 100%;
     max-width: 260px;
     padding: 10px;
-    color: #ddd;
+    color: #dddddd;
   }
 
   &__additional--textarea:hover,
@@ -94,7 +94,7 @@
   }
 
   &__additional--textarea:active {
-    color: #444;
+    color: #444444;
   }
 
   &__necessary {
@@ -170,15 +170,7 @@
 
 @media (min-width: 768px) {
   .form {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
 
     &__desc {
@@ -219,15 +211,7 @@
     }
 
     &__color {
-      -webkit-flex-direction: row;
-      -moz-flex-direction: row;
-      -ms-flex-direction: row;
-      -o-flex-direction: row;
       flex-direction: row;
-      -webkit-flex-wrap: wrap;
-      -moz-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-      -o-flex-wrap: wrap;
       flex-wrap: wrap;
     }
 
@@ -268,10 +252,6 @@
     }
 
     &__submit {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
       display: flex;
     }
 
@@ -292,10 +272,6 @@
 
   .form__fieldset .form__name {
     flex-direction: row;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    -o-flex-wrap: wrap;
     flex-wrap: wrap;
     align-items: baseline;
 
