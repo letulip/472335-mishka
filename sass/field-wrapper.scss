@@ -23,6 +23,10 @@
     border-bottom: 2px solid black;
   }
 
+  &__input::placeholder {
+    opacity: 0.3;
+  }
+
   &__input:hover,
   &__input:focus,
   &__input:active {
@@ -38,9 +42,6 @@
   .field-wrapper,
   .form__additional--textarea {
     margin-left: 167px;
-  }
-
-  .field-wrapper {
     font-size: 19px;
     line-height: 20px;
   }
@@ -50,9 +51,9 @@
     margin-left: 70px;
   }
 
-  .form__name .field-wrapper__input {
+  .field-wrapper__input,
+  .form__additional--textarea {
     min-width: 375px;
-    padding-left: 20px;
   }
 
   .field-wrapper__input--name {
@@ -61,7 +62,7 @@
 }
 
 @media (min-width: 1150px) {
-  .form__name .field-wrapper__input {
+  .field-wrapper__input {
     min-width: 590px;
     padding-left: 20px;
   }
