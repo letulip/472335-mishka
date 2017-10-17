@@ -19,13 +19,15 @@
   }
 }
 
-.spec-table__cell--email span {
+.spec-table__cell--email a {
+  text-decoration: none;
+  color: inherit;
   box-shadow: 0 1px 0 0 var(--main-color);
 }
 
-.spec-table__cell--email:hover,
-.spec-table__cell--email:focus,
-.spec-table__cell--email:active {
+.spec-table__cell--email a:hover,
+.spec-table__cell--email a:focus,
+.spec-table__cell--email a:active {
   color: var(--main-color);
 }
 
