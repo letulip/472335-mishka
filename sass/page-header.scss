@@ -170,7 +170,7 @@
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
     .index-header--wrapper {
-      background-image:url("../img/bg-zigzag-fill.svg"), url("../img/hero-desktop@2x.jpg");
+      background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-desktop@2x.jpg");
     }
   }
 }
