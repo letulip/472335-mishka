@@ -58,7 +58,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .reviews {
     display: flex;
     flex-wrap: wrap;
@@ -117,7 +117,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .reviews {
     padding-left: 175px;
 

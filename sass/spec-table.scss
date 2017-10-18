@@ -21,7 +21,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .spec-table {
     width: 292px;
   }

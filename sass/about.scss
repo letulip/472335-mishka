@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .about {
     margin-bottom: 60px;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .about {
     margin-left: 180px;
   }

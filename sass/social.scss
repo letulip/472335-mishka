@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .social {
     padding-bottom: 0;
     border-bottom: 0;

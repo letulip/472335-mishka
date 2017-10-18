@@ -167,7 +167,7 @@
   background-position: 50% 50%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .form {
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +280,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .form {
     &__fieldset .container {
       padding-right: 167px;
