@@ -42,18 +42,6 @@ body {
   flex-direction: column;
 }
 
-@media (min-width: $tablet-width) {
-  .container {
-    width: 668px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: 1050px;
-  }
-}
-
 .map {
   width: 100%;
   min-height: 457px;
@@ -64,8 +52,23 @@ body {
   width: 30px;
   height: 40px;
   display: inline-block;
-  background-image: url("/img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
   margin-left: 30px;
+
+  &--icon {
+    width: 30px;
+    height: 40px;
+    fill: var(--main-color);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1050px;
+  }
 }
