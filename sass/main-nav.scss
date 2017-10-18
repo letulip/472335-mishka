@@ -155,6 +155,7 @@
       margin: 0;
       width: 300px;
       text-align: left;
+      padding-bottom: 15px;
     }
 
     &--free-shipping {
@@ -210,6 +211,8 @@
 
     &--logo {
       text-align: center;
+      padding-top: 5px;
+      padding-bottom: 2px;
     }
 
     &--catalog,

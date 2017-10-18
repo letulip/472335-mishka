@@ -65,10 +65,21 @@ body {
   .container {
     width: 668px;
   }
+
+  .logo {
+    width: 115px;
+    height: 50px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1050px;
+  }
+
+  .logo {
+    width: 155px;
+    height: 80px;
+
   }
 }
