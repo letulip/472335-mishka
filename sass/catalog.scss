@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .catalog {
     &-header {
       font-size: var(--header-font-size-tablet);
@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .catalog {
     &-header {
       font-size: var(--header-font-size-desktop);
@@ -170,6 +170,7 @@
       position: relative;
       max-width: 315px;
       min-height: 460px;
+      left: 0;
     }
 
     &__add {

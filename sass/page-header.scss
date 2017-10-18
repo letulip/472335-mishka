@@ -4,8 +4,10 @@
 }
 
 .index-header--wrapper {
-  background-image: url("/img/hero-mobile@1x.jpg");
-  background-position: 50% 20%;
+  background-color: #f9f9f9;
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-size: 575px 373px;
+  background-position: 50% -10%;
   background-repeat: no-repeat;
   border-top: 1px solid #dddddd;
 }
@@ -69,23 +71,50 @@
   right: -10px;
 }
 
-@media (min-width: 768px) {
+@media (min-resolution: $retina-dppx),
+  (min-resolution: $retina-dpi) {
+  .index-header--wrapper {
+    background-image: url("../img/hero-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+  }
+
   .index-header {
     width: 530px;
     font-size: var(--header-font-size-tablet);
     line-height: var(--header-line-height-tablet);
 
-    &--wrapper {
+    /*&--wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 746px;
       margin-top: 90px;
       padding-top: 60px;
-      background-color: #f9f9f9;
-    }
+      background: ("../img/hero-tablet@1x.jpg");
+      background-size: 1150px 746px;
+    }*/
+  }
+
+  .index-header--wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 746px;
+    margin-top: 90px;
+    padding-top: 60px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px 746px;
   }
 
   .page-header__content--wrapper {
     display: flex;
     width: 668px;
-    margin: 0 auto;
+    align-self: center;
+    margin-top: auto;
   }
 
   .page-header__content--bg-wrapper .container {
@@ -108,22 +137,42 @@
   .page-header__content--toy::after {
     right: -5px;
   }
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    .index-header--wrapper {
+      background-image: url("../img/hero-tablet@2x.jpg");
+    }
+  }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .index-header {
     width: 700px;
     font-size: var(--header-font-size-desktop);
     line-height: var(--header-line-height-desktop);
+
+    /*&--wrapper {
+      background: ("../img/hero-desktop@1x.jpg");
+    }*/
+  }
+
+  .index-header--wrapper {
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   .page-header__content--wrapper {
-    display: flex;
     width: 1050px;
-    margin: 0 auto;
   }
 
   .page-header__content--bg-wrapper .container {
     width: 525px;
+  }
+
+  @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+    .index-header--wrapper {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 }

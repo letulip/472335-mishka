@@ -47,7 +47,7 @@
   color: #ffffff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .cart-add {
     width: 568px;
     left: calc(50% - 284px);

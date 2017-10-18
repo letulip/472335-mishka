@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .featured {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .featured {
     padding-top: 55px;
 
