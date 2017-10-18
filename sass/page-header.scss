@@ -71,7 +71,8 @@
   right: -10px;
 }
 
-@media (min-resolution: $retina-dppx) {
+@media (min-resolution: $retina-dppx),
+        (min-resolution: $retina-dpi) {
   .index-header--wrapper {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
@@ -137,7 +138,8 @@
     right: -5px;
   }
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx),
+          (min-resolution: $retina-dpi) {
     .index-header--wrapper {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
@@ -167,7 +169,8 @@
     width: 525px;
   }
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dppx),
+          (min-resolution: $retina-dpi) {
     .index-header--wrapper {
       background-image: url("../img/hero-desktop@2x.jpg");
     }

@@ -98,7 +98,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .menu-toggle {
     display: none;
   }
@@ -191,7 +191,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media (min-width: $desktop-width) {
   .main-nav__list {
     max-width: 1050px;
     left: calc(50% - 525px);
