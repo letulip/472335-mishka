@@ -88,16 +88,6 @@
     width: 530px;
     font-size: var(--header-font-size-tablet);
     line-height: var(--header-line-height-tablet);
-
-    /*&--wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 746px;
-      margin-top: 90px;
-      padding-top: 60px;
-      background: ("../img/hero-tablet@1x.jpg");
-      background-size: 1150px 746px;
-    }*/
   }
 
   .index-header--wrapper {
@@ -106,8 +96,10 @@
     min-height: 746px;
     margin-top: 90px;
     padding-top: 60px;
-    background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: 1150px 746px;
+    background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-tablet@1x.jpg");
+    background-size: auto 30px, 1150px 746px;
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 102%, 50%;
   }
 
   .page-header__content--wrapper {
@@ -115,6 +107,13 @@
     width: 668px;
     align-self: center;
     margin-top: auto;
+  }
+
+  .page-header__content--bg-wrapper {
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: 285% 240%;
+    background-repeat: no-repeat;
+    background-position: 0 -25px;
   }
 
   .page-header__content--bg-wrapper .container {
@@ -141,7 +140,7 @@
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
     .index-header--wrapper {
-      background-image: url("../img/hero-tablet@2x.jpg");
+      background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-tablet@2x.jpg");
     }
   }
 }
@@ -151,14 +150,13 @@
     width: 700px;
     font-size: var(--header-font-size-desktop);
     line-height: var(--header-line-height-desktop);
-
-    /*&--wrapper {
-      background-image: ("../img/hero-desktop@1x.jpg");
-    }*/
   }
 
   .index-header--wrapper {
-    background-image: url("../img/hero-desktop@1x.jpg");
+    background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-desktop@1x.jpg");
+    background-size: auto 44px, 1150px 746px;
+    background-repeat: repeat-x, no-repeat;
+    background-position: 0 103%, 50%;
   }
 
   .page-header__content--wrapper {
@@ -172,7 +170,7 @@
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
     .index-header--wrapper {
-      background-image: url("../img/hero-desktop@2x.jpg");
+      background-image:url("../img/bg-zigzag-fill.svg"), url("../img/hero-desktop@2x.jpg");
     }
   }
 }
