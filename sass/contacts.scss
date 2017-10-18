@@ -1,5 +1,11 @@
 .contacts {
   margin-top: var(--main-margin-bottom-mobile);
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 10px;
+  margin-top: 0;
+  padding-top: 45px;
 
   & .container {
     flex-wrap: wrap;
@@ -52,6 +58,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     margin-top: 60px;
+    background-size: 100% 20px;
 
     &__header {
       font-size: var(--header-font-size-tablet);
@@ -104,6 +111,7 @@
     margin-bottom: 100px;
     position: relative;
     margin-top: 65px;
+    background-size: 100% 25px;
 
     & .container {
       max-width: 525px;
