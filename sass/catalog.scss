@@ -1,4 +1,6 @@
 .catalog {
+  margin-top: 10px;
+
   &__list {
     list-style: none;
   }
@@ -93,6 +95,8 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
+    margin-top: 75px;
+
     &-header {
       font-size: var(--header-font-size-tablet);
       line-height: var(--header-line-height-tablet);
@@ -104,7 +108,7 @@
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-position: 0 105px;
-      background-size: 80% 100%
+      background-size: 80% 101%
     }
 
     &__img {
@@ -148,6 +152,8 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
+    margin-top: 120px;
+
     &-header {
       font-size: var(--header-font-size-desktop);
       line-height: var(--header-line-height-desktop);
