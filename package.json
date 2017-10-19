@@ -13,9 +13,11 @@
     "gulp-imagemin": "^3.4.0",
     "gulp-plumber": "1.1.x",
     "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.0",
     "gulp-sass": "3.1.x",
     "gulp-uncss": "^1.0.6",
     "gulp-webp": "^2.3.0",
+    "run-sequence": "^2.2.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
     "svg-sprite-generator": "0.0.7"

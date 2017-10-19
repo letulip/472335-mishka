@@ -10,6 +10,8 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgsprite = require("svg-sprite-generator");
 var server = require("browser-sync").create();
+var run = require("run-sequence");
+var del = require("del");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -18,10 +20,10 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe (minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -37,8 +39,29 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("img"));
-})
+  .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("svgsprite", function () {
+  return gulp.src("img/icon-*.svg")
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("copy", function () {
+  return gulp.src([
+    "fonts/**/*.{woff,woff2}",
+    "img/**",
+    "js/**"
+    ], {
+      base: "."
+    })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("clean", function () {
+  return del("build");
+});
 
 gulp.task("serve", ["style"], function() {
   server.init({
@@ -47,6 +70,16 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
+  });
+
+  gulp.task("build", function (done) {
+    run(
+      "clean",
+      "copy",
+      "style",
+      "svgsprite",
+      done
+    );
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
