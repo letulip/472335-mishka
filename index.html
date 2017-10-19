@@ -37,22 +37,20 @@
         </nav>
         <div class="index-header--wrapper">
           <h1 class="index-header header header--h1">Милые штучки ручной работы для дома</h1>
-          <!-- <div class="page-header__content--wrapper"> -->
-            <div class="page-header__content--bg-wrapper">
-              <a href="interior.html">
-                <div class="container">
-                  <div class="page-header__content--interior">Предметы интерьера</div>
-                </div>
-              </a>
-            </div>
-            <div class="page-header__content--bg-wrapper">
-              <a href="kids-toys.html">
-                <div class="container">
-                  <div class="page-header__content--toy">Детские игрушки</div>
-                </div>
-              </a>
-            </div>
-          <!-- </div> -->
+          <div class="page-header__content--bg-wrapper">
+            <a href="interior.html">
+              <div class="container">
+                <div class="page-header__content--interior">Предметы интерьера</div>
+              </div>
+            </a>
+          </div>
+          <div class="page-header__content--bg-wrapper">
+            <a href="kids-toys.html">
+              <div class="container">
+                <div class="page-header__content--toy">Детские игрушки</div>
+              </div>
+            </a>
+          </div>
         </div>
       </header>
       <div class="container">
@@ -191,7 +189,9 @@
       </section>
       <footer class="page-footer">
         <div class="container">
-          <img class="logo page-footer__logo" src="img/logo-footer.svg" width="105" height="40" alt="Мишка логотип">
+          <svg class="logo page-footer__logo" width="105" height="40">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
           <ul class="social">
             <li class="social__item">
               <a href="#">
