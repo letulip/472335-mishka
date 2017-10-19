@@ -7,6 +7,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -31,6 +32,12 @@ gulp.task("images", function () {
     imagemin.svgo()
   ]))
 });
+
+gulp.task("webp", function () {
+  return gulp.src("img/**/*.{png,jpg}")
+  .pipe(webp({quality: 90}))
+  .pipe(gulp.dest("img"));
+})
 
 gulp.task("serve", ["style"], function() {
   server.init({
