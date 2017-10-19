@@ -11,36 +11,12 @@
   margin-top: 80px;
   position: relative;
 
-  &::before {
-    content: "";
+  &--before {
     position: absolute;
     width: 55px;
-    height: 55px;
     top: -50px;
     left: 0;
-    background-image: url("../img/icon-feature-flower.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-  }
-
-  &--style::before {
-    background-image: url("../img/icon-feature-money.svg");
-  }
-
-  &--like::before {
-    background-image: url("../img/icon-feature-heart.svg");
-  }
-
-  &--knitted::before {
-    background-image: url("../img/icon-feature-ball.svg");
-  }
-
-  &--patriot::before {
-    background-image: url("../img/icon-feature-rocket.svg");
-  }
-
-  &--present::before {
-    background-image: url("../img/icon-feature-gift.svg");
+    fill: var(--main-color);
   }
 }
 

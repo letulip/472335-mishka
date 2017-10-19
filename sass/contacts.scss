@@ -1,5 +1,10 @@
 .contacts {
   margin-top: var(--main-margin-bottom-mobile);
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 10px;
+  padding-top: 45px;
 
   & .container {
     flex-wrap: wrap;
@@ -11,6 +16,11 @@
 
   &__spec .spec-table__cell {
     border: none;
+    width: 75px;
+  }
+
+  &__spec .spec-table__cell:last-child {
+    width: 250px;
   }
 
   &__spec > tbody {
@@ -46,7 +56,9 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    margin-top: 60px;
+    margin-top: 0;
+    padding-top: 85px;
+    background-size: 100% 20px;
 
     &__header {
       font-size: var(--header-font-size-tablet);
@@ -56,7 +68,7 @@
       margin-bottom: 30px;
     }
 
-    .contacts__flag {
+    &__flag {
       width: 55px;
       height: 85px;
       background-image: url("/img/icon-flag.svg");
@@ -98,7 +110,9 @@
     margin: 0 auto;
     margin-bottom: 100px;
     position: relative;
-    margin-top: 65px;
+    margin-top: 0;
+    padding-top: 65px;
+    background-size: 100% 25px;
 
     & .container {
       max-width: 525px;
@@ -114,6 +128,7 @@
 
     &__flag {
       left: -100px;
+      top: -15px;
     }
   }
 

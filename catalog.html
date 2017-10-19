@@ -13,7 +13,20 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--logo">
-              <a href="index.html"><img class="logo" src="img/logo-mobile.svg" width="100" height="45" alt="Мишка логотип"></a>
+              <a href="index.html">
+                <picture>
+                  <source
+                  media="(min-width: 1150px)"
+                  srcset="img/logo-desktop.svg 1x">
+                  <source
+                  media="(min-width: 768px)"
+                  srcset="img/logo-tablet.svg 1x">
+                  <img
+                  src="/img/logo-mobile.svg"
+                  width="100" height="45" alt="Вязаные корзинки"
+                  class="logo">
+                </picture>
+              </a>
               <img class="menu-toggle" src="img/icon-menu-open.svg" width="20" height="20" alt="Меню">
             </li>
             <li class="main-nav__item main-nav__item--catalog main-nav__item--drop-down"><a href="catalog.html" class="main-nav__link main-nav__link--tablet">Каталог товаров</a></li>
@@ -211,13 +224,41 @@
       </div>
       <footer class="page-footer">
         <div class="container">
-          <img class="logo page-footer__logo" src="img/logo-mobile.svg" width="100" height="45" alt="Мишка логотип">
+          <svg class="logo page-footer__logo" width="105" height="40">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
           <ul class="social">
-            <li class="social__item social__item--ig"><a href="#">Instagram</a></li>
-            <li class="social__item social__item--fb"><a href="#">Facebook</a></li>
-            <li class="social__item social__item--tw"><a href="#">Twitter</a></li>
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__item--icon social__item--ig" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+                Instagram
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__item--icon social__item--fb" width="25" height="30">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
+                Facebook
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#">
+                <svg class="social__item--icon social__item--tw" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+                Twitter
+              </a>
+            </li>
           </ul>
-          <h3 class="page-footer__copyright header header--h3">Разработано<a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">HTML Academy</a></h3>
+          <h3 class="page-footer__copyright header header--h3">Разработано<a href="https://htmlacademy.ru/intensive/adaptive" class="academy-link">
+            <svg class="academy-link--icon" width="30" height="40">
+              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+            </svg>
+            HTML Academy</a>
+          </h3>
         </div>
       </footer>
     </div>

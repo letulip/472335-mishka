@@ -20,10 +20,8 @@
 
   &__logo:hover,
   &__logo:focus,
-  &__logo:active,
-  &__copyright:hover,
-  &__copyright:focus {
-    fill: var(--main-color);
+  &__logo:active {
+    fill: var(--main-color-hover);
   }
 
   &__logo:active,
@@ -43,6 +41,8 @@
 
     &__logo {
       display: block;
+      width: 105px;
+      height: 40px;
       margin-right: 155px;
     }
 
@@ -50,6 +50,12 @@
       margin-left: auto;
       padding-top: 0;
     }
+  }
+
+  .page-footer__copyright:hover .academy-link--icon,
+  .page-footer__copyright:focus .academy-link--icon,
+  .page-footer__copyright:active .academy-link--icon {
+    fill: var(--main-color-hover);
   }
 }
 

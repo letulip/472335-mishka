@@ -3,6 +3,7 @@
   line-height: 18px;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   &__checkbox,
   &__radio {
@@ -55,12 +56,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .field-wrapper,
+  .form__additional--textarea {
+    margin-left: 102px;
+  }
+
   .field-wrapper__input {
-    min-width: 590px;
+    min-width: 582px;
     padding-left: 20px;
   }
 
   .field-wrapper__input--name {
-    width: 640px;
+    width: 632px;
   }
 }
