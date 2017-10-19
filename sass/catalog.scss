@@ -98,7 +98,13 @@
       line-height: var(--header-line-height-tablet);
       margin-top: 90px;
       padding-top: 100px;
-      padding-bottom: 60px;
+      padding-bottom: 80px;
+      margin-bottom: 0;
+      min-height: 230px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 0 105px;
+      background-size: 80% 100%
     }
 
     &__img {
