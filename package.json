@@ -8,6 +8,7 @@
     "autoprefixer": "7.1.x",
     "browser-sync": "2.18.x",
     "gulp": "3.9.x",
+    "gulp-cli": "^1.4.0",
     "gulp-csso": "^3.0.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.4.0",
@@ -24,6 +25,7 @@
     "svg-sprite-generator": "0.0.7"
   },
   "scripts": {
+    "gulp": "gulp",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'sass/**/*.scss' --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",

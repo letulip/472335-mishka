@@ -21,7 +21,6 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("build/css"))
     .pipe (minify())
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
@@ -38,12 +37,13 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("img/**/*.{png,jpg}")
+  return gulp.src("img/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("svgsprite", function () {
+  // return del("build/img/sprite.svg")
   return gulp.src("img/icon-*.svg")
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
@@ -52,7 +52,7 @@ gulp.task("svgsprite", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/**",
+    "img/*.{png,jpg,svg}",
     "js/**"
     ], {
       base: "."
@@ -64,6 +64,20 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+gulp.task("build", function (done) {
+  run(
+    "clean",
+    "style",
+    "copy",
+    "webp",
+    done
+  );
+});
+
+var defaultTask = ["build"];
+
+gulp.task("default", defaultTask);
+
 gulp.task("serve", ["style"], function() {
   server.init({
     server: ".",
@@ -71,16 +85,6 @@ gulp.task("serve", ["style"], function() {
     open: true,
     cors: true,
     ui: false
-  });
-
-  gulp.task("build", function (done) {
-    run(
-      "clean",
-      "copy",
-      "style",
-      "svgsprite",
-      done
-    );
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
