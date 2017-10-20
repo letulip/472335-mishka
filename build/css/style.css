@@ -1741,12 +1741,22 @@ body {
   border: none;
   padding: 0;
   padding-top: 15px;
+<<<<<<< HEAD
   padding-bottom: 15px; }
+=======
+  padding-bottom: 15px;
+  outline: 1px solid blue; }
+>>>>>>> 776872b181cadfa1f7b5b1e6a8ba3b0ab7dbcaf3
 
 .form__fieldset .container {
   position: relative;
   display: block;
+<<<<<<< HEAD
   overflow: hidden; }
+=======
+  overflow: hidden;
+  outline: 1px solid red; }
+>>>>>>> 776872b181cadfa1f7b5b1e6a8ba3b0ab7dbcaf3
 
 .form__legend {
   color: var(--main-color);
