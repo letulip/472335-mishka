@@ -163,6 +163,7 @@
 @media (min-width: $desktop-width) {
   .index-header {
     width: 700px;
+    margin: 0 auto;
     font-size: var(--header-font-size-desktop);
     line-height: var(--header-line-height-desktop);
   }
