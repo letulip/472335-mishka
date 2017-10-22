@@ -15,6 +15,7 @@ var svgmin = require("gulp-svgmin");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+var variables = require("gulp-vars");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -23,6 +24,7 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(variables())
     .pipe(gulp.dest("build/css"))
     .pipe (minify())
     .pipe(rename("style.min.css"))
