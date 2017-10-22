@@ -18,7 +18,7 @@
   &__sub-header {
     font-size: 17px;
     line-height: 20px;
-    color: var(--main-color);
+    color: $main-color;
     text-transform: uppercase;
     padding-bottom: 0;
   }
@@ -54,8 +54,8 @@
     }
 
     &__header {
-      font-size: var(--header-font-size-tablet);
-      line-height: var(--header-line-height-tablet);
+      font-size: $header-font-size-tablet;
+      line-height: $header-line-height-tablet;
     }
 
     &__sub-header {
@@ -89,8 +89,8 @@
 
     &__header {
       order: 1;
-      font-size: var(--header-font-size-desktop);
-      line-height: var(--header-line-height-desktop);
+      font-size: $header-font-size-desktop;
+      line-height: $header-line-height-desktop;
       margin-right: auto;
     }
 

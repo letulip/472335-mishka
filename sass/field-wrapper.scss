@@ -24,7 +24,7 @@
   &__input:hover,
   &__input:focus,
   &__input:active {
-    border-color: var(--main-color);
+    border-color: $main-color;
   }
 
   &__input:active {

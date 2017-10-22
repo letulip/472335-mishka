@@ -1,5 +1,5 @@
 .reviews {
-  margin-bottom: var(--main-margin-bottom-mobile);
+  margin-bottom: $main-margin-bottom-mobile;
 
   &__header {
     margin-bottom: 30px;
@@ -9,7 +9,7 @@
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: var(--main-margin-bottom-mobile);
+    margin-bottom: $main-margin-bottom-mobile;
   }
 
   &__author {
@@ -26,8 +26,8 @@
   &__controls {
     width: 100%;
     display: flex;
-    margin-top: var(--main-margin-bottom-mobile);
-    margin-bottom: var(--main-margin-bottom-mobile);
+    margin-top: $main-margin-bottom-mobile;
+    margin-bottom: $main-margin-bottom-mobile;
   }
 
   &__btn {
@@ -80,8 +80,8 @@
     }
 
     &__header {
-      font-size: var(--header-font-size-tablet);
-      line-height: var(--header-line-height-tablet);
+      font-size: $header-font-size-tablet;
+      line-height: $header-line-height-tablet;
     }
 
     &__btn-write {
@@ -134,8 +134,8 @@
     }
 
     &__header {
-      font-size: var(--header-font-size-desktop);
-      line-height: var(--header-line-height-desktop);
+      font-size: $header-font-size-desktop;
+      line-height: $header-line-height-desktop;
     }
   }
 }

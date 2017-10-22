@@ -394,18 +394,6 @@ template {
 [hidden] {
   display: none; }
 
-:root {
-  --main-color: #63d1bb;
-  --main-color-hover: #46c1ae;
-  --main-bg-color: #f4f4f4;
-  --header-font-size-tablet: 43px;
-  --header-line-height-tablet: 50px;
-  --header-font-size-desktop: 53px;
-  --header-line-height-desktop: 57px;
-  --main-margin-bottom-mobile: 38px;
-  --min-width-tablet: 768px;
-  --min-width-desktop: 1150px; }
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }

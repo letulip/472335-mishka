@@ -19,7 +19,7 @@
   }
 
   &__legend {
-    color: var(--main-color);
+    color: $main-color;
     display: block;
     position: relative;
   }
@@ -29,7 +29,7 @@
     position: absolute;
     min-width: 210px;
     height: 1px;
-    background-color: var(--main-color);
+    background-color: $main-color;
     top: 25%;
     margin-left: 25px;
   }
@@ -47,7 +47,7 @@
     &:hover,
     &:focus,
     &:active {
-      fill: var(--main-color);
+      fill: $main-color;
     }
   }
 
@@ -68,7 +68,7 @@
 
   &__additional--textarea:hover,
   &__additional--textarea:focus {
-    border-color: var(--main-color);
+    border-color: $main-color;
   }
 
   &__additional--textarea:active {
@@ -118,7 +118,7 @@
   &:focus::before,
   &:hover::before,
   &:focus::before {
-    box-shadow: 0 0 0 2px var(--main-color);
+    box-shadow: 0 0 0 2px $main-color;
   }
 
   &:active::before,
@@ -137,7 +137,7 @@
 }
 
 .field-wrapper__radio:checked + .form__type--radio::before {
-  background-color: var(--main-color);
+  background-color: $main-color;
 }
 
 .field-wrapper__checkbox:checked + .form__color--checkbox::before {

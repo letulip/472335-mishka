@@ -23,7 +23,7 @@
   &__item--icon:hover,
   &__item--icon:focus,
   &__item--icon:active {
-    fill: var(--main-color);
+    fill: $main-color;
   }
 
   &__item--icon:active {

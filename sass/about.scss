@@ -16,7 +16,7 @@
     width: 55px;
     top: -50px;
     left: 0;
-    fill: var(--main-color);
+    fill: $main-color;
   }
 }
 
@@ -26,8 +26,8 @@
   }
 
   .about__header {
-    font-size: var(--header-font-size-tablet);
-    line-height: var(--header-line-height-tablet);
+    font-size: $header-font-size-tablet;
+    line-height: $header-line-height-tablet;
   }
 
   .about__list {
@@ -70,8 +70,8 @@
   }
 
   .about__header {
-    font-size: var(--header-font-size-desktop);
-    line-height: var(--header-line-height-desktop);
+    font-size: $header-font-size-desktop;
+    line-height: $header-line-height-desktop;
   }
 
   .about__list {

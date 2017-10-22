@@ -25,7 +25,7 @@
 
 .page-header__content--bg-wrapper {
   width: 100%;
-  background-color: var(--main-color);
+  background-color: $main-color;
 
   & a {
     text-decoration: none;
@@ -102,8 +102,8 @@
   .index-header {
     width: 668px;
     margin-bottom: auto;
-    font-size: var(--header-font-size-tablet);
-    line-height: var(--header-line-height-tablet);
+    font-size: $header-font-size-tablet;
+    line-height: $header-line-height-tablet;
   }
 
   .index-header--wrapper {
@@ -177,8 +177,8 @@
   .index-header {
     width: 700px;
     margin: 0 auto;
-    font-size: var(--header-font-size-desktop);
-    line-height: var(--header-line-height-desktop);
+    font-size: $header-font-size-desktop;
+    line-height: $header-line-height-desktop;
   }
 
   .index-header--wrapper {
