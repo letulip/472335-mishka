@@ -1694,6 +1694,7 @@ body {
       max-width: 680px;
       max-height: 455px;
       position: absolute;
+      top: 0;
       left: 0; }
     .video__play {
       left: 28%;
