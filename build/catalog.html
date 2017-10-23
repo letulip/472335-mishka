@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="build/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
   </head>
   <body>
@@ -23,7 +23,7 @@
                   srcset="img/logo-tablet.svg 1x">
                   <img
                   src="/img/logo-mobile.svg"
-                  width="100" height="45" alt="Вязаные корзинки"
+                  width="100" height="45" alt="Мишка логотип"
                   class="logo">
                 </picture>
               </a>
@@ -185,46 +185,51 @@
             </ul>
           </section>
           <section class="video">
-              <h2 class="video__header header header--h2">Процесс производства</h2>
-              <picture>
-                <source
-                type="image/webp"
-                media="(min-width: 1150px)"
-                srcset="img/video-desktop@1x.webp 1x,
-                video-desktop@2x.webp 2x">
-                <source
-                media="(min-width: 1150px)"
-                srcset="img/video-desktop@1x.jpg 1x,
-                video-desktop@2x.jpg 2x">
-                <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="img/video-tablet@1x.webp 1x,
-                img/video-tablet@2x.webp 2x">
-                <source
-                media="(min-width: 768px)"
-                srcset="img/video-tablet@1x.jpg 1x,
-                img/video-tablet@2x.jpg 2x">
-                <source
-                type="image/webp"
-                media="(min-width: 320px)"
-                srcset="img/video-mobile@1x.webp 1x,
-                img/video-mobile@2x.webp 2x">
-                <img
-                src="/img/video-mobile@1x.jpg"
-                width="260" height="150" alt="Процесс производства"
-                class="video__file"
-                srcset="/img/video-mobile@2x.jpg 2x">
-              </picture>
-              <button class="video__play">Play</button>
-              <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-              <a href="form.html" class="button video__order">Сделать заказ</a>
+            <svg class="about__item--before" width="32" height="32">
+              <use xlink:href="img/sprite.svg#icon-video"></use>
+            </svg>
+            <h2 class="video__header header header--h2">Процесс производства</h2>
+            <picture>
+              <source
+              type="image/webp"
+              media="(min-width: 1150px)"
+              srcset="img/video-desktop@1x.webp 1x,
+              video-desktop@2x.webp 2x">
+              <source
+              media="(min-width: 1150px)"
+              srcset="img/video-desktop@1x.jpg 1x,
+              video-desktop@2x.jpg 2x">
+              <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.webp 1x,
+              img/video-tablet@2x.webp 2x">
+              <source
+              media="(min-width: 768px)"
+              srcset="img/video-tablet@1x.jpg 1x,
+              img/video-tablet@2x.jpg 2x">
+              <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="img/video-mobile@1x.webp 1x,
+              img/video-mobile@2x.webp 2x">
+              <img
+              src="/img/video-mobile@1x.jpg"
+              width="260" height="150" alt="Процесс производства"
+              class="video__file"
+              srcset="/img/video-mobile@2x.jpg 2x">
+            </picture>
+            <button class="video__play">Play</button>
+            <p class="video__desc">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a href="form.html" class="button button--ghost video__order">Сделать заказ</a>
           </section>
         </main>
       </div>
       <footer class="page-footer">
         <div class="container">
-          <img class="logo page-footer__logo" src="img/logo-footer.svg" width="105" height="40" alt="Мишка логотип">
+          <svg class="logo page-footer__logo" width="105" height="40" alt="Мишка логотип">
+            <use xlink:href="img/sprite.svg#logo-footer"></use>
+          </svg>
           <ul class="social">
             <li class="social__item">
               <a href="#">
@@ -270,5 +275,8 @@
         <a href="cart.html" class="button cart-add__add-button">Добавить</a>
       </div>
     </div>
+    <script src="js/pictureFill.js"></script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </body>
 </html>

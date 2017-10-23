@@ -101,6 +101,7 @@
 
   .index-header {
     width: 668px;
+    margin: 0;
     margin-bottom: auto;
     font-size: $header-font-size-tablet;
     line-height: $header-line-height-tablet;
@@ -176,7 +177,6 @@
 @media (min-width: $desktop-width) {
   .index-header {
     width: 700px;
-    margin: 0 auto;
     font-size: $header-font-size-desktop;
     line-height: $header-line-height-desktop;
   }

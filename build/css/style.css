@@ -587,6 +587,7 @@ body {
       z-index: 1; }
   .index-header {
     width: 668px;
+    margin: 0;
     margin-bottom: auto;
     font-size: 43px;
     line-height: 50px; }
@@ -645,7 +646,6 @@ body {
 @media (min-width: 1150px) {
   .index-header {
     width: 700px;
-    margin: 0 auto;
     font-size: 53px;
     line-height: 57px; }
   .index-header--wrapper {
