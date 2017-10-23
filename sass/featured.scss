@@ -46,6 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: $container-width-tablet;
 
     &__header--wrapper {
       display: flex;
@@ -86,6 +87,7 @@
 @media (min-width: $desktop-width) {
   .featured {
     padding-top: 55px;
+    max-width: $container-width-desktop;
 
     &__header {
       order: 1;

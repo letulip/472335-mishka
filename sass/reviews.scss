@@ -66,6 +66,7 @@
     padding-top: 70px;
     padding-bottom: 40px;
     position: relative;
+    max-width: $container-width-tablet;
 
     &::before {
       content: "";
@@ -128,6 +129,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 175px;
+    max-width: $container-width-desktop;
 
     &::before {
       left: 0;

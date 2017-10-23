@@ -69,7 +69,7 @@ body {
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
+    width: $container-width-tablet;
   }
 
   .logo {
@@ -80,7 +80,7 @@ body {
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1050px;
+    width: $container-width-desktop;
   }
 
   .logo {
