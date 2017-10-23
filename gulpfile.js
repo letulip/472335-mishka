@@ -85,6 +85,16 @@ gulp.task("build", function (done) {
   );
 });
 
+gulp.task("html:copy", function() {
+  return gulp.src("*.html")
+  .pipe(gulp.dest("build"))
+});
+
+gulp.task("html:update", ["html:copy"], function(done) {
+  server.reload();
+  done();
+});
+
 gulp.task("serve", ["style"], function() {
   server.init({
     server: "build/",
@@ -95,5 +105,6 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html:update"]);
+  gulp.watch("build/css/*.css").on("change", server.reload);
 });

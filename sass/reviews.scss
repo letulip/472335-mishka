@@ -83,6 +83,7 @@
     &__header {
       font-size: $header-font-size-tablet;
       line-height: $header-line-height-tablet;
+      order: -1;
     }
 
     &__btn-write {

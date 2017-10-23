@@ -1044,7 +1044,7 @@ body {
     font-size: 43px;
     line-height: 50px; }
   .about__list {
-    width: 668px;
+    max-width: 668px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1053,7 +1053,6 @@ body {
   .about__item {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
-    padding-right: 35px;
     font-size: 20px;
     line-height: 22px; }
     .about__item--style {
@@ -1084,7 +1083,7 @@ body {
     font-size: 53px;
     line-height: 57px; }
   .about__list {
-    width: 700px; } }
+    max-width: 700px; } }
 
 .reviews {
   margin-bottom: 38px; }
@@ -1155,7 +1154,10 @@ body {
       background-repeat: no-repeat; }
     .reviews__header {
       font-size: 43px;
-      line-height: 50px; }
+      line-height: 50px;
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1; }
     .reviews__btn-write {
       -webkit-box-ordinal-group: 1;
           -ms-flex-order: 0;

@@ -31,14 +31,13 @@
   }
 
   .about__list {
-    width: 668px;
+    max-width: $container-width-tablet;
     display: flex;
     flex-wrap: wrap;
   }
 
   .about__item {
     flex-basis: 50%;
-    padding-right: 35px;
     font-size: 20px;
     line-height: 22px;
 
@@ -75,6 +74,6 @@
   }
 
   .about__list {
-    width: 700px;
+    max-width: 700px;
   }
 }
