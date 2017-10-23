@@ -25,10 +25,10 @@ gulp.task("style", function() {
       autoprefixer()
     ]))
     .pipe(variables())
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe (minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });
 

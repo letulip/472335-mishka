@@ -1804,6 +1804,7 @@ body {
 .form .form__icon {
   position: absolute;
   right: 0;
+  top: 0;
   opacity: 0.3;
   fill: black; }
   .form .form__icon:hover, .form .form__icon:focus, .form .form__icon:active {
