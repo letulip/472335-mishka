@@ -28,6 +28,7 @@
   &__item-header {
     font-size: 17px;
     line-height: 24px;
+    margin-top: 15px;
   }
 
   &__item-header:hover,
@@ -35,13 +36,7 @@
     opacity: 0.6;
   }
 
-  &__item-header:hover ~ .catalog__add,
-  &__item-header:focus ~ .catalog__add,
-  &__item-header:active ~ .catalog__add {
-    fill: $main-color;
-  }
-
-  &__item-header:active ~ .catalog__add {
+  &__item-header:active {
     opacity: 0.3;
   }
 
@@ -86,14 +81,27 @@
   &__add {
     width: 22px;
     min-width: 20px;
-    background-image: url("/img/icon-cart.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.2;
   }
 
   &__add a {
     font-size: 0;
+  }
+
+  &__add-icon {
+    margin-top: 22px;
+    fill: #231f20;
+    opacity: 0.3;
+  }
+
+  &__item-link:hover ~ .catalog__price-wrapper .catalog__add-icon,
+  &__item-link:focus ~ .catalog__price-wrapper .catalog__add-icon,
+  &__item-link:active ~ .catalog__price-wrapper.catalog__add-icon {
+    fill: $main-color;
+    opacity: 0.9;
+  }
+
+  &__item-link:active ~ .catalog__price-wrapper .catalog__add-icon {
+    opacity: 0.3;
   }
 }
 
