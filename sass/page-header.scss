@@ -30,6 +30,10 @@
   & a {
     text-decoration: none;
   }
+
+  &:active .container {
+    opacity: 0.3;
+  }
 }
 
 .page-header__content--bg-wrapper:last-child {

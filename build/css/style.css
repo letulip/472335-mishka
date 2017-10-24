@@ -524,6 +524,8 @@ body {
   background-color: #63d1bb; }
   .page-header__content--bg-wrapper a {
     text-decoration: none; }
+  .page-header__content--bg-wrapper:active .container {
+    opacity: 0.3; }
 
 .page-header__content--bg-wrapper:last-child {
   background-color: #56c3b2; }
