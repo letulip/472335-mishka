@@ -12,12 +12,12 @@
     margin-bottom: $main-margin-bottom-mobile;
   }
 
-  &__author {
+  &__author--details {
     font-size: 17px;
     line-height: 30px;
   }
 
-  &__author-email {
+  &__author--email {
     font-weight: normal;
     font-size: 17px;
     line-height: 30px;
@@ -100,7 +100,7 @@
       font-size: 17px;
     }
 
-    &__author--details {
+    &__author--wrapper {
       order: 2;
     }
 
