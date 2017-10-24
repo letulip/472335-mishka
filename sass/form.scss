@@ -57,7 +57,7 @@
     margin-bottom: 15px;
   }
 
-  &__additional--textarea {
+  &__additional-textarea {
     border: 2px solid black;
     min-height: 140px;
     max-height: 140px;
@@ -67,12 +67,12 @@
     color: #dddddd;
   }
 
-  &__additional--textarea:hover,
-  &__additional--textarea:focus {
+  &__additional-textarea:hover,
+  &__additional-textarea:focus {
     border-color: $main-color;
   }
 
-  &__additional--textarea:active {
+  &__additional-textarea:active {
     color: #444444;
   }
 
@@ -86,15 +86,15 @@
     display: block;
   }
 
-  &__submit--btn {
+  &__submit-btn {
     margin-top: 30px;
     margin-bottom: 55px;
     font-weight: bold;
   }
 }
 
-.form__type--radio,
-.form__color--checkbox {
+.form__type-radio,
+.form__color-checkbox {
   padding-left: 60px;
   padding-top: 25px;
   margin-bottom: 25px;
@@ -128,20 +128,20 @@
   }
 }
 
-.form__type--radio-first {
+.form__type-radio--first {
   margin-bottom: 10px;
 }
 
-.form__type--radio::before {
+.form__type-radio::before {
   border: 10px solid white;
   border-radius: 50%;
 }
 
-.field-wrapper__radio:checked + .form__type--radio::before {
+.field-wrapper__radio:checked + .form__type-radio::before {
   background-color: $main-color;
 }
 
-.field-wrapper__checkbox:checked + .form__color--checkbox::before {
+.field-wrapper__checkbox:checked + .form__color-checkbox::before {
   background-image: url("/img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -156,8 +156,8 @@
       margin-top: 60px;
     }
 
-    &__fieldset--wrapper:nth-child(3),
-    &__fieldset--wrapper:nth-child(5) {
+    &__fieldset-wrapper:nth-child(3),
+    &__fieldset-wrapper:nth-child(5) {
       background-color: #f1f1f1;
     }
 
@@ -188,7 +188,7 @@
       width: calc(100% - 167px);
     }
 
-    &__additional--textarea {
+    &__additional-textarea {
       width: 501px;
       padding: 18px;
     }
@@ -198,24 +198,24 @@
       flex-wrap: wrap;
     }
 
-    &__type--radio,
-    &__color--checkbox {
+    &__type-radio,
+    &__color-checkbox {
       padding-left: 80px;
       padding-top: 25px;
       margin-bottom: 25px;
     }
 
-    &__type--radio::before,
-    &__color--checkbox::before {
+    &__type-radio::before,
+    &__color-checkbox::before {
       width: 52px;
       height: 52px;
     }
 
-    &__type--radio::before {
+    &__type-radio::before {
       border: 15px solid white;
     }
 
-    &__color--checkbox {
+    &__color-checkbox {
       min-width: 250px;
     }
 
@@ -233,7 +233,7 @@
       display: flex;
     }
 
-    &__submit--btn {
+    &__submit-btn {
       max-width: 230px;
       margin-right: auto;
     }
@@ -267,7 +267,7 @@
       padding-right: 175px;
     }
 
-    &__fieldset--color {
+    &__fieldset-color {
       padding-right: 0;
     }
 
@@ -290,7 +290,7 @@
       width: calc(100% - 107px);
     }
 
-    &__submit--btn {
+    &__submit-btn {
       margin-left: 167px;
     }
 
