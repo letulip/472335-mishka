@@ -185,7 +185,8 @@
     }
 
     &__additional {
-      width: calc(100% - 167px);
+      width: 100%;
+      padding-left: 167px;
     }
 
     &__additional-textarea {
@@ -287,15 +288,15 @@
     }
 
     &__additional {
-      width: calc(100% - 107px);
+      padding-left: 107px;
     }
 
     &__submit-btn {
-      margin-left: 167px;
+      margin-left: 172px;
     }
 
     &__necessary {
-      margin-right: 167px;
+      margin-right: 172px;
     }
   }
 }

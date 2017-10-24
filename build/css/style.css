@@ -1915,7 +1915,8 @@ body {
   .form__legend::after {
     display: none; }
   .form__additional {
-    width: calc(100% - 167px); }
+    width: 100%;
+    padding-left: 167px; }
   .form__additional-textarea {
     width: 501px;
     padding: 18px; }
@@ -1987,11 +1988,11 @@ body {
   .form__tel::after, .form__email::after {
     right: 17%; }
   .form__additional {
-    width: calc(100% - 107px); }
+    padding-left: 107px; }
   .form__submit-btn {
-    margin-left: 167px; }
+    margin-left: 172px; }
   .form__necessary {
-    margin-right: 167px; } }
+    margin-right: 172px; } }
 
 .page-footer {
   padding-top: 20px;
