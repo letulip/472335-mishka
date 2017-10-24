@@ -691,16 +691,6 @@ body {
   -ms-flex-item-align: center;
       align-self: center; }
 
-.main-nav__item {
-  list-style: none;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-  .main-nav__item:not(:last-child):hover a,
-  .main-nav__item:not(:last-child):focus a {
-    opacity: 0.6; }
-  .main-nav__item:not(:last-child):active a {
-    opacity: 0.3; }
-
 .main-nav__item--drop-down {
   width: 100%;
   border-top: 1px solid #dddddd; }
@@ -718,35 +708,26 @@ body {
   margin: 0 auto;
   padding-left: 45px;
   position: relative; }
-  .main-nav__link--cart::before, .main-nav__link--search::before {
-    content: "";
+  .main-nav__link-icon {
     position: absolute;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     left: 0;
-    background-image: url("/img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
     opacity: 0.2; }
-  .main-nav__link--cart::before {
-    background-image: url("/img/icon-cart.svg"); }
 
-.main-nav__link--wrapper {
-  max-width: 260px;
-  margin: 0 auto;
-  position: relative; }
-  .main-nav__link--wrapper .main-nav__link::before {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    left: 0;
-    background-image: url("/img/icon-search.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    opacity: 0.2; }
-  .main-nav__link--wrapper .main-nav__link--cart::before {
-    background-image: url("/img/icon-cart.svg"); }
+.main-nav__item {
+  list-style: none;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .main-nav__item:not(:last-child):hover a,
+  .main-nav__item:not(:last-child):focus a {
+    opacity: 0.6; }
+  .main-nav__item:not(:last-child):hover .main-nav__link-icon,
+  .main-nav__item:not(:last-child):focus .main-nav__link-icon {
+    fill: #63d1bb;
+    opacity: 0.9; }
+  .main-nav__item:not(:last-child):active a {
+    opacity: 0.3; }
 
 .main-nav__item--new,
 .main-nav__item--sale,
@@ -779,12 +760,12 @@ body {
     max-width: 100%;
     margin: 0;
     padding-left: 0; }
-    .main-nav__link--cart::before, .main-nav__link--search::before {
+    .main-nav__link-icon {
       left: -50px; }
     .main-nav__link--search {
       font-size: 0; }
-    .main-nav__link--search::before {
-      left: 25px; }
+    .main-nav__link-icon--search {
+      left: 30px; }
     .main-nav__link--tablet {
       font-size: 15px; }
   .main-nav__item--drop-down {
