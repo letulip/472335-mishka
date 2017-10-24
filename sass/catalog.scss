@@ -21,27 +21,27 @@
     flex-direction: column;
   }
 
-  &__item--link {
+  &__item-link {
     text-decoration: none;
   }
 
-  &__item--header {
+  &__item-header {
     font-size: 17px;
     line-height: 24px;
   }
 
-  &__item--header:hover,
-  &__item--header:focus {
+  &__item-header:hover,
+  &__item-header:focus {
     opacity: 0.6;
   }
 
-  &__item--header:hover ~ .catalog__add,
-  &__item--header:focus ~ .catalog__add,
-  &__item--header:active ~ .catalog__add {
+  &__item-header:hover ~ .catalog__add,
+  &__item-header:focus ~ .catalog__add,
+  &__item-header:active ~ .catalog__add {
     fill: $main-color;
   }
 
-  &__item--header:active ~ .catalog__add {
+  &__item-header:active ~ .catalog__add {
     opacity: 0.3;
   }
 
@@ -52,7 +52,7 @@
     font-weight: normal;
   }
 
-  &__item--wrapper {
+  &__item-wrapper {
     display: flex;
     min-width: 260px;
     flex-direction: column;
@@ -61,16 +61,16 @@
     border: 1px solid #ececec;
   }
 
-  &__item--wrapper:hover,
-  &__item--wrapper:focus {
+  &__item-wrapper:hover,
+  &__item-wrapper:focus {
     box-shadow: 1px 6px 10px 1px #eeeeee;
   }
 
-  &__item--wrapper:active {
+  &__item-wrapper:active {
     box-shadow: 1px 3px 4px 1px #eeeeee;
   }
 
-  &__price--wrapper {
+  &__price-wrapper {
     display: flex;
     justify-content: space-between;
     border-top: 1px solid #ececec;
@@ -127,18 +127,18 @@
       padding-left: 334px;
     }
 
-    &__item--wrapper {
+    &__item-wrapper {
       min-height: 334px;
       width: 334px;
     }
 
-    &__item--header {
+    &__item-header {
       font-size: 20px;
       line-height: 24px;
       margin-top: 28px;
     }
 
-    &__price--wrapper {
+    &__price-wrapper {
       margin-top: auto;
     }
 
@@ -170,7 +170,7 @@
       flex-direction: column;
     }
 
-    &__item--wrapper {
+    &__item-wrapper {
       min-height: 140px;
       width: 315px;
       flex-grow: 1;
