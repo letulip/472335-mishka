@@ -1369,6 +1369,13 @@ body {
   .catalog__add {
     width: 22px;
     min-width: 20px; }
+    .catalog__add:hover .catalog__add-icon,
+    .catalog__add:focus .catalog__add-icon,
+    .catalog__add:active .catalog__add-icon {
+      fill: #63d1bb;
+      opacity: 0.9; }
+    .catalog__add:active .catalog__add-icon {
+      opacity: 0.3; }
   .catalog__add a {
     font-size: 0; }
   .catalog__add-icon {

@@ -81,6 +81,17 @@
   &__add {
     width: 22px;
     min-width: 20px;
+
+    &:hover .catalog__add-icon,
+    &:focus .catalog__add-icon,
+    &:active .catalog__add-icon {
+      fill: $main-color;
+      opacity: 0.9;
+    }
+
+    &:active .catalog__add-icon {
+      opacity: 0.3;
+    }
   }
 
   &__add a {
