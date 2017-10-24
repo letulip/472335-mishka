@@ -1748,6 +1748,11 @@ body {
     border-color: #63d1bb; }
   .field-wrapper__input:active {
     color: #444444; }
+  .field-wrapper__input:hover + .form__icon,
+  .field-wrapper__input:focus + .form__icon,
+  .field-wrapper__input:active + .form__icon {
+    fill: #63d1bb;
+    opacity: 0.9; }
 
 @media (min-width: 768px) {
   .field-wrapper,
@@ -1814,8 +1819,6 @@ body {
   top: 0;
   opacity: 0.3;
   fill: black; }
-  .form .form__icon:hover, .form .form__icon:focus, .form .form__icon:active {
-    fill: #63d1bb; }
 
 .form__additional {
   margin-top: 20px;

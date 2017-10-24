@@ -30,6 +30,13 @@
   &__input:active {
     color: #444444;
   }
+
+  &__input:hover + .form__icon,
+  &__input:focus + .form__icon,
+  &__input:active + .form__icon {
+    fill: $main-color;
+    opacity: 0.9;
+  }
 }
 
 @media (min-width: $tablet-width) {
