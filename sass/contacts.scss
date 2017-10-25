@@ -4,23 +4,23 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: 100% 10px;
-  padding-top: 45px;
+  padding-top: 35px;
 
   & .container {
     flex-wrap: wrap;
   }
 
   &__header {
-    margin-bottom: $main-margin-bottom-mobile;
+    margin-bottom: 20px;
+  }
+
+  &__spec {
+    margin-bottom: 0;
   }
 
   &__spec .spec-table__cell {
     border: none;
-    width: 75px;
-  }
-
-  &__spec .spec-table__cell:last-child {
-    width: 250px;
+    padding-bottom: 15px;
   }
 
   &__spec > tbody {
@@ -50,7 +50,7 @@
 }
 
 .button--write-us {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 
