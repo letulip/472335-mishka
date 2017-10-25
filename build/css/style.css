@@ -503,7 +503,7 @@ body {
 
 .page-header__content--wrapper {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-size: 575px 373px;
+  background-size: 565px 373px;
   background-position: 50% -10%;
   background-repeat: no-repeat; }
 
@@ -512,12 +512,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 285px;
+  /*align-items: center;*/
+  min-height: 280px;
   width: 270px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-top: 70px; }
 
 .page-header__content--bg-wrapper {
   width: 100%;
@@ -535,7 +534,7 @@ body {
   color: #ffffff;
   width: 40%;
   display: block;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   font-size: 19px;
   line-height: 24px; }
