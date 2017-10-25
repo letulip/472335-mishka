@@ -37,3 +37,9 @@
     border-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 10px;
+  }
+}

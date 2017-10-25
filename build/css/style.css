@@ -693,8 +693,7 @@ body {
 
 .main-nav__item--drop-down {
   width: 100%;
-  border-top: 1px solid #dddddd;
-  display: none; }
+  border-top: 1px solid #dddddd; }
 
 .free-shipping {
   font-weight: normal; }
@@ -2115,7 +2114,9 @@ body {
           -ms-flex-direction: row;
               flex-direction: row; }
     .page-footer__logo {
-      margin-right: 345px; } }
+      margin-right: 345px; }
+    .page-footer__copyright {
+      padding-top: 10px; } }
 
 .social {
   display: -webkit-box;
@@ -2147,6 +2148,10 @@ body {
   .social {
     padding-bottom: 0;
     border-bottom: 0; } }
+
+@media (min-width: 1150px) {
+  .social {
+    padding-top: 10px; } }
 
 .cart-add {
   position: fixed;
