@@ -97,7 +97,8 @@
 
 @media (min-width: $desktop-width) {
   .featured {
-    padding-top: 55px;
+    margin-bottom: 60px;
+    padding-top: 80px;
     max-width: $container-width-desktop;
 
     &__header--heading {
@@ -116,14 +117,18 @@
       margin-left: 175px;
     }
 
+    &__description {
+      margin-bottom: 30px;
+    }
+
     &__price {
-      margin-top: 65px;
+      margin-top: 80px;
     }
 
     &__img {
       width: 525px;
-      height: 625px;
-      top: 0;
+      height: 655px;
+      top: 15px;
       z-index: -1;
     }
   }
