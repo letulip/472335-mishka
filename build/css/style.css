@@ -1080,7 +1080,8 @@ body {
 
 @media (min-width: 1150px) {
   .about {
-    margin-left: 180px; }
+    margin-left: 170px;
+    padding-top: 78px; }
   .about__header {
     font-size: 53px;
     line-height: 57px; }
