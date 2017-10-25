@@ -3,7 +3,7 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   &__fieldset {
@@ -13,7 +13,7 @@
     padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     position: relative;
     overflow: hidden;
   }
@@ -36,6 +36,7 @@
 
   &__name * {
     margin-top: 10px;
+    margin-bottom: 3px;
   }
 
   .form__icon {
@@ -47,8 +48,7 @@
   }
 
   &__additional {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   &__additional-textarea {
@@ -81,7 +81,7 @@
   }
 
   &__submit-btn {
-    margin-top: 30px;
+    margin-top: 25px;
     margin-bottom: 55px;
     font-weight: bold;
   }
@@ -90,15 +90,15 @@
 .form__type-radio,
 .form__color-checkbox {
   padding-left: 60px;
-  padding-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 20px;
+  margin-bottom: 22px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
-    width: 42px;
-    height: 42px;
+    width: 37px;
+    height: 37px;
     box-shadow: 0 0 0 2px black;
     left: 2px;
     top: 10px;
@@ -123,7 +123,7 @@
 }
 
 .form__type-radio--first {
-  margin-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .form__type-radio::before {
