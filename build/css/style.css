@@ -1246,14 +1246,14 @@ body {
 @media (min-width: 768px) {
   .contacts {
     margin-top: 0;
-    padding-top: 85px;
+    padding-top: 80px;
     background-size: 100% 20px; }
     .contacts__header {
       font-size: 43px;
       line-height: 50px;
       width: 100%;
       position: relative;
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
     .contacts__flag {
       width: 55px;
       height: 85px;
@@ -1261,7 +1261,7 @@ body {
       background-repeat: no-repeat;
       background-position: 50% 50%;
       right: 0;
-      top: 0;
+      top: -15px;
       position: absolute; }
   .contacts__spec {
     width: 100%; }
@@ -1274,7 +1274,9 @@ body {
               justify-content: space-between;
       font-size: 17px; }
     .contacts__spec .spec-table__row {
-      min-width: 45%; }
+      min-width: 49%; }
+    .contacts__spec .spec-table__cell:first-child {
+      width: 19%; }
   .button--write-us {
     max-width: 231px;
     margin: 0 auto;
@@ -1319,6 +1321,10 @@ body {
 
 .map {
   margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .map {
+    margin-top: 40px; } }
 
 .catalog {
   margin-top: 10px; }
@@ -1533,14 +1539,14 @@ body {
 @media (min-width: 768px) {
   .contacts {
     margin-top: 0;
-    padding-top: 85px;
+    padding-top: 80px;
     background-size: 100% 20px; }
     .contacts__header {
       font-size: 43px;
       line-height: 50px;
       width: 100%;
       position: relative;
-      margin-bottom: 30px; }
+      margin-bottom: 40px; }
     .contacts__flag {
       width: 55px;
       height: 85px;
@@ -1548,7 +1554,7 @@ body {
       background-repeat: no-repeat;
       background-position: 50% 50%;
       right: 0;
-      top: 0;
+      top: -15px;
       position: absolute; }
   .contacts__spec {
     width: 100%; }
@@ -1561,7 +1567,9 @@ body {
               justify-content: space-between;
       font-size: 17px; }
     .contacts__spec .spec-table__row {
-      min-width: 45%; }
+      min-width: 49%; }
+    .contacts__spec .spec-table__cell:first-child {
+      width: 19%; }
   .button--write-us {
     max-width: 231px;
     margin: 0 auto;

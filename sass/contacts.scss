@@ -57,7 +57,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     margin-top: 0;
-    padding-top: 85px;
+    padding-top: 80px;
     background-size: 100% 20px;
 
     &__header {
@@ -65,7 +65,7 @@
       line-height: $header-line-height-tablet;
       width: 100%;
       position: relative;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     &__flag {
@@ -75,7 +75,7 @@
       background-repeat: no-repeat;
       background-position: 50% 50%;
       right: 0;
-      top: 0;
+      top: -15px;
       position: absolute;
     }
   }
@@ -90,7 +90,11 @@
     }
 
     & .spec-table__row {
-      min-width: 45%;
+      min-width: 49%;
+    }
+
+    & .spec-table__cell:first-child {
+      width: 19%;
     }
   }
 
