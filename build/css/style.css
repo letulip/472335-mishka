@@ -1053,20 +1053,20 @@ body {
     font-size: 43px;
     line-height: 50px; }
   .about__list {
-    max-width: 668px;
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .about__item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 42%;
+        flex-basis: 42%;
     font-size: 20px;
     line-height: 22px;
     margin-top: 103px;
     margin-bottom: 10px;
-    padding-right: 60px; }
+    margin-right: 50px; }
     .about__item--style {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
@@ -1092,14 +1092,14 @@ body {
   .about {
     padding-top: 78px; }
     .about .container {
-      max-width: 700px; }
+      max-width: 750px; }
   .about__header {
     font-size: 53px;
     line-height: 57px; }
-  .about__list {
-    max-width: 700px; }
   .about__item {
-    padding-right: 70px; } }
+    margin-right: 70px;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%; } }
 
 .reviews {
   margin-bottom: 20px; }

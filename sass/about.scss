@@ -50,18 +50,18 @@
   }
 
   .about__list {
-    max-width: $container-width-tablet;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
   .about__item {
-    flex-basis: 50%;
+    flex-basis: 42%;
     font-size: 20px;
     line-height: 22px;
     margin-top: 103px;
     margin-bottom: 10px;
-    padding-right: 60px;
+    margin-right: 50px;
 
     &--style {
       order: 2;
@@ -90,7 +90,7 @@
     padding-top: 78px;
 
     & .container {
-      max-width: 700px;
+      max-width: 750px;
     }
   }
 
@@ -99,11 +99,8 @@
     line-height: $header-line-height-desktop;
   }
 
-  .about__list {
-    max-width: 700px;
-  }
-
   .about__item {
-    padding-right: 70px;
+    margin-right: 70px;
+    flex-basis: 40%;
   }
 }
