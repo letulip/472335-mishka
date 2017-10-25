@@ -1475,11 +1475,12 @@ body {
 
 @media (min-width: 1150px) {
   .catalog {
-    margin-top: 120px; }
+    margin-top: 113px; }
     .catalog-header {
       font-size: 53px;
       line-height: 57px;
-      padding-bottom: 80px; }
+      padding-bottom: 80px;
+      margin-top: 53px; }
     .catalog__list {
       display: -webkit-box;
       display: -ms-flexbox;
