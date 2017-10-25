@@ -1,10 +1,20 @@
 .about {
   padding-top: 40px;
   margin-bottom: 55px;
-  background-image: url(../img/bg-zigzag-line.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-size: 100% 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 20px;
+    left: -130px;
+    top: 0;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: 500px 15px;
+  }
 }
 
 .about__item {
@@ -72,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    margin-left: 170px;
+    padding-left: 170px;
     padding-top: 78px;
   }
 
@@ -83,5 +93,9 @@
 
   .about__list {
     max-width: 700px;
+  }
+
+  .about__item {
+    padding-right: 70px;
   }
 }

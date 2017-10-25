@@ -55,6 +55,7 @@
   list-style: none;
   padding-top: 20px;
   padding-bottom: 20px;
+  display: block;
 
   &:not(:last-child):hover a,
   &:not(:last-child):focus a {
