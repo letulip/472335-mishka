@@ -3,7 +3,7 @@
   position: relative;
 
   & * {
-    padding-top: 20px;
+    padding-top: 13px;
     padding-bottom: 20px;
   }
 
@@ -27,13 +27,15 @@
     font-size: 15px;
     line-height: 24px;
     font-weight: normal;
-    padding-top: 0;
+    padding-top: 5px;
+    padding-bottom: 18px;
   }
 
   &__price {
     font-size: 17px;
     line-height: 24px;
     text-align: center;
+    padding-top: 0;
   }
 
   &__button {

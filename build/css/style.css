@@ -859,7 +859,7 @@ body {
   margin-bottom: 30px;
   position: relative; }
   .featured * {
-    padding-top: 20px;
+    padding-top: 13px;
     padding-bottom: 20px; }
   .featured__header--wrapper {
     padding-bottom: 0; }
@@ -875,11 +875,13 @@ body {
     font-size: 15px;
     line-height: 24px;
     font-weight: normal;
-    padding-top: 0; }
+    padding-top: 5px;
+    padding-bottom: 18px; }
   .featured__price {
     font-size: 17px;
     line-height: 24px;
-    text-align: center; }
+    text-align: center;
+    padding-top: 0; }
   .featured__button {
     max-width: 292px; }
 
@@ -959,9 +961,9 @@ body {
     padding-top: 10px;
     padding-bottom: 10px; }
   .spec-table__cell:first-child {
-    width: 36%; }
+    width: 42%; }
   .spec-table__cell:last-child {
-    width: 63%; }
+    width: 57%; }
 
 @media (min-width: 768px) {
   .spec-table {
