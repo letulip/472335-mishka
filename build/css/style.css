@@ -1022,12 +1022,14 @@ body {
     position: absolute;
     width: 100%;
     height: 20px;
-    left: -130px;
+    left: 0;
     top: 0;
     background-image: url(../img/bg-zigzag-line.svg);
     background-repeat: repeat-x;
     background-position: 0 0;
     background-size: 500px 15px; }
+  .about .container {
+    display: block; }
 
 .about__item {
   list-style: none;
@@ -1063,7 +1065,8 @@ body {
     font-size: 20px;
     line-height: 22px;
     margin-top: 103px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-right: 60px; }
     .about__item--style {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;
@@ -1087,8 +1090,9 @@ body {
 
 @media (min-width: 1150px) {
   .about {
-    padding-left: 170px;
     padding-top: 78px; }
+    .about .container {
+      max-width: 700px; }
   .about__header {
     font-size: 53px;
     line-height: 57px; }
@@ -1317,7 +1321,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 100px;
     position: relative;
@@ -1326,7 +1329,9 @@ body {
     background-size: 100% 25px; }
     .contacts .container {
       max-width: 525px;
-      padding-left: 175px; }
+      min-height: 470px;
+      padding-left: 170px;
+      margin-left: calc(50% - 525px); }
     .contacts__header {
       margin-top: 70px;
       margin-bottom: 0;
@@ -1336,15 +1341,13 @@ body {
     .contacts__flag {
       left: -115px;
       top: -10px; }
-  .map {
-    max-width: 525px; }
   .contacts__spec > tbody {
     display: block;
     margin-bottom: 73px; }
   .button--write-us {
     position: absolute;
-    left: 175px;
-    bottom: 0;
+    left: calc(50% - 351px);
+    bottom: 8px;
     margin-bottom: 0; } }
 
 .map {
@@ -1356,7 +1359,10 @@ body {
 
 @media (min-width: 1150px) {
   .map {
-    margin-top: 0; } }
+    max-width: 525px;
+    margin-top: 0;
+    position: absolute;
+    right: calc(50% - 525px); } }
 
 .catalog {
   margin-top: 10px; }
@@ -1624,7 +1630,6 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 100px;
     position: relative;
@@ -1633,7 +1638,9 @@ body {
     background-size: 100% 25px; }
     .contacts .container {
       max-width: 525px;
-      padding-left: 175px; }
+      min-height: 470px;
+      padding-left: 170px;
+      margin-left: calc(50% - 525px); }
     .contacts__header {
       margin-top: 70px;
       margin-bottom: 0;
@@ -1643,15 +1650,13 @@ body {
     .contacts__flag {
       left: -115px;
       top: -10px; }
-  .map {
-    max-width: 525px; }
   .contacts__spec > tbody {
     display: block;
     margin-bottom: 73px; }
   .button--write-us {
     position: absolute;
-    left: 175px;
-    bottom: 0;
+    left: calc(50% - 351px);
+    bottom: 8px;
     margin-bottom: 0; } }
 
 .video {
@@ -2141,7 +2146,7 @@ body {
 
 @media (min-width: 1150px) {
   .page-footer {
-    padding-top: 55px;
+    padding-top: 45px;
     padding-bottom: 55px; }
     .page-footer .container {
       -webkit-box-pack: justify;

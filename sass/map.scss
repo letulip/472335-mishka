@@ -10,6 +10,9 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    max-width: 525px;
     margin-top: 0;
+    position: absolute;
+    right: calc(50% - 525px)
   }
 }

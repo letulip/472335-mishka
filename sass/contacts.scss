@@ -120,7 +120,6 @@
   .contacts {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1050px;
     margin: 0 auto;
     margin-bottom: 100px;
     position: relative;
@@ -130,7 +129,9 @@
 
     & .container {
       max-width: 525px;
-      padding-left: 175px;
+      min-height: 470px;
+      padding-left: 170px;
+      margin-left: calc(50% - 525px);
     }
 
     &__header {
@@ -147,10 +148,6 @@
     }
   }
 
-  .map {
-    max-width: 525px;
-  }
-
   .contacts__spec > tbody {
     display: block;
     margin-bottom: 73px;
@@ -158,8 +155,8 @@
 
   .button--write-us {
     position: absolute;
-    left: 175px;
-    bottom: 0;
+    left: calc(50% - 351px);
+    bottom: 8px;
     margin-bottom: 0;
   }
 }
