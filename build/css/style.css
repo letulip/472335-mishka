@@ -600,8 +600,8 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-height: 746px;
-    padding-top: 60px;
+    min-height: 760px;
+    padding-top: 80px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;
     background-repeat: no-repeat;
@@ -610,7 +610,7 @@ body {
     background-size: 285% 240%;
     background-repeat: no-repeat;
     background-position: 0 -25px;
-    height: 120px;
+    height: 135px;
     width: 334px;
     -ms-flex-item-align: end;
         align-self: flex-end; }
@@ -624,7 +624,7 @@ body {
       margin-right: calc(50% - 334px); }
   .page-header__content--bg-wrapper:hover,
   .page-header__content--bg-wrapper:focus {
-    min-height: 125px; }
+    min-height: 140px; }
     .page-header__content--bg-wrapper:hover .container,
     .page-header__content--bg-wrapper:focus .container {
       padding-top: 5px; }
@@ -635,7 +635,8 @@ body {
     width: 120px; }
     .page-header__content--interior::after,
     .page-header__content--toy::after {
-      right: -15px; }
+      right: -15px;
+      top: 30px; }
   .page-header__content--toy::after {
     right: -5px; } }
 
@@ -1400,7 +1401,7 @@ body {
 
 @media (min-width: 768px) {
   .catalog {
-    margin-top: 75px; }
+    margin-top: 70px; }
     .catalog-header {
       font-size: 43px;
       line-height: 50px;
@@ -1667,7 +1668,7 @@ body {
       min-height: 455px;
       top: 0; }
     .video__play {
-      top: 215px; }
+      top: 180px; }
     .video .about__item--before {
       top: 480px;
       left: 40px;

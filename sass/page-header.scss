@@ -115,8 +115,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 746px;
-    padding-top: 60px;
+    min-height: 760px;
+    padding-top: 80px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 1150px 746px;
     background-repeat: no-repeat;
@@ -127,7 +127,7 @@
     background-size: 285% 240%;
     background-repeat: no-repeat;
     background-position: 0 -25px;
-    height: 120px;
+    height: 135px;
     width: 334px;
     align-self: flex-end;
 
@@ -148,7 +148,7 @@
 
   .page-header__content--bg-wrapper:hover,
   .page-header__content--bg-wrapper:focus {
-    min-height: 125px;
+    min-height: 140px;
 
     & .container {
       padding-top: 5px;
@@ -163,6 +163,7 @@
 
     &::after {
       right: -15px;
+      top: 30px;
     }
   }
 
