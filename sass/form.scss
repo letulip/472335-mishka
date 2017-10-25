@@ -146,7 +146,7 @@
     &__desc {
       font-size: 17px;
       line-height: 30px;
-      margin-bottom: 50px;
+      margin-bottom: 10px;
       margin-top: 60px;
     }
 
@@ -162,6 +162,20 @@
       padding-bottom: 40px;
     }
 
+    &__fieldset--tel {
+      padding-top: 55px;
+      padding-bottom: 10px;
+    }
+
+    &__fieldset--email {
+      padding-top: 13px;
+      padding-bottom: 50px;
+    }
+
+    &__fieldset--email .form__legend {
+      top: 23px;
+    }
+
     &__fieldset:nth-child(3),
     &__fieldset:nth-child(5),
     &__fieldset:nth-child(6) {
@@ -171,16 +185,25 @@
     &__legend {
       position: absolute;
       font-size: 17px;
-      top: 60px;
+      top: 65px;
     }
 
     &__legend::after {
       display: none;
     }
 
+    &__name * {
+      margin-top: 20px;
+    }
+
+    &__name-label {
+      padding-right: 25px;
+    }
+
     &__additional {
       width: 100%;
       padding-left: 167px;
+      margin-top: 5px;
     }
 
     &__additional-textarea {
@@ -197,7 +220,7 @@
     &__color-checkbox {
       padding-left: 80px;
       padding-top: 25px;
-      margin-bottom: 25px;
+      margin-bottom: 28px;
     }
 
     &__type-radio::before,
@@ -219,9 +242,8 @@
       background-color: #f1f1f1;
     }
 
-    &__tel::after,
-    &__email::after {
-      top: 10px;
+    & .form__icon {
+      right: 20px;
     }
 
     &__submit {
@@ -231,15 +253,18 @@
     &__submit-btn {
       max-width: 230px;
       margin-right: auto;
+      margin-top: 5px
     }
 
     &__necessary {
       order: 1;
-      max-width: 300px;
+      max-width: 305px;
       font-weight: normal;
       align-self: center;
-      margin-top: 30px;
+      margin-top: 5px;
       margin-bottom: 55px;
+      font-size: 17px;
+      line-height: 18px;
     }
   }
 
