@@ -888,6 +888,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -1019,7 +1020,7 @@ body {
   .about::before {
     content: "";
     position: absolute;
-    width: 200%;
+    width: 100%;
     height: 20px;
     left: -130px;
     top: 0;
@@ -1226,9 +1227,9 @@ body {
   .contacts::before {
     content: "";
     position: absolute;
-    width: 200%;
+    width: 100%;
     height: 20px;
-    left: -130px;
+    left: 0;
     top: 0;
     background-image: url(../img/bg-zigzag-line.svg);
     background-repeat: repeat-x;
@@ -1533,9 +1534,9 @@ body {
   .contacts::before {
     content: "";
     position: absolute;
-    width: 200%;
+    width: 100%;
     height: 20px;
-    left: -130px;
+    left: 0;
     top: 0;
     background-image: url(../img/bg-zigzag-line.svg);
     background-repeat: repeat-x;

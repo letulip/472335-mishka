@@ -46,6 +46,7 @@
 @media (min-width: $tablet-width) {
   .featured {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
     max-width: $container-width-tablet;
