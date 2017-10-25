@@ -63,8 +63,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 90px;
+    padding-bottom: 60px;
     position: relative;
     max-width: $container-width-tablet;
 
@@ -89,7 +89,7 @@
     &__btn-write {
       order: 0;
       max-width: 175px;
-      margin-bottom: 60px;
+      margin-bottom: 47px;
       font-size: 17px;
       line-height: 20px;
     }
@@ -107,6 +107,7 @@
     &__controls {
       order: 3;
       max-width: 167px;
+      margin-top: 0;
     }
 
     &__btn {

@@ -1137,8 +1137,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 90px;
+    padding-bottom: 60px;
     position: relative;
     max-width: 668px; }
     .reviews::before {
@@ -1162,7 +1162,7 @@ body {
           -ms-flex-order: 0;
               order: 0;
       max-width: 175px;
-      margin-bottom: 60px;
+      margin-bottom: 47px;
       font-size: 17px;
       line-height: 20px; }
     .reviews__text {
@@ -1179,7 +1179,8 @@ body {
       -webkit-box-ordinal-group: 4;
           -ms-flex-order: 3;
               order: 3;
-      max-width: 167px; }
+      max-width: 167px;
+      margin-top: 0; }
     .reviews__btn {
       border: none; }
     .reviews__btn--wrapper {
