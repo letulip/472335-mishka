@@ -23,14 +23,14 @@
     font-size: 17px;
     line-height: 24px;
     padding-left: 90px;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 23px;
+    margin-bottom: 25px;
   }
 
   &__play {
     position: absolute;
     left: calc(50% - 52px);
-    top: 105px;
+    top: 130px;
     min-height: 80px;
     min-width: 105px;
     background-image: url("/img/icon-play.svg");
@@ -55,7 +55,7 @@
   &__file {
     width: 260px;
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   &__desc {
@@ -64,7 +64,7 @@
     font-weight: normal;
     margin-left: 35px;
     width: 190px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   &__order {

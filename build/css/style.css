@@ -1610,12 +1610,12 @@ body {
     font-size: 17px;
     line-height: 24px;
     padding-left: 90px;
-    padding-top: 20px;
-    margin-bottom: 20px; }
+    padding-top: 23px;
+    margin-bottom: 25px; }
   .video__play {
     position: absolute;
     left: calc(50% - 52px);
-    top: 105px;
+    top: 130px;
     min-height: 80px;
     min-width: 105px;
     background-image: url("/img/icon-play.svg");
@@ -1635,14 +1635,14 @@ body {
   .video__file {
     width: 260px;
     height: 150px;
-    margin-bottom: 30px; }
+    margin-bottom: 23px; }
   .video__desc {
     font-size: 13px;
     line-height: 24px;
     font-weight: normal;
     margin-left: 35px;
     width: 190px;
-    margin-bottom: 20px; }
+    margin-bottom: 23px; }
   .video__order {
     width: 190px;
     margin: 0 auto;
