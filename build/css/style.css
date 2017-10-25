@@ -1198,12 +1198,18 @@ body {
 @media (min-width: 1150px) {
   .reviews {
     padding-left: 175px;
+    margin-bottom: 65px;
     max-width: 1050px; }
     .reviews::before {
-      left: 0; }
+      left: 0;
+      top: 15px; }
     .reviews__header {
       font-size: 53px;
-      line-height: 57px; } }
+      line-height: 57px;
+      margin-bottom: 45px; }
+    .reviews__text {
+      margin-bottom: 37px;
+      padding-right: 100px; } }
 
 .contacts {
   margin-top: 30px;

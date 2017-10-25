@@ -131,15 +131,23 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 175px;
+    margin-bottom: 65px;
     max-width: $container-width-desktop;
 
     &::before {
       left: 0;
+      top: 15px;
     }
 
     &__header {
       font-size: $header-font-size-desktop;
       line-height: $header-line-height-desktop;
+      margin-bottom: 45px;
+    }
+
+    &__text {
+      margin-bottom: 37px;
+      padding-right: 100px;
     }
   }
 }
