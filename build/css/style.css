@@ -856,7 +856,7 @@ body {
     margin-top: 40px; } }
 
 .featured {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   position: relative; }
   .featured * {
     padding-top: 13px;
@@ -1003,21 +1003,25 @@ body {
     color: #7c7c7c; }
 
 .about {
-  margin-top: 60px;
-  margin-bottom: 30px; }
+  padding-top: 40px;
+  margin-bottom: 30px;
+  background-image: url(../img/bg-zigzag-line.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% 10px; }
 
 .about__item {
   list-style: none;
   color: #000000;
   font-size: 17px;
   line-height: 20px;
-  margin-top: 80px;
+  margin-top: 83px;
   position: relative; }
   .about__item--before {
     position: absolute;
     width: 55px;
-    top: -50px;
-    left: 0;
+    top: -55px;
+    left: -5px;
     fill: #63d1bb; }
 
 @media (min-width: 768px) {
