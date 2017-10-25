@@ -916,6 +916,10 @@ body {
       padding-bottom: 5px; }
     .featured__content * {
       width: 300px; }
+    .featured__img {
+      width: 335px;
+      height: 420px;
+      padding-top: 0; }
     .featured__description {
       margin-right: auto;
       margin-bottom: 25px;
@@ -923,7 +927,9 @@ body {
       line-height: 30px; }
     .featured__price {
       margin-top: 25px;
-      margin-bottom: 5px; } }
+      margin-bottom: 15px;
+      padding-top: 25px;
+      font-size: 21px; } }
 
 @media (min-width: 1150px) {
   .featured {
@@ -967,7 +973,9 @@ body {
 
 @media (min-width: 768px) {
   .spec-table {
-    width: 292px; } }
+    width: 292px; }
+    .spec-table__cell:first-child {
+      width: 30%; } }
 
 .modal {
   z-index: 11;

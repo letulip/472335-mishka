@@ -24,5 +24,9 @@
 @media (min-width: $tablet-width) {
   .spec-table {
     width: 292px;
+
+    &__cell:first-child {
+      width: 30%;
+    }
   }
 }

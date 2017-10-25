@@ -72,6 +72,12 @@
       width: 300px;
     }
 
+    &__img {
+      width: 335px;
+      height: 420px;
+      padding-top: 0;
+    }
+
     &__description {
       margin-right: auto;
       margin-bottom: 25px;
@@ -81,7 +87,9 @@
 
     &__price {
       margin-top: 25px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
+      padding-top: 25px;
+      font-size: 21px;
     }
   }
 }
