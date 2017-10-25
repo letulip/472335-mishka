@@ -1004,7 +1004,7 @@ body {
 
 .about {
   padding-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 55px;
   background-image: url(../img/bg-zigzag-line.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1073,14 +1073,14 @@ body {
     max-width: 700px; } }
 
 .reviews {
-  margin-bottom: 38px; }
+  margin-bottom: 20px; }
   .reviews__header {
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
   .reviews__text {
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 38px; }
+    margin-bottom: 25px; }
   .reviews__author--details {
     font-size: 17px;
     line-height: 30px; }
@@ -1093,8 +1093,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 38px;
-    margin-bottom: 38px; }
+    margin-top: 30px;
+    margin-bottom: 35px; }
   .reviews__btn {
     width: 50%;
     font-size: 0;
@@ -1189,7 +1189,7 @@ body {
       line-height: 57px; } }
 
 .contacts {
-  margin-top: 38px;
+  margin-top: 30px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1199,7 +1199,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .contacts__header {
-    margin-bottom: 38px; }
+    margin-bottom: 30px; }
   .contacts__spec .spec-table__cell {
     border: none;
     width: 75px; }
@@ -1474,7 +1474,7 @@ body {
       margin-left: auto; } }
 
 .contacts {
-  margin-top: 38px;
+  margin-top: 30px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1484,7 +1484,7 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .contacts__header {
-    margin-bottom: 38px; }
+    margin-bottom: 30px; }
   .contacts__spec .spec-table__cell {
     border: none;
     width: 75px; }
