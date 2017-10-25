@@ -896,7 +896,8 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 668px; }
+    max-width: 668px;
+    margin-bottom: 35px; }
     .featured__header--wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1016,7 +1017,7 @@ body {
   background-image: url(../img/bg-zigzag-line.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 100% 10px; }
+  background-size: 100% 15px; }
 
 .about__item {
   list-style: none;
@@ -1034,7 +1035,8 @@ body {
 
 @media (min-width: 768px) {
   .about {
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    padding-top: 60px; }
   .about__header {
     font-size: 43px;
     line-height: 50px; }
@@ -1049,7 +1051,9 @@ body {
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
     font-size: 20px;
-    line-height: 22px; }
+    line-height: 22px;
+    margin-top: 103px;
+    margin-bottom: 10px; }
     .about__item--style {
       -webkit-box-ordinal-group: 3;
           -ms-flex-order: 2;

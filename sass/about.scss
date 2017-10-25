@@ -4,7 +4,7 @@
   background-image: url(../img/bg-zigzag-line.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-size: 100% 10px;
+  background-size: 100% 15px;
 }
 
 .about__item {
@@ -27,6 +27,7 @@
 @media (min-width: $tablet-width) {
   .about {
     margin-bottom: 60px;
+    padding-top: 60px;
   }
 
   .about__header {
@@ -44,6 +45,8 @@
     flex-basis: 50%;
     font-size: 20px;
     line-height: 22px;
+    margin-top: 103px;
+    margin-bottom: 10px;
 
     &--style {
       order: 2;
