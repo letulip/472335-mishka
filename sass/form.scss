@@ -280,6 +280,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .container-catalog {
+    margin-top: 105px;
+  }
+
   .form {
     &__fieldset {
       width: 1050px;
@@ -287,13 +291,26 @@
       padding-right: 175px;
     }
 
-    &__fieldset-color {
+    &__color-checkbox {
+      min-width: 265px;
+    }
+
+    &__fieldset--color {
       padding-right: 0;
     }
 
+    &__fieldset--tel {
+      padding-top: 36px;
+    }
+
+    &__name * {
+      margin-top: 5px;
+      margin-bottom: 23px;
+    }
+
     &__desc {
-      padding-left: 167px;
-      padding-right: 167px;
+      padding-left: 175px;
+      padding-right: 175px;
     }
 
     &__tel,
@@ -316,6 +333,10 @@
 
     &__necessary {
       margin-right: 172px;
+    }
+
+    & .form__icon {
+      right: 0;
     }
   }
 }

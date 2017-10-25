@@ -1496,7 +1496,7 @@ body {
           -ms-flex-direction: column;
               flex-direction: column; }
     .catalog__item-wrapper {
-      min-height: 140px;
+      min-height: 200px;
       width: 315px;
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
@@ -1808,12 +1808,12 @@ body {
 @media (min-width: 1150px) {
   .field-wrapper,
   .form__additional--textarea {
-    margin-left: 102px; }
+    margin-left: 110px; }
   .field-wrapper__input {
-    min-width: 582px;
+    min-width: 573px;
     padding-left: 20px; }
   .field-wrapper__input--name {
-    width: 632px; } }
+    width: 626px; } }
 
 .form__desc {
   font-weight: normal;
@@ -2033,15 +2033,24 @@ body {
       margin-right: 25px; } }
 
 @media (min-width: 1150px) {
+  .container-catalog {
+    margin-top: 105px; }
   .form__fieldset {
     width: 1050px;
     padding-left: 65px;
     padding-right: 175px; }
-  .form__fieldset-color {
+  .form__color-checkbox {
+    min-width: 265px; }
+  .form__fieldset--color {
     padding-right: 0; }
+  .form__fieldset--tel {
+    padding-top: 36px; }
+  .form__name * {
+    margin-top: 5px;
+    margin-bottom: 23px; }
   .form__desc {
-    padding-left: 167px;
-    padding-right: 167px; }
+    padding-left: 175px;
+    padding-right: 175px; }
   .form__tel, .form__email {
     width: 87%; }
   .form__tel::after, .form__email::after {
@@ -2051,7 +2060,9 @@ body {
   .form__submit-btn {
     margin-left: 172px; }
   .form__necessary {
-    margin-right: 172px; } }
+    margin-right: 172px; }
+  .form .form__icon {
+    right: 0; } }
 
 .page-footer {
   padding-top: 20px;
