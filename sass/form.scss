@@ -124,7 +124,6 @@
 }
 
 .form__type-radio {
-
   &::before {
     border: 10px solid white;
     border-radius: 50%;
@@ -258,7 +257,7 @@
     &__submit-btn {
       max-width: 230px;
       margin-right: auto;
-      margin-top: 5px
+      margin-top: 5px;
     }
 
     &__necessary {
