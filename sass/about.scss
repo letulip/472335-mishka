@@ -1,6 +1,26 @@
 .about {
-  margin-top: 60px;
-  margin-bottom: 30px;
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-top: 40px;
+  margin-bottom: 55px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0;
+    top: 0;
+    background-image: url(../img/bg-zigzag-line.svg);
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    background-size: 500px 15px;
+  }
+
+  & .container {
+    display: block;
+  }
 }
 
 .about__item {
@@ -8,39 +28,43 @@
   color: #000000;
   font-size: 17px;
   line-height: 20px;
-  margin-top: 80px;
+  margin-top: 83px;
   position: relative;
 
   &--before {
     position: absolute;
     width: 55px;
-    top: -50px;
-    left: 0;
-    fill: var(--main-color);
+    top: -55px;
+    left: -5px;
+    fill: $main-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .about {
+    width: $tablet-width;
     margin-bottom: 60px;
+    padding-top: 60px;
   }
 
   .about__header {
-    font-size: var(--header-font-size-tablet);
-    line-height: var(--header-line-height-tablet);
+    font-size: $header-font-size-tablet;
+    line-height: $header-line-height-tablet;
   }
 
   .about__list {
-    width: 668px;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
 
   .about__item {
-    flex-basis: 50%;
-    padding-right: 35px;
+    flex-basis: 42%;
     font-size: 20px;
     line-height: 22px;
+    margin-top: 103px;
+    margin-bottom: 10px;
+    margin-right: 50px;
 
     &--style {
       order: 2;
@@ -66,15 +90,21 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    margin-left: 180px;
+    width: $desktop-width;
+    padding-top: 78px;
+
+    & .container {
+      max-width: 700px;
+    }
   }
 
   .about__header {
-    font-size: var(--header-font-size-desktop);
-    line-height: var(--header-line-height-desktop);
+    font-size: $header-font-size-desktop;
+    line-height: $header-line-height-desktop;
   }
 
-  .about__list {
-    width: 700px;
+  .about__item {
+    margin-right: 70px;
+    flex-basis: 40%;
   }
 }

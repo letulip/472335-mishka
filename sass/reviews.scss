@@ -1,23 +1,23 @@
 .reviews {
-  margin-bottom: var(--main-margin-bottom-mobile);
+  margin-bottom: 20px;
 
   &__header {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   &__text {
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: var(--main-margin-bottom-mobile);
+    margin-bottom: 25px;
   }
 
-  &__author {
+  &__author--details {
     font-size: 17px;
     line-height: 30px;
   }
 
-  &__author-email {
+  &__author--email {
     font-weight: normal;
     font-size: 17px;
     line-height: 30px;
@@ -26,8 +26,8 @@
   &__controls {
     width: 100%;
     display: flex;
-    margin-top: var(--main-margin-bottom-mobile);
-    margin-bottom: var(--main-margin-bottom-mobile);
+    margin-top: 30px;
+    margin-bottom: 35px;
   }
 
   &__btn {
@@ -63,9 +63,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 70px;
-    padding-bottom: 40px;
+    padding-top: 90px;
+    padding-bottom: 60px;
     position: relative;
+    max-width: $container-width-tablet;
 
     &::before {
       content: "";
@@ -80,14 +81,15 @@
     }
 
     &__header {
-      font-size: var(--header-font-size-tablet);
-      line-height: var(--header-line-height-tablet);
+      font-size: $header-font-size-tablet;
+      line-height: $header-line-height-tablet;
+      order: -1;
     }
 
     &__btn-write {
       order: 0;
       max-width: 175px;
-      margin-bottom: 60px;
+      margin-bottom: 47px;
       font-size: 17px;
       line-height: 20px;
     }
@@ -98,13 +100,14 @@
       font-size: 17px;
     }
 
-    &__author--details {
+    &__author--wrapper {
       order: 2;
     }
 
     &__controls {
       order: 3;
       max-width: 167px;
+      margin-top: 0;
     }
 
     &__btn {
@@ -128,14 +131,23 @@
 @media (min-width: $desktop-width) {
   .reviews {
     padding-left: 175px;
+    margin-bottom: 65px;
+    max-width: $container-width-desktop;
 
     &::before {
       left: 0;
+      top: 15px;
     }
 
     &__header {
-      font-size: var(--header-font-size-desktop);
-      line-height: var(--header-line-height-desktop);
+      font-size: $header-font-size-desktop;
+      line-height: $header-line-height-desktop;
+      margin-bottom: 45px;
+    }
+
+    &__text {
+      margin-bottom: 37px;
+      padding-right: 100px;
     }
   }
 }

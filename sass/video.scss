@@ -4,6 +4,12 @@
   margin-bottom: 60px;
   border: 1px solid #ececec;
 
+  & .about__item--before {
+    top: 25px;
+    left: 30px;
+    width: 35px;
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0 0 10px 1px #eeeeee;
@@ -16,17 +22,15 @@
   &__header {
     font-size: 17px;
     line-height: 24px;
-    padding-left: 60px;
-    background-image: url("/img/icon-video.svg");
-    background-repeat: no-repeat;
-    background-position: 15px 50%;
-    margin-bottom: 20px;
+    padding-left: 90px;
+    padding-top: 23px;
+    margin-bottom: 25px;
   }
 
   &__play {
     position: absolute;
     left: calc(50% - 52px);
-    top: 105px;
+    top: 130px;
     min-height: 80px;
     min-width: 105px;
     background-image: url("/img/icon-play.svg");
@@ -51,7 +55,7 @@
   &__file {
     width: 260px;
     height: 150px;
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 
   &__desc {
@@ -60,7 +64,7 @@
     font-weight: normal;
     margin-left: 35px;
     width: 190px;
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   &__order {
@@ -76,15 +80,25 @@
     flex-direction: column;
     margin-bottom: 65px;
 
-    &__file {
+    & picture {
       order: -1;
+      height: 455px;
+    }
+
+    &__file {
       width: 100%;
       min-height: 455px;
       top: 0;
     }
 
     &__play {
-      top: 215px;
+      top: 180px;
+    }
+
+    & .about__item--before {
+      top: 480px;
+      left: 40px;
+      width: 35px;
     }
 
     &__header {
@@ -115,15 +129,22 @@
     padding-left: 680px;
     margin-bottom: 100px;
 
-    &__file {
+    & .about__item--before {
+      top: 40px;
+      left: 760px;
+    }
+
+    & picture {
       max-width: 680px;
       max-height: 455px;
       position: absolute;
+      top: 0;
       left: 0;
     }
 
     &__play {
-      left: 30%;
+      left: 28%;
+      top: calc(50% - 40px);
     }
 
     &__header {

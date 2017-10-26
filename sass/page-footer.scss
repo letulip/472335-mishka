@@ -1,7 +1,7 @@
 .page-footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: var(--main-bg-color);
+  background-color: $main-bg-color;
 
   & .container {
     display: flex;
@@ -21,7 +21,7 @@
   &__logo:hover,
   &__logo:focus,
   &__logo:active {
-    fill: var(--main-color-hover);
+    fill: $main-color-hover;
   }
 
   &__logo:active,
@@ -55,13 +55,13 @@
   .page-footer__copyright:hover .academy-link--icon,
   .page-footer__copyright:focus .academy-link--icon,
   .page-footer__copyright:active .academy-link--icon {
-    fill: var(--main-color-hover);
+    fill: $main-color-hover;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 55px;
+    padding-top: 45px;
     padding-bottom: 55px;
 
     & .container {
@@ -71,6 +71,10 @@
 
     &__logo {
       margin-right: 345px;
+    }
+
+    &__copyright {
+      padding-top: 10px;
     }
   }
 }

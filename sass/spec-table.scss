@@ -13,16 +13,20 @@
   }
 
   &__cell:first-child {
-    width: 36%;
+    width: 42%;
   }
 
   &__cell:last-child {
-    width: 63%;
+    width: 57%;
   }
 }
 
 @media (min-width: $tablet-width) {
   .spec-table {
     width: 292px;
+
+    &__cell:first-child {
+      width: 30%;
+    }
   }
 }

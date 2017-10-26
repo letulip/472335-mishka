@@ -1,32 +1,38 @@
-.page-header .container {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.page-header {
+  background-color: #f9f9f9;
+
+  & .container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.index-header--wrapper {
-  background-color: #f9f9f9;
+.page-header__content--wrapper {
   background-image: url("../img/hero-mobile@1x.jpg");
-  background-size: 575px 373px;
+  background-size: 565px 373px;
   background-position: 50% -10%;
   background-repeat: no-repeat;
-  border-top: 1px solid #dddddd;
 }
 
-.index-header {
+.page-header__heading {
   display: flex;
   text-align: center;
-  align-items: center;
-  min-height: 285px;
+  min-height: 280px;
   width: 270px;
   margin: 0 auto;
+  padding-top: 70px;
 }
 
 .page-header__content--bg-wrapper {
   width: 100%;
-  background-color: var(--main-color);
+  background-color: $main-color;
 
   & a {
     text-decoration: none;
+  }
+
+  &:active .container {
+    opacity: 0.3;
   }
 }
 
@@ -39,7 +45,7 @@
   color: #ffffff;
   width: 40%;
   display: block;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
   font-size: 19px;
   line-height: 24px;
@@ -73,7 +79,7 @@
 
 @media (min-resolution: $retina-dppx),
   (min-resolution: $retina-dpi) {
-  .index-header--wrapper {
+  .page-header__content--wrapper {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
 }
@@ -82,34 +88,46 @@
   .page-header {
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 30px;
+      bottom: 0;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: auto 30px;
+      background-repeat: repeat-x;
+      z-index: 1;
+    }
   }
 
-  .index-header {
-    width: 668px;
+  .page-header__heading {
+    width: 650px;
+    margin: 0;
     margin-bottom: auto;
-    font-size: var(--header-font-size-tablet);
-    line-height: var(--header-line-height-tablet);
+    font-size: $header-font-size-tablet;
+    line-height: $header-line-height-tablet;
   }
 
-  .index-header--wrapper {
+  .page-header__content--wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 746px;
-    margin-top: 90px;
-    padding-top: 60px;
-    background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-tablet@1x.jpg");
-    background-size: auto 30px, 1150px 746px;
-    background-repeat: repeat-x, no-repeat;
-    background-position: 0 102%, 50%;
+    min-height: 760px;
+    padding-top: 80px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 120% 746px;
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 
   .page-header__content--bg-wrapper {
-    background-image: url("../img/bg-zigzag-fill.svg");
     background-size: 285% 240%;
     background-repeat: no-repeat;
     background-position: 0 -25px;
-    height: 120px;
+    height: 135px;
     width: 334px;
     align-self: flex-end;
 
@@ -130,7 +148,7 @@
 
   .page-header__content--bg-wrapper:hover,
   .page-header__content--bg-wrapper:focus {
-    min-height: 125px;
+    min-height: 140px;
 
     & .container {
       padding-top: 5px;
@@ -145,6 +163,7 @@
 
     &::after {
       right: -15px;
+      top: 30px;
     }
   }
 
@@ -154,25 +173,24 @@
 
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
-    .index-header--wrapper {
-      background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-tablet@2x.jpg");
+    .page-header__content--wrapper {
+      background-image: url("../img/hero-tablet@2x.jpg");
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .index-header {
+  .page-header__heading {
     width: 700px;
-    margin: 0 auto;
-    font-size: var(--header-font-size-desktop);
-    line-height: var(--header-line-height-desktop);
+    font-size: $header-font-size-desktop;
+    line-height: $header-line-height-desktop;
   }
 
-  .index-header--wrapper {
-    background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-desktop@1x.jpg");
-    background-size: auto 44px, 1150px 746px;
-    background-repeat: repeat-x, no-repeat;
-    background-position: 0 103%, 50%;
+  .page-header__content--wrapper {
+    width: 1050px;
+    margin: 0 auto;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position: 50% 0%;
   }
 
   .page-header__content--wrapper {
@@ -197,8 +215,8 @@
 
   @media (min-resolution: $retina-dppx),
     (min-resolution: $retina-dpi) {
-    .index-header--wrapper {
-      background-image: url("../img/bg-zigzag-fill.svg"), url("../img/hero-desktop@2x.jpg");
+    .page-header__content--wrapper {
+      background-image: url("../img/hero-desktop@2x.jpg");
     }
   }
 }

@@ -23,7 +23,7 @@
   &__item--icon:hover,
   &__item--icon:focus,
   &__item--icon:active {
-    fill: var(--main-color);
+    fill: $main-color;
   }
 
   &__item--icon:active {
@@ -35,5 +35,11 @@
   .social {
     padding-bottom: 0;
     border-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-top: 10px;
   }
 }
