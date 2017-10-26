@@ -584,7 +584,7 @@ body {
       background-repeat: repeat-x;
       z-index: 1; }
   .page-header__heading {
-    width: 668px;
+    width: 650px;
     margin: 0;
     margin-bottom: auto;
     font-size: 43px;
@@ -601,7 +601,7 @@ body {
     min-height: 760px;
     padding-top: 80px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: 1150px 746px;
+    background-size: 120% 746px;
     background-repeat: no-repeat;
     background-position: 50%; }
   .page-header__content--bg-wrapper {
@@ -651,9 +651,7 @@ body {
     width: 1050px;
     margin: 0 auto;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-size: 1150px 746px;
-    background-repeat: no-repeat;
-    background-position: 50%; }
+    background-position: 50% 0%; }
   .page-header__content--wrapper {
     width: 1050px; }
   .page-header__content--bg-wrapper {
@@ -775,7 +773,8 @@ body {
     display: flex; }
   .main-nav__item {
     -ms-flex-item-align: center;
-        align-self: center; }
+        align-self: center;
+    padding-top: 19px; }
     .main-nav__item--logo {
       margin: 0;
       width: 300px;
@@ -814,15 +813,19 @@ body {
     left: calc(50% - 525px); }
   .main-nav__link--tablet {
     font-size: 17px; }
-  .main-nav__link--desktop {
+  .main-nav__link--desktop,
+  .free-shipping {
     font-size: 15px; }
   .main-nav__item {
     -ms-flex-item-align: center;
-        align-self: center; }
+        align-self: center;
+    padding-top: 15px; }
     .main-nav__item--logo {
       text-align: center;
       padding-top: 5px;
       padding-bottom: 2px; }
+    .main-nav__item--search, .main-nav__item--cart {
+      padding-top: 30px; }
     .main-nav__item--catalog, .main-nav__item--form {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
@@ -1014,6 +1017,8 @@ body {
     color: #7c7c7c; }
 
 .about {
+  width: 320px;
+  margin: 0 auto;
   padding-top: 40px;
   margin-bottom: 55px;
   position: relative; }
@@ -1047,6 +1052,7 @@ body {
 
 @media (min-width: 768px) {
   .about {
+    width: 768px;
     margin-bottom: 60px;
     padding-top: 60px; }
   .about__header {
@@ -1090,9 +1096,10 @@ body {
 
 @media (min-width: 1150px) {
   .about {
+    width: 1150px;
     padding-top: 78px; }
     .about .container {
-      max-width: 750px; }
+      max-width: 700px; }
   .about__header {
     font-size: 53px;
     line-height: 57px; }
@@ -1351,7 +1358,8 @@ body {
     margin-bottom: 0; } }
 
 .map {
-  margin-top: 30px; }
+  margin-top: 30px;
+  border: none; }
 
 @media (min-width: 768px) {
   .map {

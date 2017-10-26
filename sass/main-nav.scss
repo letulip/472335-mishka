@@ -134,6 +134,7 @@
 
   .main-nav__item {
     align-self: center;
+    padding-top: 19px;
 
     &--logo {
       margin: 0;
@@ -188,17 +189,26 @@
     font-size: 17px;
   }
 
-  .main-nav__link--desktop {
+  .main-nav__link--desktop,
+  .free-shipping {
     font-size: 15px;
   }
 
+
+
   .main-nav__item {
     align-self: center;
+    padding-top: 15px;
 
     &--logo {
       text-align: center;
       padding-top: 5px;
       padding-bottom: 2px;
+    }
+
+    &--search,
+    &--cart {
+      padding-top: 30px;
     }
 
     &--catalog,

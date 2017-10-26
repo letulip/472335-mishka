@@ -104,7 +104,7 @@
   }
 
   .page-header__heading {
-    width: 668px;
+    width: 650px;
     margin: 0;
     margin-bottom: auto;
     font-size: $header-font-size-tablet;
@@ -118,7 +118,7 @@
     min-height: 760px;
     padding-top: 80px;
     background-image: url("../img/hero-tablet@1x.jpg");
-    background-size: 1150px 746px;
+    background-size: 120% 746px;
     background-repeat: no-repeat;
     background-position: 50%;
   }
@@ -190,9 +190,7 @@
     width: 1050px;
     margin: 0 auto;
     background-image: url("../img/hero-desktop@1x.jpg");
-    background-size: 1150px 746px;
-    background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 50% 0%;
   }
 
   .page-header__content--wrapper {
