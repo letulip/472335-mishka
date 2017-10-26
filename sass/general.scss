@@ -1,36 +1,24 @@
-:root {
-  --main-color: #63d1bb;
-  --main-color-hover: #46c1ae;
-  --main-bg-color: #f4f4f4;
-  --header-font-size-tablet: 43px;
-  --header-line-height-tablet: 50px;
-  --header-font-size-desktop: 53px;
-  --header-line-height-desktop: 57px;
-  --main-margin-bottom-mobile: 38px;
-  --min-width-tablet: 768px;
-  --min-width-desktop: 1150px;
-}
-
 html {
   box-sizing: border-box;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensans.woff");
-  src: url("../fonts/opensans.woff") format ("woff");
-  src: url("../fonts/opensans.woff2") format ("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensans.woff2") format ("woff2"),
+  url ("../fonts/opensans.woff") format ("woff");
+
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../fonts/opensansbold.woff");
-  src: url("../fonts/opensansbold.woff") format ("woff");
-  src: url("../fonts/opensansbold.woff2") format ("woff2");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format ("woff2"),
+  url ("../fonts/opensansbold.woff") format ("woff");
 }
 
 body {
@@ -76,13 +64,13 @@ body {
   &--icon {
     width: 30px;
     height: 40px;
-    fill: var(--main-color);
+    fill: $main-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
+    width: $container-width-tablet;
   }
 
   .logo {
@@ -93,7 +81,7 @@ body {
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1050px;
+    width: $container-width-desktop;
   }
 
   .logo {

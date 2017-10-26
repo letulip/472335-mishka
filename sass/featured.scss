@@ -1,9 +1,9 @@
 .featured {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   position: relative;
 
   & * {
-    padding-top: 20px;
+    padding-top: 13px;
     padding-bottom: 20px;
   }
 
@@ -11,14 +11,14 @@
     padding-bottom: 0;
   }
 
-  &__header {
+  &__header--heading {
     padding-bottom: 5px;
   }
 
   &__sub-header {
     font-size: 17px;
     line-height: 20px;
-    color: var(--main-color);
+    color: $main-color;
     text-transform: uppercase;
     padding-bottom: 0;
   }
@@ -27,13 +27,15 @@
     font-size: 15px;
     line-height: 24px;
     font-weight: normal;
-    padding-top: 0;
+    padding-top: 5px;
+    padding-bottom: 18px;
   }
 
   &__price {
     font-size: 17px;
     line-height: 24px;
     text-align: center;
+    padding-top: 0;
   }
 
   &__button {
@@ -44,8 +46,11 @@
 @media (min-width: $tablet-width) {
   .featured {
     display: flex;
+    width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: $container-width-tablet;
+    margin-bottom: 35px;
 
     &__header--wrapper {
       display: flex;
@@ -53,9 +58,9 @@
       margin-bottom: 25px;
     }
 
-    &__header {
-      font-size: var(--header-font-size-tablet);
-      line-height: var(--header-line-height-tablet);
+    &__header--heading {
+      font-size: $header-font-size-tablet;
+      line-height: $header-line-height-tablet;
     }
 
     &__sub-header {
@@ -65,8 +70,14 @@
       padding-bottom: 5px;
     }
 
-    &--wrapper * {
+    &__content * {
       width: 300px;
+    }
+
+    &__img {
+      width: 335px;
+      height: 420px;
+      padding-top: 0;
     }
 
     &__description {
@@ -78,19 +89,23 @@
 
     &__price {
       margin-top: 25px;
-      margin-bottom: 5px;
+      margin-bottom: 15px;
+      padding-top: 25px;
+      font-size: 21px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .featured {
-    padding-top: 55px;
+    margin-bottom: 60px;
+    padding-top: 80px;
+    max-width: $container-width-desktop;
 
-    &__header {
+    &__header--heading {
       order: 1;
-      font-size: var(--header-font-size-desktop);
-      line-height: var(--header-line-height-desktop);
+      font-size: $header-font-size-desktop;
+      line-height: $header-line-height-desktop;
       margin-right: auto;
     }
 
@@ -99,18 +114,22 @@
       margin-right: 25px;
     }
 
-    &--wrapper {
+    &__content {
       margin-left: 175px;
     }
 
+    &__description {
+      margin-bottom: 30px;
+    }
+
     &__price {
-      margin-top: 65px;
+      margin-top: 80px;
     }
 
     &__img {
       width: 525px;
-      height: 625px;
-      top: 0;
+      height: 655px;
+      top: 15px;
       z-index: -1;
     }
   }
