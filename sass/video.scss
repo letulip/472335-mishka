@@ -14,10 +14,12 @@
   }
 }
 
-.video .about__item--before {
+.video__icon {
+  position: absolute;
   top: 25px;
   left: 30px;
   width: 35px;
+  fill: $main-color;
 }
 
 .video__header {
