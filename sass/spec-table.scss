@@ -5,28 +5,28 @@
   margin-left: 0;
   border-collapse: collapse;
   margin-bottom: 20px;
+}
 
-  &__cell {
-    border-bottom: 1px solid #dddddd;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.spec-table__cell {
+  border-bottom: 1px solid #dddddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
-  &__cell:first-child {
-    width: 42%;
-  }
+.spec-table__cell:first-child {
+  width: 42%;
+}
 
-  &__cell:last-child {
-    width: 57%;
-  }
+.spec-table__cell:last-child {
+  width: 57%;
 }
 
 @media (min-width: $tablet-width) {
   .spec-table {
     width: 292px;
+  }
 
-    &__cell:first-child {
-      width: 30%;
-    }
+  .spec-table__cell:first-child {
+    width: 30%;
   }
 }

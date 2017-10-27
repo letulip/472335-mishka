@@ -5,30 +5,30 @@
   align-items: baseline;
   padding-bottom: 20px;
   border-bottom: 1px solid #ececec;
+}
 
-  &__item {
-    font-size: 0;
-  }
+.social__item {
+  font-size: 0;
+}
 
-  &__item--icon {
-    width: 25px;
-    height: 25px;
-    fill: #231f20;
-  }
+.social__item--icon {
+  width: 25px;
+  height: 25px;
+  fill: #231f20;
 
-  &__item--fb {
-    height: 30px;
-  }
-
-  &__item--icon:hover,
-  &__item--icon:focus,
-  &__item--icon:active {
+  &:hover,
+  &:focus,
+  &:active {
     fill: $main-color;
   }
 
-  &__item--icon:active {
+  &:active {
     opacity: 0.3;
   }
+}
+
+.social__item--fb {
+  height: 30px;
 }
 
 @media (min-width: $tablet-width) {

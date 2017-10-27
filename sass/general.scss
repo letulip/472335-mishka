@@ -59,12 +59,12 @@ body {
   height: 40px;
   display: inline-block;
   margin-left: 30px;
+}
 
-  &--icon {
-    width: 30px;
-    height: 40px;
-    fill: $main-color;
-  }
+.academy-link--icon {
+  width: 30px;
+  height: 40px;
+  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {

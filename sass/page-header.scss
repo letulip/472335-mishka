@@ -1,10 +1,10 @@
 .page-header {
   background-color: #f9f9f9;
+}
 
-  & .container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+.page-header .container {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .page-header__content--wrapper {
@@ -26,14 +26,14 @@
 .page-header__content--bg-wrapper {
   width: 100%;
   background-color: $main-color;
+}
 
-  & a {
-    text-decoration: none;
-  }
+.page-header__content--bg-wrapper a {
+  text-decoration: none;
+}
 
-  &:active .container {
-    opacity: 0.3;
-  }
+.page-header__content--bg-wrapper:active .container {
+  opacity: 0.3;
 }
 
 .page-header__content--bg-wrapper:last-child {
@@ -49,6 +49,19 @@
   padding-bottom: 10px;
   font-size: 19px;
   line-height: 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 75px;
+    top: 20px;
+    right: -20px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.2;
+  }
 }
 
 .page-header__content--bg-wrapper .container {
@@ -56,20 +69,6 @@
   width: 260px;
   margin: 0 auto;
   min-height: 105px;
-}
-
-.page-header__content--interior::after,
-.page-header__content--toy::after {
-  content: "";
-  position: absolute;
-  width: 85px;
-  height: 75px;
-  top: 20px;
-  right: -20px;
-  background-image: url("../img/icon-interior.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.2;
 }
 
 .page-header__content--toy::after {
@@ -130,20 +129,20 @@
     height: 135px;
     width: 334px;
     align-self: flex-end;
+  }
 
-    & .container {
-      width: 334px;
-      min-height: 120px;
-      padding-left: 35px;
-    }
+  .page-header__content--bg-wrapper .container {
+    width: 334px;
+    min-height: 120px;
+    padding-left: 35px;
+  }
 
-    &:nth-child(2) {
-      margin-left: calc(50% - 334px);
-    }
+  .page-header__content--bg-wrapper:nth-child(2) {
+    margin-left: calc(50% - 334px);
+  }
 
-    &:nth-child(3) {
-      margin-right: calc(50% - 334px);
-    }
+  .page-header__content--bg-wrapper:nth-child(3) {
+    margin-right: calc(50% - 334px);
   }
 
   .page-header__content--bg-wrapper:hover,
@@ -153,6 +152,11 @@
     & .container {
       padding-top: 5px;
     }
+  }
+
+  .page-header__content--bg-wrapper:hover .container,
+  .page-header__content--bg-wrapper:focus .container {
+    padding-top: 5px;
   }
 
   .page-header__content--interior,

@@ -4,39 +4,39 @@
   display: flex;
   flex-direction: column;
   position: relative;
+}
 
-  &__checkbox,
-  &__radio {
-    display: none;
-  }
+.field-wrapper__checkbox,
+.field-wrapper__radio {
+  display: none;
+}
 
-  &__input {
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border: 0;
-    border-bottom: 2px solid black;
-  }
+.field-wrapper__input {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border: 0;
+  border-bottom: 2px solid black;
+}
 
-  &__input::placeholder {
-    opacity: 0.3;
-  }
+.field-wrapper__input::placeholder {
+  opacity: 0.3;
+}
 
-  &__input:hover,
-  &__input:focus,
-  &__input:active {
-    border-color: $main-color;
-  }
+.field-wrapper__input:hover,
+.field-wrapper__input:focus,
+.field-wrapper__input:active {
+  border-color: $main-color;
+}
 
-  &__input:active {
-    color: #444444;
-  }
+.field-wrapper__input:active {
+  color: #444444;
+}
 
-  &__input:hover + .form__icon,
-  &__input:focus + .form__icon,
-  &__input:active + .form__icon {
-    fill: $main-color;
-    opacity: 0.9;
-  }
+.field-wrapper__input:hover + .form__icon,
+.field-wrapper__input:focus + .form__icon,
+.field-wrapper__input:active + .form__icon {
+  fill: $main-color;
+  opacity: 0.9;
 }
 
 @media (min-width: $tablet-width) {
