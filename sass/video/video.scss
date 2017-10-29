@@ -31,17 +31,17 @@
 }
 
 .video__play {
-    position: absolute;
-    left: calc(50% - 52px);
-    top: 130px;
-    min-height: 80px;
-    min-width: 105px;
-    background-image: url("/img/icon-play.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border: 0;
-    background-color: transparent;
-    font-size: 0;
+  position: absolute;
+  left: calc(50% - 52px);
+  top: 130px;
+  min-height: 80px;
+  min-width: 105px;
+  background-image: url("/img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border: 0;
+  background-color: transparent;
+  font-size: 0;
 
   &:hover,
   &:focus {
