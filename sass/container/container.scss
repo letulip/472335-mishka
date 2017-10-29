@@ -1,0 +1,21 @@
+.container {
+  width: 260px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.container--catalog {
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: $container-width-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: $container-width-desktop;
+  }
+}
