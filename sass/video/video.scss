@@ -155,12 +155,17 @@
     top: calc(50% - 40px);
   }
 
+  .video__icon {
+    top: 41px;
+    left: 759px;
+  }
+
   .video__header {
     width: 280px;
     padding-top: 50px;
-    margin-top: 50px;
+    margin-top: 45px;
     max-height: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 63px;
     padding-left: 80px;
     background-position: 33% 0%;
   }
@@ -170,6 +175,6 @@
     width: 230px;
     margin: 0;
     margin-left: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
   }
 }
