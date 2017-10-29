@@ -13,7 +13,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
-    background-size: 80% 15px;
+    background-size: 320px 8px;
   }
 }
 
@@ -43,6 +43,11 @@
   .about {
     margin-bottom: 60px;
     padding-top: 60px;
+
+    &::before {
+      height: 25px;
+      background-size: 768px 16px;
+    }
   }
 
   .about .container {
@@ -93,6 +98,11 @@
 @media (min-width: $desktop-width) {
   .about {
     padding-top: 78px;
+
+    &::before {
+      height: 25px;
+      background-size: 100% 21px;
+    }
   }
 
   .about .container {

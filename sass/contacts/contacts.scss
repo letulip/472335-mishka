@@ -13,7 +13,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
-    background-size: 80% 15px;
+    background-size: 320px 8px;
   }
 }
 
@@ -73,6 +73,11 @@
     margin-top: 0;
     padding-top: 80px;
     background-size: 100% 20px;
+
+    &::before {
+      height: 25px;
+      background-size: 768px 21px;
+    }
   }
 
   .contacts__header {
@@ -130,6 +135,11 @@
     margin-top: 0;
     padding-top: 100px;
     background-size: 100% 25px;
+
+    &::before {
+      height: 25px;
+      background-size: 100% 21px;
+    }
   }
 
   .contacts .container {
