@@ -38,21 +38,6 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 260px;
-  margin: 0 auto;
-  display: flex;
-}
-
-.container--catalog {
-  flex-direction: column;
-}
-
-.map {
-  width: 100%;
-  min-height: 457px;
-}
-
 .academy-link {
   font-size: 0;
   width: 30px;
@@ -65,26 +50,4 @@ body {
   width: 30px;
   height: 40px;
   fill: $main-color;
-}
-
-@media (min-width: $tablet-width) {
-  .container {
-    width: $container-width-tablet;
-  }
-
-  .logo {
-    width: 115px;
-    height: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .container {
-    width: $container-width-desktop;
-  }
-
-  .logo {
-    width: 155px;
-    height: 80px;
-  }
 }
