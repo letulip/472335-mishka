@@ -167,13 +167,13 @@
     width: 120px;
 
     &::after {
-      right: -15px;
+      right: -9px;
       top: 30px;
     }
   }
 
   .page-header__content--toy::after {
-    right: -5px;
+    right: 8px;
   }
 
   @media (min-resolution: $retina-dppx),
