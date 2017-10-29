@@ -114,12 +114,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-height: 760px;
-    padding-top: 80px;
+    min-height: 680px;
+    /*padding-top: 80px;*/
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 120% 746px;
     background-repeat: no-repeat;
     background-position: 50%;
+    z-index: 1;
   }
 
   .page-header__content--bg-wrapper {
