@@ -163,7 +163,7 @@
   .form__desc {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     margin-top: 60px;
   }
 
@@ -177,11 +177,13 @@
     border: none;
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .form__fieldset--tel {
     padding-top: 55px;
     padding-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .form__fieldset--email {
@@ -210,7 +212,7 @@
   }
 
   .form__name * {
-    margin-top: 20px;
+    margin-top: 18px;
   }
 
   .form__name-label {
@@ -220,7 +222,7 @@
   .form__additional {
     width: 100%;
     padding-left: 167px;
-    margin-top: 5px;
+    margin-top: 11px;
   }
 
   .form__additional-textarea {
@@ -237,7 +239,13 @@
   .form__color-checkbox {
     padding-left: 80px;
     padding-top: 25px;
-    margin-bottom: 28px;
+    margin-bottom: 29px;
+  }
+
+  .form__color-checkbox--white,
+  .form__color-checkbox--tiff,
+  .form__color-checkbox--pink {
+    margin-right: 70px;
   }
 
   .form__type-radio::before,
@@ -251,7 +259,7 @@
   }
 
   .form__color-checkbox {
-    min-width: 250px;
+    min-width: 190px;
   }
 
   .form__tel input[type="tel"],
@@ -270,7 +278,7 @@
   .form__submit-btn {
     max-width: 230px;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   .form__necessary {
@@ -288,10 +296,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: baseline;
-  }
-
-  .form--label {
-    margin-right: 25px;
   }
 }
 
