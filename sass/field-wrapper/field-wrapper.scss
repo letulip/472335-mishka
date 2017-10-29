@@ -18,6 +18,11 @@
   border-bottom: 2px solid black;
 }
 
+.field-wrapper__input--name {
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+
 .field-wrapper__input::placeholder {
   opacity: 0.3;
 }
