@@ -267,7 +267,7 @@
     background-color: #f1f1f1;
   }
 
-  .form .form__icon {
+  .form__icon {
     right: 20px;
   }
 
@@ -314,17 +314,27 @@
     min-width: 265px;
   }
 
+  .form__color-checkbox--white,
+  .form__color-checkbox--tiff,
+  .form__color-checkbox--pink {
+    margin-right: 0;
+  }
+
   .form__fieldset--color {
     padding-right: 0;
   }
 
   .form__fieldset--tel {
-    padding-top: 36px;
+    padding-top: 49px;
   }
 
   .form__name * {
-    margin-top: 5px;
-    margin-bottom: 23px;
+    margin-top: 13px;
+    margin-bottom: 15px;
+  }
+
+  .form__name-label {
+    margin: 0;
   }
 
   .form__desc {
@@ -348,6 +358,7 @@
 
   .form__submit-btn {
     margin-left: 172px;
+    margin-top: 6px
   }
 
   .form__necessary {
@@ -355,6 +366,10 @@
   }
 
   .form__icon {
-    right: 0;
+    right: 9px;
+  }
+
+  .form__icon--mail {
+    top: 8px;
   }
 }
