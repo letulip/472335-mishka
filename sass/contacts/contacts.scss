@@ -114,7 +114,7 @@
   }
 
   .contacts__spec .spec-table__cell:first-child {
-    width: 19%;
+    width: 17%;
   }
 
   .button--write-us {
@@ -130,7 +130,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     position: relative;
     margin-top: 0;
     padding-top: 100px;
@@ -164,13 +164,13 @@
 
   .contacts__spec > tbody {
     display: block;
-    margin-bottom: 73px;
+    margin-bottom: 90px;
   }
 
   .button--write-us {
     position: absolute;
     left: calc(50% - 351px);
-    bottom: 8px;
+    bottom: 16px;
     margin-bottom: 0;
   }
 }

@@ -20,7 +20,7 @@
   min-height: 280px;
   width: 270px;
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 69px;
 }
 
 .page-header__content--bg-wrapper {
@@ -56,7 +56,7 @@
     width: 85px;
     height: 75px;
     top: 20px;
-    right: -20px;
+    right: -38px;
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -73,7 +73,7 @@
 
 .page-header__content--toy::after {
   background-image: url("../img/icon-toy.svg");
-  right: -10px;
+  right: -27px;
 }
 
 @media (min-resolution: $retina-dppx),
@@ -106,6 +106,7 @@
     width: 650px;
     margin: 0;
     margin-bottom: auto;
+    padding-top: 90px;
     font-size: $header-font-size-tablet;
     line-height: $header-line-height-tablet;
   }
