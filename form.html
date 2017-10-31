@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
   </head>
   <body>
@@ -74,30 +75,30 @@
               <legend class="form__legend">ЦВЕТ</legend>
               <div class="field-wrapper form__color">
                 <input type="checkbox" class="field-wrapper__checkbox" id="white" name="white" checked>
-                <label class="form__color-checkbox" for="white">Белый</label>
+                <label class="form__color-checkbox form__color-checkbox--white" for="white">Белый</label>
                 <input type="checkbox" class="field-wrapper__checkbox" id="gray" name="gray" checked>
                 <label class="form__color-checkbox" for="gray">Серый</label>
                 <input type="checkbox" class="field-wrapper__checkbox" id="tiff" name="tiff">
-                <label class="form__color-checkbox" for="tiff">"Тиффани"</label>
+                <label class="form__color-checkbox form__color-checkbox--tiff" for="tiff">"Тиффани"</label>
                 <input type="checkbox" class="field-wrapper__checkbox" id="black" name="black">
                 <label class="form__color-checkbox" for="black">Черный</label>
                 <input type="checkbox" class="field-wrapper__checkbox" id="pink" name="pink">
-                <label class="form__color-checkbox" for="pink">Розовый</label>
+                <label class="form__color-checkbox form__color-checkbox--pink" for="pink">Розовый</label>
                 <input type="checkbox" class="field-wrapper__checkbox" id="orange" name="orange">
                 <label class="form__color-checkbox" for="orange">Оранжевый</label>
               </div>
             </fieldset>
           </div>
           <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--name">
               <legend class="form__legend">ФИО</legend>
               <div class="field-wrapper form__name">
                 <label for="name" class="form__name-label">Имя:</label>
-                <input type="text" class="field-wrapper__input field-wrapper__input--name" id="name" required placeholder="Введите ваше имя*">
+                <input type="text" class="field-wrapper__input field-wrapper__input--name field-wrapper__input--name-first" id="name" required placeholder="Введите ваше имя*">
                 <label for="lastname" class="form__name-label">Фамилия:</label>
-                <input type="text" class="field-wrapper__input" id="lastname" required placeholder="Укажите фамилию*">
+                <input type="text" class="field-wrapper__input field-wrapper__input--name" id="lastname" required placeholder="Укажите фамилию*">
                 <label for="patronymic" class="form__name-label">Отчество:</label>
-                <input type="text" class="field-wrapper__input" id="patronymic" placeholder="Отчество, если желаете">
+                <input type="text" class="field-wrapper__input field-wrapper__input--name" id="patronymic" placeholder="Отчество, если желаете">
               </div>
             </fieldset>
           </div>
@@ -122,7 +123,7 @@
             </fieldset>
           </div>
           <div class="form__fieldset-wrapper">
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset--additional">
               <legend class="form__legend">ДОП</legend>
               <div class="form__additional">
                 <textarea class="form__additional-textarea">Опишите ваши пожелания к заказу</textarea>

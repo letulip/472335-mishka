@@ -6,6 +6,8 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
+var jsMinify = require("gulp-uglify");
+var pump = require("pump");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
@@ -28,6 +30,16 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task("compress", function (cb) {
+  pump([
+        gulp.src("js/*.js"),
+        jsMinify(),
+        gulp.dest("build/js")
+    ],
+    cb
+  );
 });
 
 gulp.task("images", function () {
@@ -62,7 +74,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
     "img/*.{png,jpg,svg}",
-    "js/**",
     "*.html"
     ], {
       base: "."
@@ -78,6 +89,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "style",
+    "compress",
     "copy",
     "webp",
     "sprite",
