@@ -14,7 +14,7 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
-    background-size: 320px 8px;
+    background-size: auto 8px;
   }
 }
 
@@ -47,7 +47,7 @@
 
     &::before {
       height: 25px;
-      background-size: 768px 16px;
+      background-size: auto 16px;
     }
   }
 
@@ -67,12 +67,12 @@
   }
 
   .about__item {
-    flex-basis: 42%;
+    flex-basis: 50%;
     font-size: 20px;
     line-height: 22px;
     margin-top: 103px;
     margin-bottom: 10px;
-    margin-right: 50px;
+    padding-right: 40px;
   }
 
   .about__item--style {
@@ -102,7 +102,7 @@
 
     &::before {
       height: 25px;
-      background-size: 1150px 21px;
+      background-size: auto 21px;
     }
   }
 
@@ -116,7 +116,7 @@
   }
 
   .about__item {
-    margin-right: 70px;
-    flex-basis: 40%;
+    /*margin-right: 70px;*/
+    flex-basis: 50%;
   }
 }

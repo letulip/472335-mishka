@@ -60,7 +60,7 @@
     background-image: url("../img/icon-interior.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    opacity: 0.2;
+    opacity: 0.5;
   }
 }
 
@@ -115,7 +115,6 @@
     flex-wrap: wrap;
     justify-content: center;
     min-height: 697px;
-    /*padding-top: 80px;*/
     background-image: url("../img/hero-tablet@1x.jpg");
     background-size: 141% 104%;
     background-repeat: no-repeat;
@@ -149,10 +148,25 @@
   .page-header__content--bg-wrapper:hover,
   .page-header__content--bg-wrapper:focus {
     min-height: 140px;
+    background-color: #59d5bc;
 
     & .container {
       padding-top: 5px;
     }
+  }
+
+  .page-header__content--bg-wrapper:nth-child(3):hover,
+  .page-header__content--bg-wrapper:nth-child(3):focus {
+    background-color: #46c1ae;
+  }
+
+  .page-header__content--bg-wrapper:hover .page-header__content::after,
+  .page-header__content--bg-wrapper:focus  .page-header__content::after {
+    opacity: 0.8;
+  }
+
+  .page-header__content--bg-wrapper:active .page-header__content::after {
+    opacity: 0.3;
   }
 
   .page-header__content--interior,
