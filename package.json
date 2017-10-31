@@ -23,6 +23,7 @@
     "gulp-uncss": "^1.0.6",
     "gulp-vars": "^0.1.6",
     "gulp-webp": "^2.3.0",
+    "pump": "^1.0.2",
     "run-sequence": "^2.2.0",
     "stylelint": "8.1.x",
     "stylelint-config-htmlacademy": "0.1.x",
