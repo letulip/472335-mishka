@@ -1,10 +1,14 @@
 .page-header {
-  background-color: #f9f9f9;
+  background-color: #f1f1f1;
 
   & .container {
     padding-top: 10px;
     padding-bottom: 10px;
   }
+}
+
+.page-header--bg {
+  background-color: #f9f9f9;
 }
 
 .page-header__content--wrapper {
