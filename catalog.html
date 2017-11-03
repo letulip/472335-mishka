@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/css/style.min.css" as="style">
+    <link rel="preload" href="/fonts/opensans.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="/fonts/opensansbold.woff2" as="font" type="font/woff2">
+    <link rel="stylesheet" type="text/css" href="/css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimal-ui">
   </head>
   <body>
@@ -65,11 +66,11 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="img/photo-hare-desktop@1x.webp 1x,
-                  photo-hare-desktop@2x.webp 2x">
+                  img/photo-hare-desktop@2x.webp 2x">
                   <source
                   media="(min-width: 1150px)"
                   srcset="img/photo-hare-desktop@1x.jpg 1x,
-                  photo-hare-desktop@2x.jpg 2x">
+                  img/photo-hare-desktop@2x.jpg 2x">
                   <source
                   type="image/webp"
                   media="(min-width: 768px)"
@@ -116,11 +117,11 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="img/photo-bowl-desktop@1x.webp 1x,
-                  photo-bowl-desktop@2x.webp 2x">
+                  img/photo-bowl-desktop@2x.webp 2x">
                   <source
                   media="(min-width: 1150px)"
                   srcset="img/photo-bowl-desktop@1x.jpg 1x,
-                  photo-bowl-desktop@2x.jpg 2x">
+                  img/photo-bowl-desktop@2x.jpg 2x">
                   <source
                   type="image/webp"
                   media="(min-width: 768px)"
@@ -167,11 +168,11 @@
                   type="image/webp"
                   media="(min-width: 1150px)"
                   srcset="img/photo-toys-desktop@1x.webp 1x,
-                  photo-toys-desktop@2x.webp 2x">
+                  img/photo-toys-desktop@2x.webp 2x">
                   <source
                   media="(min-width: 1150px)"
                   srcset="img/photo-toys-desktop@1x.jpg 1x,
-                  photo-toys-desktop@2x.jpg 2x">
+                  img/photo-toys-desktop@2x.jpg 2x">
                   <source
                   type="image/webp"
                   media="(min-width: 768px)"
@@ -214,7 +215,7 @@
           </ul>
         </section>
         <section class="video">
-          <svg class="about__item--before" width="32" height="32">
+          <svg class="video__icon" width="32" height="32">
             <use xlink:href="img/sprite.svg#icon-video"></use>
           </svg>
           <h2 class="video__header header header--h2">Процесс производства</h2>

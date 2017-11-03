@@ -1,7 +1,6 @@
 .about {
-  width: $mobile-width;
-  margin: 0 auto;
-  padding-top: 40px;
+  width: 100%;
+  padding-top: 35px;
   margin-bottom: 55px;
   position: relative;
 
@@ -15,12 +14,13 @@
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 0 0;
-    background-size: 500px 15px;
+    background-size: auto 8px;
   }
+}
 
-  & .container {
-    display: block;
-  }
+.about .container {
+  display: block;
+  margin: 0 auto;
 }
 
 .about__item {
@@ -30,21 +30,29 @@
   line-height: 20px;
   margin-top: 83px;
   position: relative;
+}
 
-  &--before {
-    position: absolute;
-    width: 55px;
-    top: -55px;
-    left: -5px;
-    fill: $main-color;
-  }
+.about__item--before {
+  position: absolute;
+  width: 55px;
+  top: -55px;
+  left: -5px;
+  fill: $main-color;
 }
 
 @media (min-width: $tablet-width) {
   .about {
-    width: $tablet-width;
     margin-bottom: 60px;
     padding-top: 60px;
+
+    &::before {
+      height: 25px;
+      background-size: auto 16px;
+    }
+  }
+
+  .about .container {
+    width: $container-width-tablet;
   }
 
   .about__header {
@@ -59,43 +67,47 @@
   }
 
   .about__item {
-    flex-basis: 42%;
+    flex-basis: 50%;
     font-size: 20px;
     line-height: 22px;
     margin-top: 103px;
     margin-bottom: 10px;
-    margin-right: 50px;
+    padding-right: 40px;
+  }
 
-    &--style {
-      order: 2;
-    }
+  .about__item--style {
+    order: 2;
+  }
 
-    &--like {
-      order: 4;
-    }
+  .about__item--like {
+    order: 4;
+  }
 
-    &--knitted {
-      order: 1;
-    }
+  .about__item--knitted {
+    order: 1;
+  }
 
-    &--patriot {
-      order: 3;
-    }
+  .about__item--patriot {
+    order: 3;
+  }
 
-    &--present {
-      order: 5;
-    }
+  .about__item--present {
+    order: 5;
   }
 }
 
 @media (min-width: $desktop-width) {
   .about {
-    width: $desktop-width;
     padding-top: 78px;
 
-    & .container {
-      max-width: 700px;
+    &::before {
+      height: 25px;
+      background-size: auto 21px;
     }
+  }
+
+  .about .container {
+    width: 700px;
   }
 
   .about__header {
@@ -104,7 +116,7 @@
   }
 
   .about__item {
-    margin-right: 70px;
-    flex-basis: 40%;
+    /*margin-right: 70px;*/
+    flex-basis: 50%;
   }
 }
